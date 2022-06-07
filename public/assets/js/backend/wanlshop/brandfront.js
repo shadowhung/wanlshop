@@ -1,0 +1,1 @@
+"use strict";define(["jquery","bootstrap","backend","table","form"],function(n,e,i,t,o){var r={add:function(){r.api.bindevent()},edit:function(){r.api.bindevent()},api:{bindevent:function(){o.api.bindevent(n("form[role=form]"))}}};return r});

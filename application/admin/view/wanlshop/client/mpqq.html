@@ -1,0 +1,86 @@
+<div class="alert alert-warning-light">
+	<i class="fa fa-warning"></i> 温馨提示：如不搭建【QQ小程序】则不用配置此页，如要搭建请完善此页，点击【更新】后系统将更新客户端配置文件，更新完请在【客户端配置】重新生成源码导入HBuilder X
+</div>
+<div class="panel panel-default panel-intro">
+	<div class="panel-heading">
+		<div class="panel-lead"><em>QQ小程序</em>用于QQ小程序参数配置和一键本地打包QQ小程序</div>
+	</div>
+	<div class="panel-body">
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="ini">
+				<div class="widget-body no-padding">
+					<form id="ini-form" class="edit-form form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.client/edit')}">
+					    {:token()}	
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th width="15%">配置项</th>
+									<th width="85%">参数</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>QQ小程序AppID</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::text('row[mp_qq][appid]', $wanlshop.mp_qq.appid, ['data-rule'=>'required','data-tip'=>'请填写QQ小程序AppID','placeholder'=>'请在QQ开发者工具中申请获取AppID'])}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>QQ小程序AppSecret</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::text('row[mp_qq][appsecret]', $wanlshop.mp_qq.appsecret, ['data-rule'=>'required','data-tip'=>'请填写QQ小程序AppSecret','placeholder'=>'请在QQ开发者工具中申请获取AppSecret'])}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td></td>
+									<td>
+										<button type="submit" class="btn btn-success btn-embossed">{:__('更新')}</button>
+										<button type="reset" class="btn btn-default btn-embossed">重置</button>
+									</td>
+									<td></td>
+								</tr>
+							</tfoot>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	@media (max-width: 375px) {
+		.edit-form tr td input {
+			width: 100%;
+		}
+
+		.edit-form tr th:first-child,
+		.edit-form tr td:first-child {
+			width: 20%;
+		}
+
+		.edit-form tr th:nth-last-of-type(-n+2),
+		.edit-form tr td:nth-last-of-type(-n+2) {
+			display: none;
+		}
+	}
+
+	.edit-form table>tbody>tr td a.btn-delcfg {
+		visibility: hidden;
+	}
+
+	.edit-form table>tbody>tr:hover td a.btn-delcfg {
+		visibility: visible;
+	}
+</style>

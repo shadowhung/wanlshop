@@ -1,0 +1,98 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text" value="{$row.name|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Template')}:</label>
+        <div class="col-xs-12 col-sm-8">
+                        
+            <select  id="c-template" data-rule="required" class="form-control selectpicker" name="row[template]">
+                {foreach name="templateList" item="vo"}
+                    <option value="{$key}" {in name="key" value="$row.template"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Canvas_width')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-canvas_width" data-rule="required" class="form-control" name="row[canvas_width]" type="number" value="{$row.canvas_width|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Canvas_height')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-canvas_height" data-rule="required" class="form-control" name="row[canvas_height]" type="number" value="{$row.canvas_height|htmlentities}">
+        </div>
+    </div>
+	<div class="form-group" id="thumbnail">
+	     <label class="control-label col-xs-12 col-sm-2">{:__('Thumbnail_url')}:</label>
+	     <div class="col-xs-12 col-sm-8">
+	         <div class="input-group">
+	             <input id="c-thumbnail_url" data-rule="required" class="form-control" size="50" name="row[thumbnail_url]" type="text" value="{$row.thumbnail_url|htmlentities}">
+	             <div class="input-group-addon no-border no-padding">
+	                 <span><button type="button" id="plupload-thumbnail_url" class="btn btn-danger plupload" data-input-id="c-thumbnail_url" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-thumbnail_url"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+	                 <span><button type="button" id="fachoose-thumbnail_url" class="btn btn-primary fachoose" data-input-id="c-thumbnail_url" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+	             </div>
+	             <span class="msg-box n-right" for="c-thumbnail_url"></span>
+	         </div>
+	         <ul class="row list-inline plupload-preview" id="p-thumbnail_url"></ul>
+	     </div>
+	 </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Thumbnail_width')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-thumbnail_width" data-rule="required" class="form-control" name="row[thumbnail_width]" type="number" value="{$row.thumbnail_width|htmlentities}">
+        </div>
+    </div>
+    <div class="form-group" id="background">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Background_url')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-background_url" class="form-control" size="50" name="row[background_url]" type="text" value="{$row.background_url|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-background_url" class="btn btn-danger plupload" data-input-id="c-background_url" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-background_url"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-background_url" class="btn btn-primary fachoose" data-input-id="c-background_url" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-background_url"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-background_url"></ul>
+        </div>
+    </div>
+    <div class="form-group" id="logo">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Logo_src')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input id="c-logo_src" class="form-control" size="50" name="row[logo_src]" type="text" value="{$row.logo_src|htmlentities}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-logo_src" class="btn btn-danger plupload" data-input-id="c-logo_src" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-logo_src"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-logo_src" class="btn btn-primary fachoose" data-input-id="c-logo_src" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-logo_src"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-logo_src"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Checked')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            
+            <input  id="c-checked" name="row[checked]" type="hidden" value="{$row.checked}">
+            <a href="javascript:;" data-toggle="switcher" class="btn-switcher" data-input-id="c-checked" data-yes="1" data-no="0" >
+                <i class="fa fa-toggle-on text-success {eq name="$row.checked" value="0"}fa-flip-horizontal text-gray{/eq} fa-2x"></i>
+            </a>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

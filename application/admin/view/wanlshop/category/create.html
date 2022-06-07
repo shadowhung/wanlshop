@@ -1,0 +1,30 @@
+<div class="alert alert-danger-light">
+	<i class="fa fa-warning"></i> 重要提示：此操作不可逆可批量生成类目，生成多个菜单菜单名称请每行一个，例如女装 换行 男装
+</div>
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+	<div class="form-group">
+	    <label for="pid" class="control-label col-xs-12 col-sm-2">{:__('Pid')}:</label>
+	    <div class="col-xs-12 col-sm-8">
+	        <select name="row[pid]" data-rule="required" id="pid" class="form-control">
+	            <option value="0">{:__('None')}</option>
+	            {foreach name="channelList" item="vo"}
+	            <option value="{$vo.id}">{$vo.name}</option>
+	            {/foreach}
+	        </select>
+	    </div>
+	</div>
+	
+	<div class="form-group">
+	    <label class="control-label col-xs-12 col-sm-2">{:__('菜单名称')}:</label>
+	    <div class="col-xs-12 col-sm-8">
+			<textarea id="c-name" data-rule="required" class="form-control" name="row[name]" rows="10" cols="30"></textarea>
+	    </div>
+	</div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('批量生成')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

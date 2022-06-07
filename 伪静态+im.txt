@@ -1,0 +1,40 @@
+location /index/ {
+	if (!-e $request_filename){
+		rewrite  ^(.*)$  /index.php?s=$1  last;   break;
+	}
+}
+location /api/ {
+	if (!-e $request_filename){
+		rewrite  ^(.*)$  /index.php?s=$1  last;   break;
+	}
+}
+location /api1/ {
+	if (!-e $request_filename){
+		rewrite  ^(.*)$  /index.php?s=$1  last;   break;
+	}
+}
+location /addons/ {
+	if (!-e $request_filename){
+		rewrite  ^(.*)$  /index.php?s=$1  last;   break;
+	}
+}
+location /wholesale/ {
+       try_files $uri /wholesale/index.html;
+}
+location / {
+       try_files $uri /index.html;
+}
+
+listen 443 ssl http2;
+server_name iim.shopptw.com;
+location / {
+    proxy_pass http://47.242.172.149:8282; #代理到上面的地址去，格式：http://域名:端口号，
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection "Upgrade";
+    proxy_connect_timeout 5s; #配置点1
+    proxy_read_timeout 60000s; #配置点2，如果没效，可以考虑这个时间配置长一点
+    proxy_send_timeout 60000s; #配置点3
+}
+
+#SSL-START SSL相关配置，请勿删除或修改下一行带注释的404规则

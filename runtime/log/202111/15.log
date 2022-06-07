@@ -1,0 +1,3501 @@
+---------------------------------------------------------------
+[ 2021-11-15T00:43:34+08:00 ] 45.146.164.110 GET 207.148.97.4:443/
+[运行时间：0.024898s] [吞吐率：40.16req/s] [内存消耗：2,898.18kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001482s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000604s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000621s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000167s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '207.148.97.4:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000886s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000291s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T00:43:35+08:00 ] 45.146.164.110 GET 207.148.97.4:443/index/wanlshop.console/index.html
+[运行时间：0.028936s] [吞吐率：34.56req/s] [内存消耗：3,509.31kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001405s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000530s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000545s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000143s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'referer' => 'https://207.148.97.4:443/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '207.148.97.4:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000832s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T01:48:08+08:00 ] 45.146.164.110 GET 207.148.97.4:443/
+[运行时间：0.026344s] [吞吐率：37.96req/s] [内存消耗：2,898.48kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001659s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000588s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000605s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000156s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'content-type' => 'application/json',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '207.148.97.4:443',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000933s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000294s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T04:46:57+08:00 ] 54.196.184.222 GET 207.148.97.4/
+[运行时间：0.028846s] [吞吐率：34.67req/s] [内存消耗：2,898.38kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001595s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000600s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000617s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000164s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.2;en-US) AppleWebKit/537.32.36 (KHTML, live Gecko) Chrome/50.0.3073.55 Safari/537.32',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000954s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000287s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T04:46:57+08:00 ] 54.196.184.222 GET 207.148.97.4/index/wanlshop.console/index.html
+[运行时间：0.032402s] [吞吐率：30.86req/s] [内存消耗：3,509.28kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001532s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000589s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000608s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000139s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.2;en-US) AppleWebKit/537.32.36 (KHTML, live Gecko) Chrome/50.0.3073.55 Safari/537.32',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000821s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T04:47:00+08:00 ] 54.196.184.222 GET 207.148.97.4/
+[运行时间：0.021690s] [吞吐率：46.10req/s] [内存消耗：2,898.02kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001385s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000524s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000540s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000134s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000806s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000241s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T04:47:01+08:00 ] 54.196.184.222 GET 207.148.97.4/
+[运行时间：0.023008s] [吞吐率：43.46req/s] [内存消耗：2,898.02kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001432s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000700s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000723s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000141s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000809s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000226s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T04:47:01+08:00 ] 54.196.184.222 GET 207.148.97.4/
+[运行时间：0.026835s] [吞吐率：37.26req/s] [内存消耗：2,898.02kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001467s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000764s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000785s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000191s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000817s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000261s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T04:47:02+08:00 ] 54.196.184.222 GET 207.148.97.4/
+[运行时间：0.022540s] [吞吐率：44.37req/s] [内存消耗：2,898.02kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001449s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000544s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000561s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000139s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000828s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000248s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T04:47:04+08:00 ] 54.196.184.222 GET 207.148.97.4/
+[运行时间：0.022949s] [吞吐率：43.57req/s] [内存消耗：2,898.02kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001400s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000540s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000556s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000138s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000818s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000283s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T04:47:05+08:00 ] 54.196.184.222 GET 207.148.97.4/
+[运行时间：0.024320s] [吞吐率：41.12req/s] [内存消耗：2,898.02kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001579s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000700s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000720s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000144s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000931s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000255s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T06:17:35+08:00 ] 34.219.227.249 GET manyajp.com/
+[运行时间：0.024527s] [吞吐率：40.77req/s] [内存消耗：2,897.87kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001455s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000590s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000607s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000142s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'host' => 'manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000909s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000266s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T06:17:59+08:00 ] 54.190.109.76 GET manyajp.com/
+[运行时间：0.022528s] [吞吐率：44.39req/s] [内存消耗：2,897.87kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001445s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000546s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000563s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000130s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'host' => 'manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001314s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000240s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T06:29:39+08:00 ] 52.40.161.42 GET manyajp.com/
+[运行时间：0.025589s] [吞吐率：39.08req/s] [内存消耗：2,897.87kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001509s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000623s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000640s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000123s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36',
+  'host' => 'manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000911s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000261s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T07:03:05+08:00 ] 167.248.133.58 GET 207.148.97.4:443/
+[运行时间：0.023682s] [吞吐率：42.23req/s] [内存消耗：2,896.91kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001474s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000567s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000583s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000136s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '207.148.97.4:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000839s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000255s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T07:03:05+08:00 ] 167.248.133.58 GET 207.148.97.4/
+[运行时间：0.022722s] [吞吐率：44.01req/s] [内存消耗：2,897.91kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001458s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000563s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000580s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000136s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000801s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000211s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T07:03:06+08:00 ] 167.248.133.58 GET 207.148.97.4/index/wanlshop.console/index.html
+[运行时间：0.028782s] [吞吐率：34.74req/s] [内存消耗：3,508.82kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001559s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000563s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000581s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000151s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (compatible; CensysInspect/1.1; +https://about.censys.io/)',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000842s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T08:26:23+08:00 ] 3.16.107.120 POST 207.148.97.4/
+[运行时间：0.025784s] [吞吐率：38.78req/s] [内存消耗：2,900.66kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000045s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001541s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000603s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000620s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000157s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+  'host' => '207.148.97.4',
+)
+[ info ] [ PARAM ] array (
+  '0x' => 
+  array (
+    0 => 'androxgh0st',
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000929s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000301s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T08:31:48+08:00 ] 20.55.53.144 GET 207.148.97.4/
+[运行时间：0.023693s] [吞吐率：42.21req/s] [内存消耗：2,898.18kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001441s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000585s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000603s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000144s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000866s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000242s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T08:31:48+08:00 ] 20.55.53.144 GET 207.148.97.4/index/wanlshop.console/index.html
+[运行时间：0.035027s] [吞吐率：28.55req/s] [内存消耗：3,509.09kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001449s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000517s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000532s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000133s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000821s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T10:36:44+08:00 ] 209.127.109.240 GET manyajp.com/
+[运行时间：0.029893s] [吞吐率：33.45req/s] [内存消耗：2,855.96kb] [文件加载：126]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000048s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001944s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000725s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000744s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000149s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'https://www.google.com/',
+  'dnt' => '1',
+  'cache-control' => 'no-cache, max-age=0',
+  'accept-language' => 'en-GB,en-US;q=0.9,en;q=0.8',
+  'accept-encoding' => 'identity',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A5362a Safari/604.1',
+  'host' => 'manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000959s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000294s ]
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T10:36:45+08:00 ] 144.168.222.145 GET manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.033361s] [吞吐率：29.98req/s] [内存消耗：3,476.46kb] [文件加载：136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001871s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000669s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000688s ]
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000219s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'https://manyajp.com',
+  'dnt' => '1',
+  'cache-control' => 'no-cache, max-age=0',
+  'accept-language' => 'en-GB,en-US;q=0.9,en;q=0.8',
+  'accept-encoding' => 'identity',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPad; CPU OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A5362a Safari/604.1',
+  'host' => 'manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001042s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:02:09+08:00 ] 192.35.168.80 GET 207.148.97.4/
+[运行时间：0.028035s] [吞吐率：35.67req/s] [内存消耗：2,897.66kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002071s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000634s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000656s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000166s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001042s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000294s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:02:09+08:00 ] 192.35.168.80 GET 207.148.97.4:443/index/wanlshop.console/index.html
+[运行时间：0.029486s] [吞吐率：33.91req/s] [内存消耗：3,508.96kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001409s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000571s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000588s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000142s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'referer' => 'https://207.148.97.4:443/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '207.148.97.4:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000809s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:03:47+08:00 ] 216.218.206.67 GET 207.148.97.4/
+[运行时间：0.022657s] [吞吐率：44.14req/s] [内存消耗：2,896.90kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001444s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000553s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000570s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000131s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000797s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000248s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:45:56+08:00 ] 82.223.24.187 OPTIONS api.manyajp.com/api/wanlshop/token/check
+[运行时间：0.023688s] [吞吐率：42.22req/s] [内存消耗：2,402.91kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001953s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000782s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000807s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000193s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.token',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'access-control-request-headers' => 'token',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'GET',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001257s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:45:57+08:00 ] 82.223.24.187 GET api.manyajp.com/api/wanlshop/token/check
+[运行时间：0.029066s] [吞吐率：34.40req/s] [内存消耗：3,356.05kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001664s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000588s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000606s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000186s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.token',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Safari/604.1',
+  'token' => 'wanlshop',
+  'referer' => 'https://app.manyajp.com/',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000852s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:45:58+08:00 ] 82.223.24.187 OPTIONS api.manyajp.com/api/wanlshop/chat/shake
+[运行时间：0.020617s] [吞吐率：48.50req/s] [内存消耗：2,465.22kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001491s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000603s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000620s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000140s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'shake',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'POST',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000833s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:45:58+08:00 ] 82.223.24.187 OPTIONS api.manyajp.com/api/wanlshop/common/adverts?version=1.0.4
+[运行时间：0.023469s] [吞吐率：42.61req/s] [内存消耗：2,433.42kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001697s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000599s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000617s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000178s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'adverts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'GET',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001023s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:45:58+08:00 ] 82.223.24.187 OPTIONS api.manyajp.com/api/wanlshop/common/init?version=1.0.4
+[运行时间：0.018873s] [吞吐率：52.99req/s] [内存消耗：2,433.39kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001367s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000586s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000603s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000139s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'init',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'GET',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000783s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:45:58+08:00 ] 82.223.24.187 POST api.manyajp.com/api/wanlshop/chat/shake
+[运行时间：0.026416s] [吞吐率：37.86req/s] [内存消耗：3,170.11kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001520s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000551s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000567s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000145s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'shake',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Safari/604.1',
+  'content-length' => '36',
+  'referer' => 'https://app.manyajp.com/pages/twshop/guide',
+  'content-type' => 'application/json;charset=UTF-8',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+)
+[ info ] [ PARAM ] array (
+  'client_id' => '7f0000010b5500000136',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000807s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000250s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Chat->shake[ /www/wwwroot/admin.manyajp.com/application/api/controller/wanlshop/Chat.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:45:58+08:00 ] 82.223.24.187 GET api.manyajp.com/api/wanlshop/common/adverts?version=1.0.4
+[运行时间：0.035530s] [吞吐率：28.15req/s] [内存消耗：3,715.44kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001356s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000571s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000588s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000138s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'adverts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/guide',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'origin' => 'https://app.manyajp.com',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000815s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000250s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn/wanlshop/common.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Common->adverts[ /www/wwwroot/admin.manyajp.com/application/api/controller/wanlshop/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T11:45:58+08:00 ] 82.223.24.187 GET api.manyajp.com/api/wanlshop/common/init?version=1.0.4
+[运行时间：0.079328s] [吞吐率：12.61req/s] [内存消耗：4,210.05kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001384s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000529s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000545s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000135s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'init',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/guide',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'gzip, deflate, br',
+  'origin' => 'https://app.manyajp.com',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000846s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000273s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn/wanlshop/common.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Common->init[ /www/wwwroot/admin.manyajp.com/application/api/controller/wanlshop/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:11+08:00 ] 65.21.144.239 OPTIONS api.manyajp.com/api/wanlshop/token/check
+[运行时间：0.022571s] [吞吐率：44.30req/s] [内存消耗：2,402.84kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001517s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000549s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000565s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000146s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.token',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'access-control-request-headers' => 'token',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'GET',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000876s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:11+08:00 ] 65.21.144.239 GET api.manyajp.com/api/wanlshop/token/check
+[运行时间：0.027388s] [吞吐率：36.51req/s] [内存消耗：3,355.98kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001734s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000570s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000587s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000147s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.token',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'token' => 'wanlshop',
+  'referer' => 'https://app.manyajp.com/',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001080s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:11+08:00 ] 65.21.144.239 OPTIONS api.manyajp.com/api/wanlshop/chat/shake
+[运行时间：0.022922s] [吞吐率：43.63req/s] [内存消耗：2,465.20kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002342s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000723s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000748s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000145s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'shake',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/guide',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'POST',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001377s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:12+08:00 ] 65.21.144.239 OPTIONS api.manyajp.com/api/wanlshop/common/adverts?version=1.0.4
+[运行时间：0.018810s] [吞吐率：53.16req/s] [内存消耗：2,433.41kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001394s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000562s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000579s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000150s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'adverts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/guide',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'GET',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000830s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:12+08:00 ] 65.21.144.239 OPTIONS api.manyajp.com/api/wanlshop/common/init?version=1.0.4
+[运行时间：0.021342s] [吞吐率：46.86req/s] [内存消耗：2,433.38kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001611s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000526s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000541s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000134s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'init',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/guide',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'GET',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000934s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:12+08:00 ] 65.21.144.239 POST api.manyajp.com/api/wanlshop/chat/shake
+[运行时间：0.024341s] [吞吐率：41.08req/s] [内存消耗：3,170.05kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001420s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000552s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000570s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000127s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'shake',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'content-length' => '36',
+  'referer' => 'https://app.manyajp.com/pages/twshop/guide',
+  'origin' => 'https://app.manyajp.com',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+)
+[ info ] [ PARAM ] array (
+  'client_id' => '7f0000010b5700000156',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000798s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000274s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Chat->shake[ /www/wwwroot/admin.manyajp.com/application/api/controller/wanlshop/Chat.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:13+08:00 ] 65.21.144.239 GET api.manyajp.com/api/wanlshop/common/adverts?version=1.0.4
+[运行时间：0.038061s] [吞吐率：26.27req/s] [内存消耗：3,715.38kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001581s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000766s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000789s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000135s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'adverts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/guide',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'origin' => 'https://app.manyajp.com',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001001s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000321s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn/wanlshop/common.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Common->adverts[ /www/wwwroot/admin.manyajp.com/application/api/controller/wanlshop/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:13+08:00 ] 65.21.144.239 GET api.manyajp.com/api/wanlshop/common/init?version=1.0.4
+[运行时间：0.086416s] [吞吐率：11.57req/s] [内存消耗：4,209.99kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001615s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000585s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000615s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000134s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'init',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/guide',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'origin' => 'https://app.manyajp.com',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000920s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000255s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn/wanlshop/common.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Common->init[ /www/wwwroot/admin.manyajp.com/application/api/controller/wanlshop/Common.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:22+08:00 ] 65.21.144.239 OPTIONS api.manyajp.com/api/wanlshop/product/likes?pages=index&page=1
+[运行时间：0.017079s] [吞吐率：58.55req/s] [内存消耗：2,546.63kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000030s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001334s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000521s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000536s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000131s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/index',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'GET',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'index',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000772s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:22+08:00 ] 65.21.144.239 OPTIONS api.manyajp.com/api/wanlshop/page/headlines
+[运行时间：0.018483s] [吞吐率：54.10req/s] [内存消耗：2,429.38kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001877s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000731s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000754s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000169s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.page',
+    2 => 'headlines',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/index',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'GET',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000806s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:22+08:00 ] 65.21.144.239 OPTIONS api.manyajp.com/api/wanlshop/page/category?col=col-2-2_1&data=%5B%7B%22categoryId%22%3A%22589%22%2C%22textColor%22%3A%22text-red%22%2C%22describe%22%3A%22%22%2C%22tags%22%3A%22%E6%96%B0%E8%A3%BD%E5%93%81%22%7D%2C%7B%22categoryId%22%3A%22590%22%2C%22textColor%22%3A%22text-red%22%2C%22describe%22%3A%22%22%2C%22tags%22%3A%22%E7%89%B9%E5%88%A5%E3%82%AA%E3%83%95%E3%82%A1%E3%83%BC%22%7D%5D
+[运行时间：0.018871s] [吞吐率：52.99req/s] [内存消耗：2,431.93kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000023s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001419s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000572s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000588s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000130s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.page',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/index',
+  'content-length' => '0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'access-control-request-headers' => 'content-type',
+  'accept-language' => 'zh-cn',
+  'access-control-request-method' => 'GET',
+  'origin' => 'https://app.manyajp.com',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'col' => 'col-2-2_1',
+  'data' => '[{"categoryId":"589","textColor":"text-red","describe":"","tags":"新製品"},{"categoryId":"590","textColor":"text-red","describe":"","tags":"特別オファー"}]',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000827s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:23+08:00 ] 65.21.144.239 GET api.manyajp.com/api/wanlshop/page/category?col=col-2-2_1&data=%5B%7B%22categoryId%22%3A%22589%22%2C%22textColor%22%3A%22text-red%22%2C%22describe%22%3A%22%22%2C%22tags%22%3A%22%E6%96%B0%E8%A3%BD%E5%93%81%22%7D%2C%7B%22categoryId%22%3A%22590%22%2C%22textColor%22%3A%22text-red%22%2C%22describe%22%3A%22%22%2C%22tags%22%3A%22%E7%89%B9%E5%88%A5%E3%82%AA%E3%83%95%E3%82%A1%E3%83%BC%22%7D%5D
+[运行时间：0.030776s] [吞吐率：32.49req/s] [内存消耗：3,747.47kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000020s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001367s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000523s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000538s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000143s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.page',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/index',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'origin' => 'https://app.manyajp.com',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'col' => 'col-2-2_1',
+  'data' => '[{"categoryId":"589","textColor":"text-red","describe":"","tags":"新製品"},{"categoryId":"590","textColor":"text-red","describe":"","tags":"特別オファー"}]',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000786s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000194s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Page->category[ /www/wwwroot/admin.manyajp.com/application/api/controller/wanlshop/Page.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:23+08:00 ] 65.21.144.239 GET api.manyajp.com/api/wanlshop/page/headlines
+[运行时间：0.034517s] [吞吐率：28.97req/s] [内存消耗：3,740.61kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001973s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000797s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000819s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000171s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.page',
+    2 => 'headlines',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/index',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'origin' => 'https://app.manyajp.com',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001180s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000324s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Page->headlines[ /www/wwwroot/admin.manyajp.com/application/api/controller/wanlshop/Page.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:01:23+08:00 ] 65.21.144.239 GET api.manyajp.com/api/wanlshop/product/likes?pages=index&page=1
+[运行时间：0.046996s] [吞吐率：21.28req/s] [内存消耗：4,127.98kb] [文件加载：151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001364s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000516s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000531s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000120s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://app.manyajp.com/pages/twshop/index',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'origin' => 'https://app.manyajp.com',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'api.manyajp.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'index',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000767s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000241s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/admin.manyajp.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:13:43+08:00 ] 103.153.76.25 POST 207.148.97.4/
+[运行时间：0.023575s] [吞吐率：42.42req/s] [内存消耗：2,900.66kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000038s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001712s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000621s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000638s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000178s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+  'host' => '207.148.97.4',
+)
+[ info ] [ PARAM ] array (
+  '0x' => 
+  array (
+    0 => 'androxgh0st',
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001025s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000243s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:21:59+08:00 ] 140.243.0.40 GET admin.manyajp.com/jp.php
+[运行时间：0.031364s] [吞吐率：31.88req/s] [内存消耗：2,910.76kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001842s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000693s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000716s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000167s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001154s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000104s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:02+08:00 ] 140.243.0.40 GET admin.manyajp.com/jp.php/index/login?url=%2Fjp.php
+[运行时间：0.024258s] [吞吐率：41.22req/s] [内存消耗：3,218.62kb] [文件加载：136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001348s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000537s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000553s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000131s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jq5dtdk6g9a5ih8c471tsnjj10',
+  'referer' => 'https://admin.manyajp.com/jp.php',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/jp.php',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000773s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000273s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/admin.manyajp.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000048s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:03+08:00 ] 140.243.0.40 GET admin.manyajp.com/jp.php/index/login?url=%2Fjp.php
+[运行时间：0.026705s] [吞吐率：37.45req/s] [内存消耗：3,218.78kb] [文件加载：136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001686s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000621s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000638s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000134s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jq5dtdk6g9a5ih8c471tsnjj10',
+  'referer' => 'https://admin.manyajp.com/jp.php',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/jp.php',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001202s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000231s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/admin.manyajp.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000059s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:03+08:00 ] 140.243.0.40 GET admin.manyajp.com/index.php?s=/captcha
+[运行时间：0.021895s] [吞吐率：45.67req/s] [内存消耗：2,283.22kb] [文件加载：120]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001914s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000736s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000758s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000226s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jq5dtdk6g9a5ih8c471tsnjj10',
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept' => 'image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/admin.manyajp.com/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:05+08:00 ] 140.243.0.40 GET admin.manyajp.com/jp.php/ajax/lang?callback=define&controllername=index&lang=zh-cn&v=1636950123&v=1636950123
+[运行时间：0.025110s] [吞吐率：39.82req/s] [内存消耗：3,235.21kb] [文件加载：137]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001515s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000542s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000559s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000121s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=jq5dtdk6g9a5ih8c471tsnjj10',
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept' => '*/*',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'lang' => 'zh-cn',
+  'v' => '1636950123',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000967s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000207s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/admin.manyajp.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000057s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:11+08:00 ] 140.243.0.40 GET shop.manyajp.com/
+[运行时间：0.021370s] [吞吐率：46.79req/s] [内存消耗：2,899.00kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001406s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000536s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000552s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000140s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'host' => 'shop.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000799s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000231s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:11+08:00 ] 140.243.0.40 GET shop.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.028769s] [吞吐率：34.76req/s] [内存消耗：3,509.91kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001501s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000541s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000563s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000136s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'host' => 'shop.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000854s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:15+08:00 ] 140.243.0.40 GET shop.manyajp.com/index/user/login.html
+[运行时间：0.025025s] [吞吐率：39.96req/s] [内存消耗：3,032.61kb] [文件加载：132]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001697s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000600s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000618s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000170s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'referer' => 'https://shop.manyajp.com/index/wanlshop.console/index.html',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'shop.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001012s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000255s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->login[ /www/wwwroot/admin.manyajp.com/application/index/controller/User.php ]
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/index/view/user/login.html [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'url',
+  4 => 'title',
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:18+08:00 ] 123.171.244.8 GET shop.manyajp.com/
+[运行时间：0.023123s] [吞吐率：43.25req/s] [内存消耗：2,898.23kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001673s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000619s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000635s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000155s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'host' => 'shop.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000943s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000240s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:18+08:00 ] 123.171.244.8 GET shop.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.027534s] [吞吐率：36.32req/s] [内存消耗：3,509.14kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000032s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001420s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000554s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000570s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000153s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'host' => 'shop.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000832s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:18+08:00 ] 140.243.0.40 GET shop.manyajp.com/index/ajax/lang?callback=define&controllername=user&lang=zh-cn&v=1636950135&v=1636950135
+[运行时间：0.022841s] [吞吐率：43.78req/s] [内存消耗：2,965.10kb] [文件加载：133]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001409s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000535s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000560s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000134s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9vpnbqjetq07i1i4o24ptr998j',
+  'referer' => 'https://shop.manyajp.com/index/user/login.html',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0 Mobile/15E148 Safari/604.1',
+  'accept-encoding' => 'br, gzip, deflate',
+  'accept' => '*/*',
+  'host' => 'shop.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'user',
+  'lang' => 'zh-cn',
+  'v' => '1636950135',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001052s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000243s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\index\controller\Ajax->lang[ /www/wwwroot/admin.manyajp.com/application/index/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/user.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:20+08:00 ] 182.245.41.19 GET shop.manyajp.com/
+[运行时间：0.021937s] [吞吐率：45.58req/s] [内存消耗：2,898.64kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001415s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000527s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000544s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000136s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'host' => 'shop.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000807s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000215s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:22:21+08:00 ] 182.245.41.19 GET shop.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.039449s] [吞吐率：25.35req/s] [内存消耗：3,509.30kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002388s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000845s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000870s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000213s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36',
+  'host' => 'shop.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001388s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:27:25+08:00 ] 103.153.76.25 POST 207.148.97.4/
+[运行时间：0.021871s] [吞吐率：45.72req/s] [内存消耗：2,900.66kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001651s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000599s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000619s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000162s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+  'host' => '207.148.97.4',
+)
+[ info ] [ PARAM ] array (
+  '0x' => 
+  array (
+    0 => 'androxgh0st',
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000946s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000228s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:35:21+08:00 ] 178.128.194.144 GET 207.148.97.4/
+[运行时间：0.023555s] [吞吐率：42.45req/s] [内存消耗：2,898.10kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002015s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000560s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000578s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000127s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000850s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000258s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T12:35:21+08:00 ] 178.128.194.144 GET 207.148.97.4/index/wanlshop.console/index.html
+[运行时间：0.028443s] [吞吐率：35.16req/s] [内存消耗：3,509.27kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001662s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000590s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000608s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000155s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'referer' => 'https://207.148.97.4/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0;) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000958s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T13:01:26+08:00 ] 185.142.236.40 GET 207.148.97.4/
+[运行时间：0.024768s] [吞吐率：40.37req/s] [内存消耗：2,898.55kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001883s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000653s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000670s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000162s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => '207.148.97.4',
+  'accept-encoding' => 'identity',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001086s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000263s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T13:01:27+08:00 ] 185.142.236.40 GET 207.148.97.4/index/wanlshop.console/index.html
+[运行时间：0.029247s] [吞吐率：34.19req/s] [内存消耗：3,509.21kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001596s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000583s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000599s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000158s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.137 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => '207.148.97.4',
+  'accept-encoding' => 'identity',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000945s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T13:39:41+08:00 ] 123.145.16.228 GET admin.manyajp.com/
+[运行时间：0.029489s] [吞吐率：33.91req/s] [内存消耗：2,898.14kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002142s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000759s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000780s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000231s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001299s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000283s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T13:39:41+08:00 ] 123.145.16.228 GET admin.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.032509s] [吞吐率：30.76req/s] [内存消耗：3,509.05kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001795s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000662s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000681s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000166s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001069s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T13:39:42+08:00 ] 27.184.92.131 GET admin.manyajp.com/
+[运行时间：0.027732s] [吞吐率：36.06req/s] [内存消耗：2,898.23kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002084s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000802s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000839s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000202s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'connection' => 'keep-alive',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001268s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000378s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T13:39:42+08:00 ] 27.184.92.131 GET admin.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.031539s] [吞吐率：31.71req/s] [内存消耗：3,509.14kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001657s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000576s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000594s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000142s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'connection' => 'keep-alive',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000852s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T13:43:11+08:00 ] 34.140.248.32 GET 207.148.97.4/
+[运行时间：0.024939s] [吞吐率：40.10req/s] [内存消耗：2,900.82kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001946s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000666s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000686s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000167s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'x-datadog-sampling-priority' => '0',
+  'x-datadog-parent-id' => '8588812542031977244',
+  'x-datadog-trace-id' => '4339424262421548144',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'python-requests/2.26.0',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001109s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000266s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T14:00:22+08:00 ] 52.53.239.42 GET 207.148.97.4:443/
+[运行时间：0.026949s] [吞吐率：37.11req/s] [内存消耗：2,898.19kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000044s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001741s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000642s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000667s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000247s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'accept-encoding' => 'gzip',
+  'connection' => 'close',
+  'host' => '207.148.97.4:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000906s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000260s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T14:08:57+08:00 ] 20.55.53.144 GET 207.148.97.4/
+[运行时间：0.027347s] [吞吐率：36.57req/s] [内存消耗：2,898.18kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001792s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000577s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000593s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000148s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001189s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000267s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T14:08:57+08:00 ] 20.55.53.144 GET 207.148.97.4/index/wanlshop.console/index.html
+[运行时间：0.028694s] [吞吐率：34.85req/s] [内存消耗：3,509.09kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001413s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000591s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000607s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000134s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.117 Safari/537.36',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000800s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T15:02:31+08:00 ] 121.57.229.39 GET admin.manyajp.com/
+[运行时间：0.030467s] [吞吐率：32.82req/s] [内存消耗：2,898.33kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001813s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000845s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000871s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000184s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001343s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000393s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T15:02:32+08:00 ] 121.57.229.39 GET admin.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.027745s] [吞吐率：36.04req/s] [内存消耗：3,509.23kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001430s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000546s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000563s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000127s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000814s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T15:02:33+08:00 ] 124.90.49.15 GET admin.manyajp.com/
+[运行时间：0.029509s] [吞吐率：33.89req/s] [内存消耗：2,898.23kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000029s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001772s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000883s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000909s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000245s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001938s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000257s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T15:02:33+08:00 ] 124.90.49.15 GET admin.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.030991s] [吞吐率：32.27req/s] [内存消耗：3,509.14kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000034s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001654s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000621s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000640s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000167s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001041s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T16:09:51+08:00 ] 139.28.235.100 POST 207.148.97.4/
+[运行时间：0.024877s] [吞吐率：40.20req/s] [内存消耗：2,900.66kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001539s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000572s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000589s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000174s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.129 Safari/537.36',
+  'host' => '207.148.97.4',
+)
+[ info ] [ PARAM ] array (
+  '0x' => 
+  array (
+    0 => 'androxgh0st',
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000924s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000304s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T16:46:04+08:00 ] 36.106.166.111 GET admin.manyajp.com/
+[运行时间：0.026896s] [吞吐率：37.18req/s] [内存消耗：2,898.33kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000046s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001624s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000639s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000658s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000182s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000966s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000336s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T16:46:04+08:00 ] 36.106.166.111 GET admin.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.039232s] [吞吐率：25.49req/s] [内存消耗：3,509.23kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000043s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002149s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000812s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000842s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000220s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001204s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T16:46:11+08:00 ] 113.120.14.116 GET admin.manyajp.com/
+[运行时间：0.022421s] [吞吐率：44.60req/s] [内存消耗：2,898.33kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001434s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000545s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000562s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000149s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000847s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000251s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T16:46:12+08:00 ] 113.120.14.116 GET admin.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.028163s] [吞吐率：35.51req/s] [内存消耗：3,509.23kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001417s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000536s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000551s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000131s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'accept-encoding' => 'gzip, deflate',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000848s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T17:43:33+08:00 ] 192.241.209.166 GET 207.148.97.4/
+[运行时间：0.031023s] [吞吐率：32.23req/s] [内存消耗：2,897.66kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001574s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000815s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000840s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000206s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 zgrab/0.x',
+  'host' => '207.148.97.4',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001288s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000384s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T18:09:38+08:00 ] 175.152.110.63 GET admin.manyajp.com/
+[运行时间：0.026993s] [吞吐率：37.05req/s] [内存消耗：2,898.33kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002072s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000796s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000818s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000221s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001281s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000288s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T18:09:38+08:00 ] 175.152.110.63 GET admin.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.029386s] [吞吐率：34.03req/s] [内存消耗：3,509.23kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000025s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001393s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000513s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000528s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000152s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000858s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T18:09:45+08:00 ] 106.45.8.217 GET admin.manyajp.com/
+[运行时间：0.021676s] [吞吐率：46.13req/s] [内存消耗：2,898.33kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000028s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001390s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000541s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000557s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000137s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000837s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000225s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T18:09:45+08:00 ] 106.45.8.217 GET admin.manyajp.com/index/wanlshop.console/index.html
+[运行时间：0.029997s] [吞吐率：33.34req/s] [内存消耗：3,509.23kb] [文件加载：138]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000027s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001418s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000529s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000552s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000131s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'wanlshop.console',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36',
+  'host' => 'admin.manyajp.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000828s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /www/wwwroot/admin.manyajp.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T18:39:14+08:00 ] 45.146.164.110 GET 207.148.97.4:443/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP21
+[运行时间：0.022161s] [吞吐率：45.12req/s] [内存消耗：2,275.80kb] [文件加载：122]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000042s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001812s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000573s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000589s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000171s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'Index',
+    1 => '\\think\\app',
+    2 => 'invokefunction',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '207.148.97.4:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'function' => 'call_user_func_array',
+  'vars' => 
+  array (
+    0 => 'md5',
+    1 => 
+    array (
+      0 => 'HelloThinkPHP21',
+    ),
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2021-11-15T19:50:48+08:00 ] 45.146.164.110 GET 207.148.97.4:443/?XDEBUG_SESSION_START=phpstorm
+[运行时间：0.023359s] [吞吐率：42.81req/s] [内存消耗：2,899.27kb] [文件加载：129]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000035s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001458s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000588s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000605s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000134s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'connection' => 'close',
+  'accept-encoding' => 'gzip',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36',
+  'host' => '207.148.97.4:443',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'XDEBUG_SESSION_START' => 'phpstorm',
+)
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000827s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000263s ]
+[ info ] [ LANG ] /www/wwwroot/admin.manyajp.com/public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ /www/wwwroot/admin.manyajp.com/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File

@@ -1,0 +1,365 @@
+<style type="text/css">
+	.panel-body .item {
+		background-color: #f1f4f6;
+		border: 1px solid #e7e7eb;
+		padding: 15px;
+	}
+
+	.panel-body .item .item-head {
+		position: relative;
+		padding: 0;
+		border-bottom: 1px solid #e7e7eb;
+	}
+
+	.panel-body .item .item-head .item-delete {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.panel-body .item .item-body {
+		margin-top: 30px;
+	}
+
+	.panel-body .item .item-body dl {
+		position: relative;
+		margin: 10px 0;
+	}
+
+	.panel-body .item .item-body dl dt {
+		width: 90px;
+		height: 30px;
+		line-height: 30px;
+		text-align: right;
+		position: absolute;
+		vertical-align: middle;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		display: block;
+	}
+
+	.panel-body .item .item-body dl dd {
+		position: relative;
+		display: block;
+		margin-left: 90px;
+		line-height: 30px;
+	}
+
+	.panel-body .item .item-body .input-box {
+		display: inline-block;
+		position: relative;
+		height: 30px;
+		line-height: 30px;
+		vertical-align: middle;
+		width: 278px;
+		font-size: 14px;
+		padding: 0 10px;
+		border: 1px solid #e7e7eb;
+		box-shadow: none;
+		border-radius: 0;
+		background-color: #fff;
+	}
+
+	.panel-body .item .item-body .input-box select {
+		width: 100%;
+		background-color: transparent;
+		border: 0;
+		outline: 0;
+		height: 30px;
+	}
+
+	[v-cloak] {
+		display: none;
+	}
+	
+	.color {
+	    -webkit-appearance: square-button;
+	    width: 29px;
+	    height: 31px;
+	    background-color: #fff;
+	    cursor: default;
+	    border-width: 1px;
+	    border-style: solid;
+	    border-color: #d2d6de;
+	    border-image: initial;
+	    padding: 0;
+	}
+	.category{
+		display: flex;
+		margin-top: 10px;
+	}
+	.category .phone{
+		position: relative;
+		margin-right: 15px;
+		width: 322px;
+		height: 645px;
+		border: 1px solid #f5f5f5;
+	}
+	.category .phone_bg{
+		height: 619px;
+		width: 300px;
+		position: absolute;
+		top: 10px;
+		left: 10px;
+		background: transparent url(/assets/addons/wanlshop/img/page/iPhone.png) no-repeat 0 0;
+		background-position: 0 0;
+		background-size: 100%;
+	}
+	.category img{
+		position: absolute;
+		top: 27px;
+		left: 26px;
+		width: 268px;
+		height: 588px;
+	}
+	.category .category_content{
+		flex: 1;
+	}
+	
+</style>
+<div class="panel panel-default panel-intro">
+	<div class="panel-heading">
+		<div class="panel-lead"><em>全局样式</em>客户端初始风格，也可以在节日、活动时修改</div>
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#category" data-toggle="tab">类目页样式</a></li>
+			<li><a href="#find" data-toggle="tab">发现页样式</a></li>
+			<li><a href="#cart" data-toggle="tab">购物车样式</a></li>
+			<li><a href="#user" data-toggle="tab">用户中心样式</a></li>
+		</ul>
+	</div>
+	<div class="panel-body">
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="category">
+				<div class="category" id="app" v-cloak>
+					<div class="phone">
+						<img :src="'/assets/addons/wanlshop/img/page/category_style_'+couponSelected+'.jpg'">
+						<div class="phone_bg"></div>
+					</div>
+					<div class="category_content">
+						<form id="form-item" class="form-item" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.client/edit')}">
+							<div class="item">
+								<div class="item-head">
+									<h4 id="current-item-name">类目样式</h4>
+								</div>
+								<div class="item-body">
+									<dl>
+										<dt id="current-item-option">选择模板：</dt>
+										<dd>
+											<div class="input-box">
+												<select name="row[style][category_style]" v-model="couponSelected" @change="getCouponSelected">
+													<option :value="coupon.id" v-for="coupon in couponList">{{coupon.name}}</option>
+												</select>
+											</div>
+										</dd>
+									</dl>
+								</div>
+							</div>
+							<div style="margin-top: 18px;">
+								<button type="submit" class="btn btn-success btn-embossed">{:__('保存样式')}</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="find">
+				<div class="widget-body no-padding">
+					<form id="form-item" class="form-item" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.client/edit')}">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th width="15%">配置项</th>
+									<th width="85%">值</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>背景图</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::image('row[style][find_bg_image]', $row.find_bg_image)}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>背景色</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												<input name="row[style][find_bg_color]" type="color" value="{$row.find_bg_color}" class="color">
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								
+								<tr>
+									<td>字体前景色</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::select('row[style][find_font_color]', ['dark'=>'深色（即文字颜色黑色）', 'light'=>'浅色（即文字颜色白色）'], $row.find_font_color)}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td></td>
+									<td>
+										<button type="submit" class="btn btn-success btn-embossed">{:__('保存')}</button>
+										<button type="reset" class="btn btn-default btn-embossed">重置</button>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="cart">
+				<div class="widget-body no-padding">
+					<form id="form-item" class="form-item" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.client/edit')}">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th width="15%">配置项</th>
+									<th width="85%">值</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>导航栏背景图</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::image('row[style][cart_nav_image]', $row.cart_nav_image)}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>导航栏背景色</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												<input name="row[style][cart_nav_color]" type="color" value="{$row.cart_nav_color}" class="color">
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>字体前景色</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::select('row[style][cart_font_color]', ['dark'=>'深色（即文字颜色黑色）', 'light'=>'浅色（即文字颜色白色）'], $row.cart_font_color)}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td></td>
+									<td>
+										<button type="submit" class="btn btn-success btn-embossed">{:__('保存')}</button>
+										<button type="reset" class="btn btn-default btn-embossed">重置</button>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</form>
+				</div>
+			</div>
+			<div class="tab-pane fade" id="user">
+				<div class="widget-body no-padding">
+					<form id="form-item" class="form-item" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.client/edit')}">
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th width="15%">配置项</th>
+									<th width="85%">值</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>导航栏背景图</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::image('row[style][user_nav_image]', $row.user_nav_image)}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>导航栏背景色</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												<input name="row[style][user_nav_color]" type="color" value="{$row.user_nav_color}" class="color">
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>背景图</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::image('row[style][user_bg_image]', $row.user_bg_image)}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>背景色</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												<input name="row[style][user_bg_color]" type="color" value="{$row.user_bg_color}" class="color">
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>字体前景色</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::select('row[style][user_font_color]', ['dark'=>'深色（即文字颜色黑色）', 'light'=>'浅色（即文字颜色白色）'], $row.user_font_color)}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td></td>
+									<td>
+										<button type="submit" class="btn btn-success btn-embossed">{:__('保存')}</button>
+										<button type="reset" class="btn btn-default btn-embossed">重置</button>
+									</td>
+								</tr>
+							</tfoot>
+						</table>
+					</form>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>

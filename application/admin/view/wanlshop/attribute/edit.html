@@ -1,0 +1,41 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+
+	<div class="form-group">
+		<label class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+		<div class="col-xs-12 col-sm-8">
+			<input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text" value="{$row.name|htmlentities}">
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-xs-12 col-sm-2">{:__('Value')}:</label>
+		<div class="col-xs-12 col-sm-8">
+			<dl class="fieldlist" data-template="valuetpl" data-name="row[value]">
+			    <dd><a href="javascript:;" class="btn btn-sm btn-success btn-append"><i class="fa fa-plus"></i> {:__('Append')}</a></dd>
+			    <textarea name="row[value]" class="form-control hide" cols="30" rows="5">{$row.value|htmlentities}</textarea>
+			</dl>
+			<script id="valuetpl" type="text/html">
+			    <dd class="form-inline">
+					<ins class="hide"><input type="number" name="<%=name%>[<%=index%>][key]" class="form-control" value="<%=index%>" placeholder="ID"/></ins>
+			        <ins><input type="text" name="<%=name%>[<%=index%>][name]" class="form-control" value="<%=row.name%>" placeholder="属性" size="10"/></ins>
+			        <span class="btn btn-sm btn-danger btn-remove"><i class="fa fa-times"></i></span>
+			        <span class="btn btn-sm btn-primary btn-dragsort"><i class="fa fa-arrows"></i></span>
+			    </dd>
+			</script>
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="control-label col-xs-12 col-sm-2">{:__('Category_id')}:</label>
+		<div class="col-xs-12 col-sm-8">
+			<input id="c-category_id" data-rule="required" data-source="wanlshop/category/selectpage" data-params='{"custom[type]":"goods","isTree":1}'
+			 class="form-control selectpage" name="row[category_id]" type="text" value="{$row.category_id|htmlentities}">
+		</div>
+	</div>
+	<div class="form-group layer-footer">
+		<label class="control-label col-xs-12 col-sm-2"></label>
+		<div class="col-xs-12 col-sm-8">
+			<button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+			<button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+		</div>
+	</div>
+</form>

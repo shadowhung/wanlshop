@@ -1,0 +1,361 @@
+<style type="text/css">
+
+	.content{
+
+		padding: 0;
+
+	}
+
+	/* 框架 */
+
+	.wanl_kuaidi{
+
+		background: url(/assets/addons/wanlshop/img/kuaidi/spider_search_v4.png) 0px 0px repeat-x;
+
+		padding: 20px 15px;
+
+	}
+
+	.wanl_kuaidi td{
+
+	  padding: 7px;
+
+	}
+
+	.wanl_kuaidi th{
+
+		padding: 7px;
+
+		font-weight: inherit;
+
+		font-size: 16px;
+
+	}
+
+	.wanl_kuaidi .last td,  .wanl_kuaidi .last td a{
+
+	  color: #ff7800;
+
+	  border-bottom: none;
+
+	}
+
+	/* 圖標線段 */
+
+	.wanl_kuaidi .process{
+
+		position: relative;
+
+		color: #b3b3b3;
+
+	    width: 60px;
+
+	    text-align: center;
+
+	}
+
+	.wanl_kuaidi .process .line{
+
+		background: #b3b3b3;
+
+		position: absolute;
+
+		width: 1px;
+
+		height: 72%;
+
+		left: 29px;
+
+		bottom: -17px;
+
+	}
+
+	/* 時間 */
+
+	.wanl_kuaidi .status {
+
+	  width: 105px;
+
+	  text-align: center;
+
+	  padding-left: 14px;
+
+	  padding-right: 0;
+
+	}
+
+	.wanl_kuaidi .status .day {
+
+	  display:block;
+
+	}
+
+	.wanl_kuaidi .status .time {
+
+	  font-size: 13px;
+
+	}
+
+	/* 內容 */
+
+	.wanl_kuaidi .info span{
+
+		display: block;
+
+		font-weight: bold;
+
+	}
+
+</style>
+
+
+
+<div class="wanl_kuaidi">
+	<table class="">
+		<thead>
+		    <?php if(isset($data['name'])){?>
+            <tr>
+    	    <th style="text-align: center;padding-left: 14px;">宅配会社：</th>
+            <th style="text-align: center;padding-left: 14px;"><?php echo isset($data['name'])?$data['name']:'';?></th>
+            </tr>
+            <tr>
+    	    <th style="text-align: center;padding-left: 14px;">追跡番号：</th>
+            <th style="text-align: center;padding-left: 14px;"><?php echo isset($row['express_no'])?$row['express_no']:'';?></th>
+            </tr>
+            <?php }else{?>
+            <tr>
+    	    <th style="text-align: center;padding-left: 14px;">宅配会社：</th>
+            <th style="text-align: center;padding-left: 14px;">雪のロジスティクス</th>
+            </tr>
+            <tr>
+    	    <th style="text-align: center;padding-left: 14px;">追跡番号：</th>
+            <th style="text-align: center;padding-left: 14px;">{$address.order_no}</th>
+            </tr>
+            <?php }?>
+		    <tr>
+
+		      <th style="text-align: center;padding-left: 14px;">時間</th>
+
+		      <th></th>
+
+			  <th>場所と追跡の進捗状況</th>
+
+		    </tr>
+
+		  </thead>
+
+		<tbody>
+
+		{switch name="row.state" }
+
+		    {case value="1"}
+
+				<tr>
+
+					<td class="status"><span class="day">{$row.createtime|date="Y.m.d",###}</span><span class="time">{$row.createtime|date="H:i",###}</span><span class="week">{$week[date('w', $row.paymenttime)]}</span></td>
+
+					<td class="process">
+
+						<i class="fa fa-credit-card"></i>
+
+					</td>
+
+					<td class="info"><span>まだ支払われていません</span>お支払い後、発送可能です</td>
+
+				</tr>
+
+			{/case}
+
+		    {case value="2"}
+
+				<tr>
+
+					<td class="status"><span class="day">{$row.paymenttime|date="Y.m.d",###}</span><span class="time">{$row.paymenttime|date="H:i",###}</span> <span class="week">{$week[date('w', $row.paymenttime)]}</span></td>
+
+					<td class="process">
+
+						<i class="fa fa-shopping-cart"></i>
+
+					</td>
+
+					<td class="info"><span>有料</span>販売者が注文を処理しています</td>
+
+				</tr>
+
+			{/case}
+
+		    {default /}
+				{empty name="list"}
+				<tr>
+					<td class="status">
+						<span class="day">{$row.delivertime|date="Y.m.d",###}</span>
+						<span class="time">{$row.delivertime|date="H:i",###}</span>
+						<span class="week"></span>
+					</td>
+					<td class="process">
+						<i class="fa fa-truck"></i>
+					</td>
+					<td class="info"><span>図書館から出るには</span>メーカーは在庫があり、24時間以内に発送される予定です。
+					<?php $time1 = date('H',$row['delivertime']);
+					    $time2 = 259200;
+					if($time1 >= 0 && $time1 < 7){
+					    $time2 = 259200;
+					}else if($time1 >= 18 && $time1 < 24){
+					    $time2 = 259200+3600*24;
+					} 
+					?>
+                    {$row.delivertime+$time2|date="Y.m.d",###}納品されましたので、しばらくお待ちください。~</td>
+					<!---包裹正在等待快遞小哥攬收-->
+				</tr>
+				
+				<?php if(!isset($data['name'])){ ?>
+    				<?php $time1 = date('H',$row['delivertime']);
+					    $time2 = 3600*20+3600*1;
+					if($time1 >= 0 && $time1 < 3){
+					    $time2 = 3600*20+3600*7;
+					}else if($time1 >= 3 && $time1 < 7){
+					    $time2 = 3600*20+3600*6;
+					}else if($time1 >= 7 && $time1 < 13){
+					    $time2 = 3600*20+3600*5;
+					}else if($time1 >= 13 && $time1 < 18){
+					    $time2 = 3600*20+3600*3;
+					}else if($time1 >= 22 && $time1 < 24){
+					    $time2 = 3600*20+3600*8;
+					} 
+					$time2 = $time2+600;
+					$fa1 = $time2+3600*4+1000;
+					$fa2 = $time2+3600*15+1201;
+					$fa3 = $time2+3600*45+2587;
+					$fa4 = $time2+3600*(24*3-10)+1234;
+					$fa5 = $time2+3600*(24*3-3)+999;
+					if($row['delivertime']<(time()-$time2)){ ?>
+    				<tr>
+    					<td class="status">
+    						<span class="day">{$row.delivertime+$time2|date="Y.m.d",###}</span>
+    						<span class="time">{$row.delivertime+$time2|date="H:i",###}</span>
+    						<span class="week"></span>
+    					</td>
+    					<td class="process">
+    						<i class="fa fa-truck"></i>
+    					</td>
+    					<td class="info"><span>回収（発送）するもの</span>【東京都】【新宿区支店】オンサイトピックアップ<br>【東京都】【新宿区分部】成功したコレクション</td>
+    				</tr>
+    				<?php } ?>
+    				<?php if($row['delivertime']<(time()-$fa1)){ ?>
+    				<tr>
+    					<td class="status">
+    						<span class="day">{$row.delivertime+$fa1|date="Y.m.d",###}</span>
+    						<span class="time">{$row.delivertime+$fa1|date="H:i",###}</span>
+    						<span class="week"></span>
+    					</td>
+    					<td class="process">
+    						<i class="fa fa-truck"></i>
+    					</td>
+    					<td class="info"><span>輸送中（輸送中）</span>【東京都】に 【{$address.rcity}積み替えセンター】(ユン1)</td>
+    				</tr>
+    				<?php } ?>
+    				<?php if($row['delivertime']<(time()-$fa2)){ ?>
+    				<tr>
+    					<td class="status">
+    						<span class="day">{$row.delivertime+$fa2|date="Y.m.d",###}</span>
+    						<span class="time">{$row.delivertime+$fa2|date="H:i",###}</span>
+    						<span class="week"></span>
+    					</td>
+    					<td class="process">
+    						<i class="fa fa-truck"></i>
+    					</td>
+    					<td class="info"><span>輸送中（輸送中）</span>到着【{$address.rcity}】【{$address.rcity}積み替えセンター】，に送信しています【{$address.rprovince}ブランチ】(ユン2)</td>
+    				</tr>
+    				<?php } ?>
+    				<?php if($row['delivertime']<(time()-$fa3)){ ?>
+    				<tr>
+    					<td class="status">
+    						<span class="day">{$row.delivertime+$fa3|date="Y.m.d",###}</span>
+    						<span class="time">{$row.delivertime+$fa3|date="H:i",###}</span>
+    						<span class="week"></span>
+    					</td>
+    					<td class="process">
+    						<i class="fa fa-truck"></i>
+    					</td>
+    					<td class="info"><span>運搬（運搬）</span>【{$address.rcity}】【{$address.rcity}積み替えセンター】に 【{$address.rprovince}支店】(ユン3)</td>
+    				</tr>
+    				<?php } ?>
+    				<?php if($row['delivertime']<(time()-$fa4)){ ?>
+    				<tr>
+    					<td class="status">
+    						<span class="day">{$row.delivertime+$fa4|date="Y.m.d",###}</span>
+    						<span class="time">{$row.delivertime+$fa4|date="H:i",###}</span>
+    						<span class="week"></span>
+    					</td>
+    					<td class="process">
+    						<i class="fa fa-truck"></i>
+    					</td>
+    					<td class="info"><span>配信済み（配信済み）</span>【{$address.rcity}】【{$address.rprovince}支店】、発送中です</td>
+    				</tr>
+    				<?php } ?>
+    				<?php if($row['delivertime']<(time()-$fa5)){ ?>
+    				<tr>
+    					<td class="status">
+    						<span class="day">{$row.delivertime+$fa5|date="Y.m.d",###}</span>
+    						<span class="time">{$row.delivertime+$fa5|date="H:i",###}</span>
+    						<span class="week"></span>
+    					</td>
+    					<td class="process">
+    						<i class="fa fa-truck"></i>
+    					</td>
+    					<td class="info"><span>到着した</span>【{$address.rprovince}】注文生成日から10日以内の購入者【{$address.name}】異議がない場合、システムは自動的に領収書を確認し、支払いは売り手のウォレットに届きます</td>
+    				</tr>
+    				<?php } ?>
+				<?php } ?>
+                <br>
+				{else /}
+
+				<!-- 快遞單當前狀態，包括0在途，1攬收，2疑難，3簽收，4退簽，5派件，6退回，7轉投 等7個狀態 -->
+
+					{volist name="list" id="vo"}
+
+					<tr class="{in name="key" value="0"} last {/in}">
+
+						<td class="status"><span class="day">{$vo.time|date="Y.m.d",###}</span><span class="time">{$vo.time|date="H:i",###}</span><span class="week">{$vo.week}</span></td>
+
+						<td class="process">
+
+							{switch name="vo.status"}
+
+							    {case value="途中"}<i class="fa fa-chevron-circle-up"></i>{/case}
+
+							    {case value="収集する"}<i class="fa fa-archive"></i>{/case}
+
+								{case value="難しい"}<i class="fa fa-exclamation-circle"></i>{/case}
+
+								{case value="サインする"}<i class="fa fa-check"></i>{/case}
+
+								{case value="撤回"}<i class="fa fa-reply"></i>{/case}
+
+								{case value="ディスパッチ"}<i class="fa fa-user"></i>{/case}
+
+								{case value="戻る"}<i class="fa fa-hand-paper-o"></i>{/case}
+
+								{case value="スイッチ"}<i class="fa fa-share-square"></i>{/case}
+
+							{/switch}
+
+							<div class="line"></div>
+
+						</td>
+
+						<td class="info"><span>{if condition="$vo.status neq '途中'"}{$vo.status}{/if}</span>{$vo.context}</td>
+
+					</tr>
+
+					{/volist}
+
+				{/empty}
+
+		{/switch}	
+
+		</tbody>
+
+	</table>
+
+</div>

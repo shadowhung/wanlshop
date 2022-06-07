@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>支払い完了 - {$row.out_trade_no}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="/assets/css/bootstrap.min.css?v={$Think.config.site.version}" rel="stylesheet">
+        <style type="text/css">
+            .wanl-pay {
+                margin: 30px;
+                margin-top: 80px;
+                text-align: center;
+            }
+            .wanl-pay .success img{
+                height: 100px;
+                width: 100px;
+            }
+            .wanl-pay .success .title{
+                font-size: 18px;
+                color: #3498db;
+                margin-top: 12px;
+            }
+            .wanl-pay .success .trade_no{
+                color: #999999;
+            }
+            .wanl-pay .success .price {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+            .wanl-pay .success .price .amount{
+                font-size: 36px;
+            }
+            .wanl-pay .success .price .unit{
+                font-size: 28px;
+                margin-left: 2px;
+            }
+            .wanl-pay .success .btn-default{
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="content">
+            <div class="wanl-pay">
+                <div class="success">
+                    <img src="/assets/addons/wanlshop/img/bank/alipay-back.png" class="img-circle">
+                    <div class="title">支払い完了</div>
+                    <div class="price">
+                        <span class="amount">{$row.total_amount}</span>
+                        <span class="unit">円</span>
+                    </div>
+                    <a href="{$config.domain}/{$config.router_base}{$config.router_mode == 'hash' ? '#' : ''}/pages/user/order/order?state=2" class="btn btn-info btn-lg btn-block">注文を確認する</a>
+                    <a href="{$config.domain}/{$config.router_base}{$config.router_mode == 'hash' ? '#' : ''}/pages/wanlshop/index" type="button" class="btn btn-default btn-lg btn-block">ホームページに戻ります</a>
+                     <div class="trade_no">
+                        注文番号：{$row.out_trade_no}
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
+
+

@@ -1,0 +1,97 @@
+
+<div id="print_html">
+	<link href="/assets/css/backend.css?v=1581391093" rel="stylesheet">
+	<style type="text/css">
+		h3{
+			margin-bottom: 40px;
+		}
+		#print_html{
+			font-size: 11px!important;
+			overflow: hidden;
+		}
+		.table-head>tbody>tr>th,
+		.table-head>tbody>tr>td {
+			border: 0px;
+			padding: 5px;
+			line-height: 1;
+		}
+		.table>tbody>tr>th,
+		.table>tbody>tr>td {
+			font-size: 12px;
+		}
+		.table>thead>tr>th{
+			font-size: 12px;
+		}
+		.wanlpay span{
+			margin-left: 10px;
+		}
+	</style>
+
+	{volist name="row" id="order"}
+		<h3 align="center">商品发货单</h3>
+		<table class="table table-head">
+			<tbody>
+				<tr>
+					<td>用户名：{$order.user.username}</td>
+					<td colspan="2">姓名：{$order.address.name}</td>
+					<td style="text-align: right;">订单号：{$order.order_no}</td>
+				</tr>
+				<tr>
+					<td>地址：{$order.address.address}</td>
+					<td colspan="2">手机号：{$order.address.mobile}</td>
+					<td style="text-align: right;">下单时间：{$order.createtime|datetime}</td>
+				</tr>
+			</tbody>
+		</table>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>商品名称</th>
+					<th>商家编码</th>
+					<th>购买规格</th>
+					<th>数量</th>
+					<th>商品单价</th>
+					<th>快递费用</th>
+					<th>优惠</th>
+				</tr>
+			</thead>
+			<tbody>
+				{volist name="order.ordergoods" id="goods"}
+					<tr>
+						<td>{$goods.title}</td>
+						<td>{$goods.goods_sku_sn}</td>
+						<td>{$goods.difference}</td>
+						<td>{$goods.number}</td>
+						<td>￥ {$goods.price}</td>
+						<td>￥ {$goods.freight_price}</td>
+						<td>￥ {$goods.discount_price}</td>
+					</tr>
+				{/volist}
+				<tr>
+					<td colspan="7">
+						<div class="wanlpay" align="right">
+							
+							<p>总数量：{$order.pay.number}</p>
+							<p>实际支付：{$order.pay.actual_payment}</p>
+							<p><span>商品金额：{$order.pay.order_price}</span>
+							<span>总运费：{$order.pay.freight_price}</span>
+							<span>优惠金额：{$order.pay.discount_price}</span>
+							<span>总金额：{$order.pay.price}</span></p>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<div style="margin-bottom: 50px;"> </div>
+		<div style="page-break-after: always;"></div>
+	{/volist}
+
+</div>
+
+<div class="form-group layer-footer">
+	<label class="control-label col-xs-12 col-sm-1"></label>
+	<div class="col-xs-12 col-sm-10">
+		<div class="btn btn-success btn-embossed"> 打印发货单 </div>
+	</div>
+</div>

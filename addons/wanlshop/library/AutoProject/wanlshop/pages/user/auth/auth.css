@@ -1,0 +1,201 @@
+page {
+	background-color: #FFFFFF;
+}
+
+.wanl-title {
+	padding-bottom: 130rpx;
+	padding-top: 170rpx;
+	font-size: 68rpx;
+}
+.wanl-title .titleInfo{
+	font-size: 56rpx;
+}
+
+.wanl-weixin-btn-info{
+	color: #B8B8B8 !important;
+}
+
+
+.auth {
+	margin: 0 60rpx;
+}
+
+.auth-group {
+	padding: 1rpx 30rpx;
+	display: flex;
+	align-items: center;
+	min-height: 90rpx;
+	justify-content: space-between;
+	margin-bottom: 25rpx;
+}
+
+.auth-group input {
+	flex: 1;
+	font-size: 33upx;
+	color: #250f00;
+	padding-right: 20upx;
+}
+
+.auth-group .placeholder {
+	color: #b3b3b3;
+}
+
+.auth-button{
+	padding: 25rpx 0 50rpx 0;
+}
+
+.auth-button .cu-btn{
+	height: 90rpx;
+}
+ 
+.text-center{
+	color: #3f2f21 ;
+}
+
+.auth-clause{
+	font-size: 25rpx;
+	color: #909090;
+}
+.auth-clause text{
+	margin: 0 10rpx;
+	color: #ED6D0F;
+}
+.auth-foot {
+	position: fixed;
+	width: 100%;
+	bottom: 0;
+	z-index: 1024;
+	padding: 0 60rpx;
+	padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+
+.auth-foot .oauth {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	min-height: 160upx;
+	justify-content: space-around;
+}
+
+.auth-foot .oauth view {
+	border: 2rpx solid #FCF7E9;
+}
+
+.auth-foot .menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 100rpx;
+	color: #3f2f21;
+	line-height: 28rpx;
+	font-size: 28rpx;
+}
+
+.auth-foot text {
+	width: 180rpx;
+	text-align: center;
+
+}
+
+.auth-foot text:nth-child(2) {
+	border-left: 1px solid #ececec;
+}
+/* 验证码 */
+.auth-title{
+	padding-bottom: 30rpx;
+	padding-top: 170rpx;
+	font-size: 60rpx;
+}
+.auth-mobile{
+	color: #9a9a9a;
+	padding-bottom: 80rpx;
+}
+.auth-mobile text{
+	margin-left: 10rpx;
+}
+
+
+
+
+
+
+.codes {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	
+}
+.codes input {
+	background: #ffffff;
+	border-bottom: 1px solid #c3c3c3;
+	width: 90upx;
+	height: 90upx;
+	text-align: center;
+}
+.codes .input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #ffffff;
+	border-bottom: 1px solid #c3c3c3;
+	width: 90upx;
+	height: 90upx;
+	font-size: 40upx;
+	font-weight: 500;
+	color: #333333;
+}
+.codes .input .shining {
+	border: 1px solid #ED6D0F;
+	height: 50upx;
+	animation: shining 1s linear infinite;
+	/* 其它浏览器兼容性前缀 */
+	-webkit-animation: shining 1s linear infinite;
+	-moz-animation: shining 1s linear infinite;
+	-ms-animation: shining 1s linear infinite;
+	-o-animation: shining 1s linear infinite;
+}
+.codes .active {
+	border-bottom: 1px solid #ED6D0F;
+	caret-color: #ED6D0F;
+}
+.oneline-codes input {
+	text-align: center;
+}
+
+.auth-again{
+	padding-top: 50rpx;
+}
+.auth-again text{
+	color: #ED6D0F;
+	margin-right: 40rpx;
+}
+.auth-again .time{
+	color: #9a9a9a;
+}
+
+@-webkit-keyframes shining {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 1;
+	}
+	50.01% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.wlIcon-QQ{
+	color: #12b8f6;
+}
+.wlIcon-WeChat{
+	color: #02dc6b;
+}
+.wlIcon-WeiBo{
+	color: #d32820;
+}
+.wlIcon-Xiaomi{
+	color: #ff6b00;
+}

@@ -1,0 +1,319 @@
+<style>
+	[v-cloak] { display: none }
+	.wanl-money-log .title{
+		padding: 10px 0 25px 0;
+	}
+	.wanl-money-log .title>div{
+		font-size: 35px;
+		font-weight: 600;
+		margin-top: 7px;
+	}
+	.wanl-money-log .list .flex {
+		margin-bottom: 13px;
+	}
+	.wanl-money-log .list .flex .type{
+		width: 75px;
+	}
+	.wanl-money-log .list .flex .info{
+		flex-grow: 1;
+	}
+	
+	.wanl-money-log .goods .item{
+		display: flex;
+		align-items: center;
+		margin: 13px 0;
+		padding-bottom: 13px;
+	}
+	
+	.wanl-money-log .goods .item img{
+		width: 50px;
+		height: 50px;
+		margin-right: 13px;
+	}
+	.wanl-money-log .goods .item .info{
+		flex: 1;
+	}
+	.text-sm{
+		
+	}
+	.wanl-gray{
+		color: #999;
+	}
+	.span-center{
+		text-align: center;
+	}
+	.flex{
+		display: flex;
+	}
+	.bg-white{
+		background-color: #fff;
+	}
+	.padding-xl{
+		padding: 20px;
+	}
+	.margin-top-xl{
+		margin-top: 20px;
+	}
+	.margin-bottom-bj{
+		margin-bottom: 13px;
+	}
+	.text-price::before {
+		content: "¥";
+		font-size: 80%;
+		margin-right: 4rpx;
+	}
+	.solid-bottom{
+		border-bottom: 1px solid #ddd;
+	}
+	.text-cut-2 {
+		width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2;
+	}
+</style>
+<div class="wanl-money-log" id="app" v-cloak>
+	<!-- 交易 -->
+	<div v-if="moneyData.type == 'pay' && data">
+		<div class="bg-white padding-xl margin-bottom-bj" v-for="(item, index) in data" :key="item.id">
+			<div class="span-center solid-bottom title">
+				<span>购买店铺：{{item.shop.shopname}}</span>
+				<div class="wanl-black"> -{{item.pay.price}} </div>
+			</div>
+			<div class="goods">
+				<div class="item solid-bottom" v-for="(goods, indexs) in item.goods" :key="indexs">
+					<img :src="cdnurl(goods.image)"></img>
+					<div class="info">
+						<div>
+							<span class="text-cut-2">{{goods.title}}</span>
+						</div>
+						<div class="wanl-gray">
+							{{goods.difference}} x {{goods.number}}
+						</div>
+					</div>
+					<div class="text-price">
+						{{goods.price}}
+					</div>
+				</div>
+			</div>
+			<div class="list margin-top-xl text-sm">
+				<div class="flex">
+					<div class="type wanl-gray"> 订单号 </div>
+					<div class="info"> {{item.pay.order_no}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 交易号 </div>
+					<div class="info"> {{item.pay.pay_no}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 订单价格 </div>
+					<div class="info text-price"> {{item.pay.order_price}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 支付方式 </div>
+					<div class="info"> {{moneyData.memo}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 交易订单号 </div>
+					<div class="info"> {{item.pay.trade_no}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 实际支付 </div>
+					<div class="info text-price"> {{item.pay.actual_payment}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 支付时间 </div>
+					<div class="info"> {{item.paymenttime_span}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 快递费 </div>
+					<div class="info text-price"> {{item.pay.freight_price}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 优惠金额 </div>
+					<div class="info text-price"> {{item.pay.discount_price}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 总金额 </div>
+					<div class="info text-price"> {{item.pay.total_amount}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 交易时间 </div>
+					<div class="info"> {{item.createtime_span}} </div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+	<!-- 用户充值 -->
+	<div v-else-if="moneyData.type == 'recharge' && data">
+		<div class="bg-white padding-xl margin-bottom-bj">
+			<div class="span-center solid-bottom title">
+				<span>{{moneyData.memo}}</span>
+				<div class="wanl-black"> +{{moneyData.money}} </div>
+			</div>
+			<div class="list margin-top-xl text-sm">
+				<div class="flex">
+					<div class="type wanl-gray"> 状态 </div>
+					<div class="info"> 充值成功 </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 订单号 </div>
+					<div class="info"> {{data.orderid}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 支付类型 </div>
+					<div class="info"> {{bankList[data.paytype]}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 交易号 </div>
+					<div class="info"> {{data.memo}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 变动后 </div>
+					<div class="info text-price"> {{moneyData.after}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 变动前 </div>
+					<div class="info text-price"> {{moneyData.before}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 充值时间 </div>
+					<div class="info"> {{timeFormat(moneyData.createtime,'yyyy-mm-dd hh:MM:ss')}} </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- 用户提现 -->
+	<div v-else-if="moneyData.type == 'withdraw' && data">
+		<div class="bg-white padding-xl margin-bottom-bj">
+			<div class="span-center solid-bottom title">
+				<span>{{moneyData.memo}}</span>
+				<div class="wanl-black"> {{moneyData.money}} </div>
+			</div>
+			<div class="list margin-top-xl text-sm">
+				<div class="flex">
+					<div class="type wanl-gray"> 状态 </div>
+					<div class="info"> 提现{{withdrawStatus[data.status]}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 提现金额 </div>
+					<div class="info text-price"> {{data.money}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 服务费 </div>
+					<div class="info text-price"> {{data.handingfee}} </div>
+				</div>
+				<div class="flex" v-if="data.status == 'successed' && data.transfertime">
+					<div class="type wanl-gray"> 转账时间 </div>
+					<div class="info"> {{timeFormat(data.transfertime,'yyyy-mm-dd hh:MM:ss')}} </div>
+				</div>
+				<div class="flex" v-if="data.status == 'rejected' && data.memo">
+					<div class="type wanl-gray"> 拒绝理由 </div>
+					<div class="info"> {{data.memo}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 类型 </div>
+					<div class="info"> {{bankList[data.type]}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 账号 </div>
+					<div class="info"> {{data.account}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 交易号 </div>
+					<div class="info"> {{data.orderid}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 变动后 </div>
+					<div class="info text-price"> {{moneyData.after}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 变动前 </div>
+					<div class="info text-price"> {{moneyData.before}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 提交时间 </div>
+					<div class="info"> {{timeFormat(moneyData.createtime,'yyyy-mm-dd hh:MM:ss')}} </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 退款 -->
+	<div v-else-if="moneyData.type == 'refund' && data">
+		<div class="bg-white padding-xl margin-bottom-bj">
+			<div class="span-center solid-bottom title">
+				<span>{{moneyData.memo}}</span>
+				<div class="wanl-black"> {{moneyData.money > 0 ? '+'+moneyData.money:moneyData.money}} </div>
+				<div >
+					<button class="cu-btn sm radius-bock"> 查看退款 </button>
+				</div>
+			</div>
+			<div class="list margin-top-xl text-sm">
+				<div class="flex">
+					<div class="type wanl-gray"> 商家 </div>
+					<div class="info"> {{data.shop.shopname}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 订单号 </div>
+					<div class="info"> {{data.order_no}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 下单时间 </div>
+					<div class="info"> {{data.createtime_span}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 支付时间 </div>
+					<div class="info"> {{data.paymenttime_span}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 退款金额 </div>
+					<div class="info text-price"> {{data.refund.price}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 退款类型 </div>
+					<div class="info"> {{getType(data.refund.type)}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 退款理由 </div>
+					<div class="info"> {{getReason(data.refund.reason)}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 退款时间 </div>
+					<div class="info"> {{timeFormat(data.refund.createtime,'yyyy-mm-dd hh:MM:ss')}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 退款时间 </div>
+					<div class="info"> {{timeFormat(data.refund.completetime,'yyyy-mm-dd hh:MM:ss')}} </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 系统 -->
+	<div v-else>
+		<div class="bg-white padding-xl margin-bottom-bj">
+			<div class="span-center solid-bottom title">
+				<span>{{moneyData.memo}}</span>
+				<div class="wanl-black"> {{moneyData.money > 0 ? '+'+moneyData.money:moneyData.money}} </div>
+			</div>
+			<div class="list margin-top-xl text-sm">
+				<div class="flex">
+					<div class="type wanl-gray"> 变动后 </div>
+					<div class="info text-price"> {{moneyData.after}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 变动前 </div>
+					<div class="info text-price"> {{moneyData.before}} </div>
+				</div>
+				<div class="flex">
+					<div class="type wanl-gray"> 时间 </div>
+					<div class="info"> {{timeFormat(moneyData.createtime,'yyyy-mm-dd hh:MM:ss')}} </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

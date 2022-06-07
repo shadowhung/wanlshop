@@ -1,0 +1,160 @@
+<style type="text/css">
+	.panel-body .msg-box {
+		display: block;
+		margin: 0;
+		padding: 10px 0;
+	}
+
+	.n-right .msg-wrap {
+		margin-left: 0;
+	}
+</style>
+<div class="alert alert-success-light"> <i class="fa fa-warning"></i> 温馨提示：查看举报后，关闭当前页不进行任何处理；如处理举报，填写处理回执点击处理按钮</div>
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+	<div class="row">
+
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">{$row.type_text}</div>
+				<div class="panel-body">
+					<!-- 举报类型:0=用户举报,1=商品举报,2=店铺举报 -->
+					{switch name="row.type" }
+					{case value="0"}
+						后续版本更新举报用户
+					{/case}
+					{case value="1"}
+					<p>商品ID：{$row.goods.id}</p>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<th class="text-center">
+									<div class="th-inner">主图</div>
+								</th>
+								<th class="text-center">
+									<div class="th-inner">商品名称</div>
+								</th>
+								<th class="text-center">
+									<div class="th-inner">点击</div>
+								</th>
+								
+								<th class="text-center">
+									<div class="th-inner">产品价格</div>
+								</th>
+								<th class="text-center">
+									<div class="th-inner">销量</div>
+								</th>
+								<th class="text-center">
+									<div class="th-inner">付款人数</div>
+								</th>
+								<th class="text-center">
+									<div class="th-inner">评论</div>
+								</th>
+								<th class="text-center">
+									<div class="th-inner">好评</div>
+								</th>
+								<th class="text-center">
+									<div class="th-inner">中评</div>
+								</th>
+								<th class="text-center">
+									<div class="th-inner">差评</div>
+								</th>
+								<th class="text-center">
+									<div class="th-inner">喜欢</div>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><a href="javascript:"><img class="img-sm img-center" src="{$row.goods.image|cdnurl|htmlentities}"></a></td>
+								<td><strong>{$row.goods.title}</strong></td>
+								<td>{$row.goods.views}</td>
+								<td>{$row.goods.price}</td>
+								<td>{$row.goods.sales}</td>
+								<td>{$row.goods.payment}</td>
+								<td>{$row.goods.comment}</td>
+								<td>{$row.goods.praise}</td>
+								<td>{$row.goods.moderate}</td>
+								<td>{$row.goods.negative}</td>
+								<td>{$row.goods.like}</td>
+							</tr>
+						</tbody>
+					</table>
+					{/case}
+					{case value="2"}
+						后续版本更新举报商家
+					{/case}
+					{/switch}
+				</div>
+			</div>
+		</div>
+		
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">举报详情</div>
+				<div class="panel-body">
+					<table class="table table-striped">
+						<tr>
+							<td width="20%">{:__('User_id')}</td>
+							<td>
+								{$row.user.nickname|htmlentities}（uid: {$row.user_id}）
+							</td>
+						</tr>
+						<tr>
+							<td width="20%">{:__('Reason')}</td>
+							<td>
+								{switch name="row.reason"}
+									{case value="0"}<span class="label label-info">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="1"}<span class="label label-warning">{$row.reason_text|htmlentities}</span>{/case}
+								    {case value="2"}<span class="label label-primary">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="3"}<span class="label label-success">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="4"}<span class="label label-success">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="5"}<span class="label label-danger">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="6"}<span class="label label-warning">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="7"}<span class="label label-info">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="8"}<span class="label label-warning">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="9"}<span class="label label-primary">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="10"}<span class="label label-success">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="11"}<span class="label label-success">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="12"}<span class="label label-danger">{$row.reason_text|htmlentities}</span>{/case}
+									{case value="13"}<span class="label label-warning">{$row.reason_text|htmlentities}</span>{/case}
+								{/switch}
+								
+							</td>
+						</tr>
+						<tr>
+							<td width="20%">{:__('Content')}</td>
+							<td>
+								{$row.content|htmlentities}
+							</td>
+						</tr>
+						<tr>
+							<td width="20%">{:__('Images')}</td>
+							<td>
+								{volist name="row.images" id="vo"}
+								<a href="{$vo}" target="_blank"><img src="{$vo|cdnurl|htmlentities}" width="32%"></a>
+								{/volist}
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">{:__('Receipt')}</div>
+				<div class="panel-body">
+					<textarea id="c-receipt" data-rule="required" class="form-control " rows="5" name="row[receipt]" cols="50">{$row.receipt|htmlentities}</textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="form-group layer-footer">
+		<label class="control-label col-xs-12 col-sm-2"></label>
+		<div class="col-xs-12 col-sm-8">
+			{eq name="row.state" value="normal"}
+			<button type="submit" class="btn btn-success btn-embossed disabled">{:__('处理')}</button>
+			{/eq}
+			<button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+		</div>
+	</div>
+</form>

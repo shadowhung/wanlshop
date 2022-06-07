@@ -1,0 +1,205 @@
+<!-- 
+	版本声明：
+	* 由于 WanlLive、WanlChat、以下代码开发难度较大，已将相关代码独立申请著作权，受法律保护！！！
+	* 无论你购买任何版本，均不允许复制到第三方直接、间接使用，且也不能以学习为目的参考和借鉴！！
+	* 你仅有在 WanlShop 中使用、二次开发权利，否则我们会追究法律责任 
+	* 福建度虎科技有限公司 @www.i36k.com
+-->
+<template>
+	<view class="page">
+		<wanl-live-image :screenHeight="screenHeight" :screenWidth="screenWidth" :image="liveData.image"/>
+		<wanl-live-empty v-if="liveData.state == 0" text="直播正在准备中~"/>
+		<wanl-live-play v-else-if="liveData.state == 1 || (liveData.state == 2 && playUrl)" :screenHeight="screenHeight" :screenWidth="screenWidth" :source="playUrl" />
+		<wanl-live-empty v-else text="直播结束，正在转码~" />
+		<wanl-live-header :statusBarHeight="statusBarHeight" :isFollow="liveData.isFollow" :state="liveData.state" :online="liveStatis.online" :userinfo="liveData.shop" @change="onShopLike" />
+		<wanl-live-comment :statusFootHeight="statusFootHeight" :state="liveData.state" :liveid="liveData.liveid" v-if="liveData.state == 1"></wanl-live-comment>
+		<wanl-live-footer :statusFootHeight="statusFootHeight" :like="liveStatis.like" :state="liveData.state" :goods="liveData.goods" @change="sendLive($event)" />
+	</view>
+</template>
+
+<script>
+var system = uni.getSystemInfoSync();
+var statusFootHeight = 10;
+// #ifdef APP-PLUS || H5 || MP-WEIXIN
+statusFootHeight = system.safeAreaInsets.bottom;
+// #endif
+import wanlLiveHeader from '@/components/wanl-live/header';
+import wanlLiveEmpty from '@/components/wanl-live/empty';
+import wanlLiveImage from '@/components/wanl-live/image';
+import wanlLivePlay from '@/components/wanl-live/play';
+import wanlLiveComment from '@/components/wanl-live/comment';
+import wanlLiveFooter from '@/components/wanl-live/footer';
+export default {
+	components: {
+		wanlLiveHeader,
+		wanlLiveEmpty,
+		wanlLiveImage,
+		wanlLivePlay,
+		wanlLiveComment,
+		wanlLiveFooter
+	},
+	data() {
+		return {
+			statusBarHeight: system.statusBarHeight,
+			statusFootHeight: statusFootHeight,
+			screenHeight: system.screenHeight,
+			screenWidth: system.screenWidth,
+			playUrl: '',
+			iSstart: false,
+			// 直播间ID
+			liveId: 0,
+			// 直播参数
+			liveData: {
+				shop: {
+					id: 0,
+					avatar: '',
+					shopname: '加载中..',
+				},
+				state: 0,
+				isFollow: false
+			},
+			// 实时统计
+			liveStatis: {
+				online: 1,
+				like: 0
+			}
+		};
+	},
+	// 监听页面卸载
+	onUnload() {
+		this.pageUnload();
+	},
+	onLoad(option) {
+		this.liveId = option.id;
+		this.loadData();
+		// 监听直播消息
+		uni.$on('onLive', this.onSocketLive);
+		var system1 = uni.getSystemInfoSync();
+		// #ifdef MP-WEIXIN
+		wx.showShareMenu({
+			withShareTicket: true,
+			menus: ['shareAppMessage', 'shareTimeline']
+		});
+		// #endif
+	},
+	methods: {
+		async loadData() {
+			uni.request({
+				url: `${this.$store.state.common.appUrl.api}/wanlshop/live/play`,
+				data: { id: this.liveId },
+				header: { token: this.$store.state.user.token },
+				success: res => {
+					if (res.data.code == 1) {
+						let data = res.data.data;
+						this.liveData = data;
+						this.iSstart = true;
+						this.liveStatis.like = data.like;
+						if(data.state == 0 || data.state == 1){
+							let play = data.liveurl.split(',');
+							// #ifdef APP-PLUS
+							this.playUrl = play[0];
+							// #endif
+							// #ifndef APP-PLUS
+							this.playUrl = play[1];
+							// #endif
+						}else if(data.state == 2){
+							this.playUrl = data.recordurl;
+						}
+					}else{
+						uni.showToast({
+						    title: res.data.msg,
+						    icon: 'none'
+						});
+					}
+				}
+			});
+		},
+		// 接收直播群组消息
+		onSocketLive(msg) {
+			if (this.liveData.state == 1) {
+				if (this.liveData.liveid == msg.group) {
+					if (msg.message.type == 'update') {
+						this.liveData.goods = msg.message.data;
+					}
+					if(msg.message.type == 'end'){
+						uni.redirectTo({
+						    url: `/pages/page/end_live?id=${this.liveData.id}`
+						});
+					}else{
+						this.liveStatis.like = msg.like;
+						this.liveStatis.online = msg.online;
+					}
+				}
+			}
+		},
+		//监听页面是否卸载，关闭播放，退出群组
+		pageUnload() {
+			uni.request({
+				url: `${this.$store.state.common.appUrl.api}/wanlshop/live/unload`,
+				data: {
+					group: this.liveData.liveid,
+					type: 'play'
+				},
+				header: { token: this.$store.state.user.token }
+			});
+		},
+		sendLive(e) {
+			switch (e.type) {
+				case 'msg':
+					uni.request({
+						url: `${this.$store.state.common.appUrl.api}/wanlshop/live/send`,
+						data: {
+							message: e.message,
+							group: this.liveData.liveid
+						},
+						header: { token: this.$store.state.user.token }
+					});
+					break;
+				case 'like':
+					this.liveStatis.like += 1;
+					uni.request({
+						url: `${this.$store.state.common.appUrl.api}/wanlshop/live/like`,
+						data: {
+							id: this.liveId
+						},
+						header: { token: this.$store.state.user.token }
+					});
+					break;
+				case 'seek':
+					uni.request({
+						url: `${this.$store.state.common.appUrl.api}/wanlshop/live/seek`,
+						data: {
+							group: this.liveData.liveid,
+							goods_index: e.key
+						},
+						header: { token: this.$store.state.user.token }
+					});
+					break;
+			}
+		},
+		// 点击关注商家 & 用户
+		onShopLike() {
+			this.liveData.isFollow = true;
+			uni.request({
+				url: `${this.$store.state.common.appUrl.api}/wanlshop/live/follow`,
+				data: {
+					id: this.liveData.shop_id,
+					group: this.liveData.liveid
+				},
+				header: { token: this.$store.state.user.token }
+			});
+		}
+	}
+};
+</script>
+
+<style scoped>
+.page {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #000000;
+}
+</style>

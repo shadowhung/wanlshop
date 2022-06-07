@@ -1,0 +1,69 @@
+<a href="/index/wanlshop.wholesale/index?order=desc&offset=10&limit=10" type="button" class="next-btn next-btn-normal next-btn-large next-pagination-item">2</a>
+    <a href="/index/wanlshop.wholesale/index?order=desc&offset=10&limit=10" type="button" class="next-btn next-btn-normal next-btn-large next-pagination-item">3</a>
+    <a href="/index/wanlshop.wholesale/index?order=desc&offset=10&limit=10" type="button" class="next-btn next-btn-normal next-btn-large next-pagination-item">4</a>
+    <span class="next-pagination-ellipsis">...</span>
+    <a href="/index/wanlshop.wholesale/index?order=desc&offset=10&limit=10" type="button" class="next-btn next-btn-normal next-btn-large next-pagination-item">50</a>
+
+
+{volist name="result.rows" id="item"}
+<div class="offer_item offer_exp" >
+    <a href="https://dj.1688.com" target="_blank" data-spm-anchor-id="a312h.2018_new_sem.dh_002.3">
+        <div class="img">
+        <img class="layLoad" src="{$item.image}">
+        </div>
+        <div class="title">{$item.title}</div>
+        <div class="tag_warp">
+            <div class="sdby">一件代发</div>
+        </div>
+        <div class="price_warp price_warp_price_list">
+            <span class="price"><i><strong>¥</strong></i>{$item.price}</span>
+        </div>
+    </a>
+</div>
+{/volist}
+
+<style>
+.offer_item {
+    margin-right: 34px;
+    margin-bottom: 20px;
+}
+.offer_item, .w_1190 .offer_item, .w_1390 .offer_item {
+    width: 222px;
+    height: 310px;
+    margin-right: 20px;
+    float: left;
+    border: 1px solid #efefef;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #fff;
+}
+.offer_item .img img, .w_1190 .offer_item .img img, .w_1390 .offer_item .img img {
+    position: relative;
+    -webkit-transition: all .6s;
+    -o-transition: all .6s;
+    transition: all .6s;
+    height: 220px;
+    width: 100%;
+}
+.offer_item .title, .w_1190 .offer_item .title, .w_1390 .offer_item .title {
+    line-height: 18px;
+    margin: 8px 10px 0;
+    white-space: nowrap;
+    height: 18px;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #666;
+}
+.offer_item .price_warp_price_list, .w_1190 .offer_item .price_warp_price_list, .w_1390 .offer_item .price_warp_price_list {
+    padding-left: 0;
+    padding-right: 0;
+    display: -ms-flexbox;
+    display: flex;
+    display: -webkit-flex;
+    -ms-flex-pack: left;
+    justify-content: left;
+    -ms-flex-align: center;
+    align-items: center;
+}
+</style>

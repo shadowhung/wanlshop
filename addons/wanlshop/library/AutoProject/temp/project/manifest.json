@@ -1,0 +1,278 @@
+{
+    "name" : "Manya",
+    "appid" : "WANL_CXHQ",
+    "description" : "© 福建度虎科技有限公司",
+    "versionName" : "1.0.4",
+    "versionCode" : 104,
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueCompiler" : "uni-app",
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : false,
+            "waiting" : false,
+            "autoclose" : false,
+            "delay" : 0
+        },
+        "modules" : {
+            "Payment" : {},
+            "Push" : {},
+            "Share" : {},
+            "Speech" : {},
+            "VideoPlayer" : {},
+			"LivePusher" : {},
+            "OAuth" : {},
+			"Maps" : {},
+			"Webview-x5" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 1.0.3升级 热更新 添加权限REQUEST_INSTALL_PACKAGES 同时修改了 targetSdkVersion 为 26 以适配 Android 9.0 */
+            "android" : {
+				"packagename": "com.manyajp.www",
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-permission android:name=\"android.permission.INSTALL_PACKAGES\"/>",
+					"<uses-permission android:name=\"android.permission.REQUEST_INSTALL_PACKAGES\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_MOCK_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_TASKS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>"
+                ],
+				"targetSdkVersion" : "26",
+                "schemes" : "shopyjp",
+				"abiFilters" : [ "armeabi-v7a", "arm64-v8a" ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+				"appid": "com.manyajp.www",
+                "UIBackgroundModes" : [ "audio" ],
+                "urlschemewhitelist" : [ "baidumap", "iosamap" ],
+                "idfa" : false,
+                "urltypes" : "shopyjp"
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "speech" : {
+                    "ifly" : {}
+                },
+                "ad" : {},
+                "payment" : {
+                    "weixin" : {
+                        "appid" : "wx******************88",
+                        "UniversalLinks" : "https://ceshi.com/"
+                    },
+                    "appleiap" : {},
+                    "alipay" : {}
+                },
+                "push" : {
+                    "unipush" : {}
+                },
+                "oauth" : {
+                    "apple" : {},
+                    "weixin" : {
+                        "appid" : "wx******************88",
+                        "appsecret" : "22***************************cc",
+                        "UniversalLinks" : "https://ceshi.com/"
+                    },
+                    "qq" : {
+                        "appid" : "10******36"
+                    },
+                    "sina" : {
+                        "appkey" : "35********94",
+                        "appsecret" : "0a********************************7f",
+                        "redirect_uri" : "/wanlshop/callback/weibo"
+                    }
+                },
+                "share" : {
+                    "weixin" : {
+                        "appid" : "wx******************88",
+                        "UniversalLinks" : "https://ceshi.com/"
+                    },
+                    "qq" : {
+                        "appid" : "10******36"
+                    }
+                },
+				"maps" : {
+				    "amap" : {
+				        "appkey_ios" : "d8b84cf540bcca9928db69b0119fc152",
+				        "appkey_android" : "6c3f7522aab215e0704225adaad9f73e"
+				    }
+				}
+            },
+            "orientation" : [ "portrait-primary" ],
+            "splashscreen" : {
+                "android" : {
+                    "hdpi" : "",
+                    "xxhdpi" : "",
+                    "xhdpi" : ""
+                },
+                "ios" : {
+                    "iphone" : {
+                        "portrait-896h@3x" : "",
+                        "landscape-896h@3x" : ""
+                    }
+                },
+                "androidStyle" : "common",
+                "iosStyle" : "common"
+            },
+            "icons" : {
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                },
+                "ios" : {
+                    "appstore" : "unpackage/res/icons/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                }
+            }
+        },
+        /* 不使用原生占位 http://ask.dcloud.net.cn/article/35564 */
+        "safearea" : {
+            "bottom" : {
+                "offset" : "none"
+            }
+        },
+        "compilerVersion" : 3,
+        "nvueLaunchMode" : "fast",
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wx**********14b",
+        "setting" : {
+            "urlCheck" : true,
+            "es6" : true,
+            "minified" : true,
+            "postcss" : true
+        },
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "演示定位能力"
+            }
+        },
+        "uniStatistics" : {
+            "enable" : false
+        }
+    },
+	"mp-qq" : {
+	    "appid" : "11*****49",
+	    "uniStatistics" : {
+	        "enable" : true
+	    },
+	    "setting" : {
+	        "es6" : true,
+	        "postcss" : true,
+	        "minified" : true,
+	        "urlCheck" : true
+	    },
+		"permission" : {
+		    "scope.userLocation" : {
+		        "desc" : "商城需要获取当前位置，查询附近商品和完善购物地址"
+		    }
+		}
+	},
+    "mp-alipay" : {
+        "usingComponents" : true,
+        "appid" : "20**********76",
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "mp-baidu" : {
+        "usingComponents" : true,
+        "appid" : "",
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "mp-toutiao" : {
+        "usingComponents" : true,
+        "appid" : "",
+        "uniStatistics" : {
+            "enable" : true
+        }
+    },
+    "h5" : {
+        "template" : "wanlshop.html",
+        "router" : {
+            "mode" : "hash",
+            "base" : "./"
+        },
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "V3JBZ-C7Z36-BL7S6-M67TX-6WORS-2TBMN"
+                }
+            }
+        },
+        "domain" : "https://m.tew.com",
+        "optimization" : {
+            "treeShaking" : {
+                "enable" : true
+            }
+        },
+        "title" : "新零售电商平台",
+        "uniStatistics" : {
+            "enable" : false
+        },
+		"devServer" : {
+		    "https" : false
+		}
+    },
+    "uniStatistics" : {
+        "enable" : false
+    }
+}

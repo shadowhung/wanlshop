@@ -1,0 +1,183 @@
+<link rel="stylesheet" href="__CDN__/assets/addons/wanlshop/css/entry.css">審査ステータス
+
+<div id="content-container" class="container">
+
+	<div class="row">
+
+		<form class="form-horizontal" role="form" data-toggle="validator" method="POST">
+
+			<div class="wanl-entry col-md-12">
+
+				<div class="head">
+
+					<div class="title">
+
+						<p>ストアアプリケーション</p>
+
+					</div>
+
+					<div class="entry-content">
+
+						<ol class="ui-step ui-step-4">
+
+							<li class="step-start step-done">
+
+								<div class="ui-step-line"></div>
+
+								<div class="ui-step-cont">
+
+									<span class="ui-step-cont-number">1</span>
+
+									<span class="ui-step-cont-text">アカウント登録</span>
+
+								</div>
+
+							</li>
+
+							<li class="step-start step-done">
+
+								<div class="ui-step-line"></div>
+
+								<div class="ui-step-cont">
+
+									<span class="ui-step-cont-number">2</span>
+
+									<span class="ui-step-cont-text">対象資格</span>
+
+								</div>
+
+							</li>
+
+							<li class="step-start step-done">
+
+								<div class="ui-step-line"></div>
+
+								<div class="ui-step-cont">
+
+									<span class="ui-step-cont-number">3</span>
+
+									<span class="ui-step-cont-text">店舗情報</span>
+
+								</div>
+
+							</li>
+
+							<li class="step-end step-active">
+
+								<div class="ui-step-line"></div>
+
+								<div class="ui-step-cont">
+
+									<span class="ui-step-cont-number">4</span>
+
+									<span class="ui-step-cont-text">監査</span>
+
+								</div>
+
+							</li>
+
+						</ol>
+
+					</div>
+
+				</div>
+
+				<div class="info">
+
+					{eq name="entry.verify" value="2"}<h2>情報が送信されました</h2>{/eq}
+
+					{eq name="entry.verify" value="3"}<h2>開店おめでとうございます！</h2>{/eq}
+
+					{eq name="entry.verify" value="4"}<h2>監査に失敗しました！</h2>{/eq}
+
+					<table class="table table-bordered" style="margin-top: 30px;">
+
+						<tbody>
+
+							<tr>
+
+								<th scope="row">件名（{$entry.state==0?'個人':'企業'}）</th>
+
+								<td>{$entry.name}</td>
+
+							</tr>
+
+							<tr>
+
+								<th scope="row">対象証明書</th>
+
+								<td>{$entry.number}</td>
+
+							</tr>
+
+							<tr>
+
+								<th scope="row">携帯電話</th>
+
+								<td>{$entry.mobile}</td>
+
+							</tr>
+
+							<tr>
+
+								<th scope="row">ショップ名</th>
+
+								<td>{$entry.shopname}</td>
+
+							</tr>
+
+							<!--<tr>
+
+								<th scope="row">店鋪簡介</th>
+
+								<td>{$entry.bio}</td>
+
+							</tr>
+
+							<tr>
+
+								<th scope="row">經營地區</th>
+
+								<td>{$entry.city}</td>
+
+							</tr>-->
+
+							<tr>
+
+								<th scope="row">監査ステータス</th>
+
+								{eq name="entry.verify" value="2"}<td class="text-info">審査中..</td>{/eq}
+
+								{eq name="entry.verify" value="3"}<td class="text-success">監査が完了しました，ショップがオープンしました！<a href="{:url('/index/wanlshop/console')}">店舗管理</a></td>{/eq}
+
+								{eq name="entry.verify" value="4"}<td class="text-danger">監査に失敗しました：<span class="text-danger">{$entry.refuse?$entry.refuse:'カスタマーサービスにお問い合わせください'}</span></td> {/eq}
+
+							</tr>
+
+						</tbody>
+
+					</table>
+
+				</div>
+
+				{eq name="entry.verify" value="4"}
+
+				<div align="center">
+
+					<div class="entry-content">
+
+						<a href="/index/wanlshop/entry.html" class="btn btn-success btn-lg">再送信</a>
+
+					</div>
+
+				</div>
+
+				{/eq}
+
+			</div>
+
+		</form>
+
+	</div>
+
+</div>

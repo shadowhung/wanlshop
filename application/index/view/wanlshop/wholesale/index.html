@@ -1,0 +1,332 @@
+<div class="panel panel-default panel-intro">
+    <div class="panel-heading">
+        <ul class="nav nav-tabs" >
+            <li <?php if($status==0){?>class="active"<?php }?>><a href="{:url('index/wanlshop.wholesale/index')}?order=desc&offset=0&limit=10&status=0">{:__('All')}</a></li>
+            <li <?php if($status==1){?>class="active"<?php }?>><a href="{:url('index/wanlshop.wholesale/index')}?order=desc&offset=0&limit=10&status=1">{:__('On the shelf')}</a></li>
+            <li <?php if($status==2){?>class="active"<?php }?>><a href="{:url('index/wanlshop.wholesale/index')}?order=desc&offset=0&limit=10&status=2">{:__('Not on sale')}</a></li>
+        </ul>
+
+    </div>
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            
+<div class="body_cont">
+
+    <?php if(!empty($category)){ ?>
+    <div class="pro_type1">
+	    	<ul>
+			<?php foreach($category as $key => $value){?>
+			    <?php if($value['id'] == $one){ ?>
+				<li style="background-color:#ffde89;">
+					<a style="color: #333;" href='{:url('index/wanlshop.wholesale/index')}?status=<?php echo $status;?>&order=desc&offset=0&limit=10&op={"category.id":"IN"}&filter={"category.id":"<?php echo $value['allid'];?>"}' rel="nofollow" title="<?php echo $value['name'];?>">
+						<?php echo $value['name'];?>
+					</a>
+				</li>
+				<?php }else{?>
+				<li>
+					<a href='{:url('index/wanlshop.wholesale/index')}?status=<?php echo $status;?>&order=desc&offset=0&limit=10&op={"category.id":"IN"}&filter={"category.id":"<?php echo $value['allid'];?>"}' rel="nofollow" title="<?php echo $value['name'];?>">
+						<?php echo $value['name'];?>
+					</a>
+				</li>
+				<?php }?>
+			<?php }?>
+	    	</ul>
+    </div>
+    <?php }?>
+
+    <?php if(!empty($category1)){ ?>
+    <div class="pro_type2">
+	    	<ul>
+			<?php foreach($category1 as $key => $value){?>
+			    <?php if($value['id'] == $two){ ?>
+				<li style="background-color: #ffde89;">
+					<a style="color: #000;" href='{:url('index/wanlshop.wholesale/index')}?status=<?php echo $status;?>&order=desc&offset=0&limit=10&op={"category.id":"IN"}&filter={"category.id":"<?php echo $value['allid'];?>"}' rel="nofollow" title="<?php echo $value['name'];?>">
+						<?php echo $value['name'];?>
+					</a>
+				</li>
+				<?php }else{?>
+				<li>
+					<a href='{:url('index/wanlshop.wholesale/index')}?status=<?php echo $status;?>&order=desc&offset=0&limit=10&op={"category.id":"IN"}&filter={"category.id":"<?php echo $value['allid'];?>"}' rel="nofollow" title="<?php echo $value['name'];?>">
+						<?php echo $value['name'];?>
+					</a>
+				</li>
+				<?php }?>
+			<?php }?>
+	    	</ul>
+    </div>
+    <?php }?>
+    
+    <?php if(!empty($category2)){ ?>
+    <div class="pro_type3">
+	    	<ul>
+			<?php foreach($category2 as $key => $value){?>
+			    <?php if($value['id'] == $three){ ?>
+				<li style="background-color: #e74c3c;">
+					<a style="color: #ffffff;" href='{:url('index/wanlshop.wholesale/index')}?status=<?php echo $status;?>&order=desc&offset=0&limit=10&op={"category.id":"IN"}&filter={"category.id":"<?php echo $value['allid'];?>"}' rel="nofollow" title="<?php echo $value['name'];?>">
+						<?php echo $value['name'];?>
+					</a>
+				</li>
+				<?php }else{?>
+				<li>
+					<a href='{:url('index/wanlshop.wholesale/index')}?status=<?php echo $status;?>&order=desc&offset=0&limit=10&op={"category.id":"IN"}&filter={"category.id":"<?php echo $value['allid'];?>"}' rel="nofollow" title="<?php echo $value['name'];?>">
+						<?php echo $value['name'];?>
+					</a>
+				</li>
+				<?php }?>
+			<?php }?>
+	    	</ul>
+	    </div>
+    </div>
+    <?php }?>
+    
+</div>
+<div class="body_cont">
+{volist name="result.rows" id="item"}
+    <div class="pro_list_view">
+        <a href="{:url('index/wanlshop.wholesale/edit',array('ids'=>$item.id))}" >
+            <div class="img">
+            <img class="layLoad" src="https://imagesrb.oss-ap-northeast-1.aliyuncs.com{$item.image}">
+            </div>
+            <div class="title">{$item.title}</div>
+            <div class="tag_warp">
+                <div class="sdby">ドロップシッピング</div> <div class="price">{$item.price}<i><strong>円</strong></i></div>
+            </div>
+            <div class="tag_warp1">
+                <div class="price1">{$item.manufacturer}</div>
+            </div>
+            
+        </a>
+            <div class="view_button">
+                <a style="cursor:pointer;" onclick="puhuo('/index/wanlshop/wholesale/import/ids/{$item.id}','{$item.title}','{$item.price}','{$item.wholesale_price}','{$item.manufacturer}')">ワンクリックショップ</a>
+            </div>
+    </div>
+{/volist}
+</div>
+<?php if(empty($result['rows'])){?>
+<div class="empty-content">
+    <div class="wanl-gray text-center">
+        <img style="width: 260px;" src="/assets/addons/wanlshop/img/default/default3x.png">
+        <div  class="text-30">関連商品が見つかりません</div>
+    </div>
+</div>
+<?php }?>
+<?php if(!empty($result['rows'])){?>
+<div class="pro_page">
+    <a href='{:url('index/wanlshop.wholesale/index')}?status=<?php echo $status;?>&order=desc&offset={$preoffset}&limit=10&op={"category.id":"IN"}&filter={$filter}'>前のページ</a>
+    <?php for($j=$j_start;$j<=$j_end;$j++){?>
+    <a href='{:url('index/wanlshop.wholesale/index')}?status=<?php echo $status;?>&order=desc&offset=<?php echo ($j-1)*$limit;?>&limit=10&op={"category.id":"IN"}&filter={$filter}' class="<?php if($page == $j) echo 'current';?>"><?php echo $j;?></a>
+    <?php }?>
+    <a href='{:url('index/wanlshop.wholesale/index')}?status=<?php echo $status;?>&order=desc&offset={$nexoffset}&limit=10&op={"category.id":"IN"}&filter={$filter}' >次のページ</a>
+    
+    <span><em>{$page}</em>/{$page_total}</span>
+    <form method="POST" action='{:url('index/wanlshop.wholesale/goindex')}?status=<?php echo $status;?>&order=desc&limit=10&op={"category.id":"IN"}&filter={$filter}'>
+        <div class="next-pagination-jump">
+            <span>最初に</span>
+            <span class="next-input">
+                <input type="number" name="offset" height="100%">
+            </span>
+            <span>ページ</span>
+            <button type="submit">決定する</button>
+        </div>
+    </form>
+</div>
+<?php }?>
+<script>
+function puhuo(url,title,price,wholesale_price,manufacturer){
+    document.getElementById('model').style.display="block";
+    document.getElementById('title').innerHTML = title;
+    document.getElementById('manufacturer').innerHTML = manufacturer;
+    document.getElementById('price').innerHTML = price;
+    document.getElementById('wholesale_price').innerHTML = wholesale_price;
+    document.getElementById('confirm').setAttribute("url",url);
+}    
+function closebutton(){
+    document.getElementById('model').style.display="none";
+}
+
+function gggurl(){
+    var gggurl1 = document.getElementById('confirm').attributes["url"].nodeValue; // 獲得  
+    console.log(gggurl1)
+    window.location.href=gggurl1
+}
+</script>
+<div class="shadow-box" id="model" style="display: none;"><!--修改手機號碼-->
+	<div class="shadow" style="margin-top:20%">
+        <div class="shadow-bg">
+            <h4 id="title"></h4>
+            <div class="shadow_text">サプライヤー:<span id="manufacturer"></span></div>
+            <div class="shadow_text">販売価格:<span class="red"><span id="price"></span>円</span></div>
+            <div class="shadow_text">卸売価格:<span class="red"><span id="wholesale_price">円</span></span></div>
+            <div class="shadow-con">
+                <button class="bg fl" type="button" onclick="closebutton();">非公開</button>
+                <button class="bg1 fr" id="confirm" url="" onclick="gggurl();">リストを確認する</button>
+            </div>
+            <div class="shadow-con" style="color:red;">
+<br/>チップ：<br/>
+1、ワンクリック商品の利益はランダムに10％〜12％です。つまり、小売価格は卸売価格より10％〜12％高くなります。<br/>
+2、による{$site.name}さまざまな卸売業者との間で締結された契約では、小売価格は卸売価格の12％を超えることはできないと規定されています。<br/>
+3、各販売者は、卸売センターから1日あたり最大10個のアイテムしかリストできません。<br/>
+            </div>
+            <br/>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</div>
+<style>
+.current{border-color: #ff6000;background: #f7f8fa;color: #ff6000;}
+.body_cont{width:100%;overflow:hidden; }
+.pro_type1{width:100%; background:#e74c3c;display:black;overflow:hidden; padding-top:3px; padding-bottom:3px;border-radius:5px 5px 0  0;}
+.pro_type2{width:100%; background:#f35c3a;display:black;overflow:hidden; padding-top:3px; padding-bottom:3px;border-radius:0  0 5px 5px;border-top:#d81d1d solid 1px;}
+.pro_type3{width:100%; background:#e74c3c;display:black;overflow:hidden; padding-top:3px; padding-bottom:3px;}
+.pro_type1 li,.pro_type2 li,.pro_type3 li,.pro_type1 ul,.pro_type2 ul,.pro_type3 ul{margin:0;padding:0;list-style:none;}
+.pro_type1 li,.pro_type2 li,.pro_type3 li{
+width:100px; /*每个元素的初始化宽度*/
+height: 20px;
+line-height: 20PX;
+text-align: center;
+flex:auto;  /*这是关键*/
+margin-left: 0.5%; 
+margin-right: 0.5%; 
+overflow: hidden;
+float: left;
+border-radius:5px;
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+}
+.pro_type1 a,.pro_type2 a,.pro_type3 a{color:#fff;}
+.pro_list_view{
+width:19%; 
+float:left; 
+margin-left: 0.5%; 
+margin-right: 0.5%; 
+margin-top: 6px;
+border: solid 1px #CCC;
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+border-radius:5px;
+background: #FFF;
+padding-bottom: 5PX;
+}
+.img{height:210px;vertical-align: middle;border:5px #FFF solid; text-align:center; overflow:hidden}
+.layLoad{height:210px;}
+.title{width:96%;line-height:22px;height:44px; margin-top:5px; font-size:14px; margin-left:5px;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.tag_warp{width:96%; height:22px;line-height:22px; margin-left:5px;overflow: hidden;}
+.tag_warp1{width:96%; height:18px;line-height:18px; margin-left:5px;overflow: hidden;}
+.sdby{float:left;font-size:12px;color:blue;}
+.price{float:right;font-size:14px;color:red;}
+.price1{float:right;font-size:12px;color:red;}
+.view_button{width:96%;text-align:center;}
+.view_button a{display:block; width:120px; height:24px;color:#FFF; background-color: #e74c3c; line-height:24px; text-align:center; margin:auto;overflow: hidden;}
+
+@media (max-width:900px){
+.pro_type1 li,.pro_type2 li,.pro_type3 li{
+width: 32.33%; /*每个元素的初始化宽度*/
+height: 20px;
+line-height: 20PX;
+text-align: center;
+flex:auto;  /*这是关键*/
+margin-left: 0.5%; 
+margin-right: 0.5%; 
+overflow: hidden;
+float: left;
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+}
+.pro_list_view{
+width:49%; 
+float:left; 
+margin-left: 0.5%; 
+margin-right: 0.5%; 
+margin-top: 6px;
+border: solid 1px #CCC;
+box-sizing:border-box;
+-moz-box-sizing:border-box; /* Firefox */
+-webkit-box-sizing:border-box; /* Safari */
+border-radius:5px;
+background: #FFF;
+padding-bottom: 5PX;
+overflow:auto;
+}
+.img{ border:5px #FFF solid; text-align:center;border-radius:5px;}
+.layLoad{width:100%;}
+.title{width:96%;line-height:22px; font-size:14px; margin-left:5px;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.tag_warp{width:96%; height:22px;line-height:22px; margin-left:5px;overflow: hidden;}
+.tag_warp1{width:96%; height:18px;line-height:18px; margin-left:5px;overflow: hidden;}
+.sdby{float:left;font-size:12px;color:blue;}
+.price{float:right;font-size:14px;color:red;}
+.price1{float:right;font-size:12px;color:red;}
+.view_button{width:96%;text-align:center;}
+.view_button a{display:block; width:120px; height:24px;color:#FFF; background-color: #e74c3c; line-height:24px; text-align:center; margin:auto;overflow: hidden;}
+
+}
+
+.pro_page{width:100%; margin-top:20px;}
+.pro_page a,.pro_page span{padding:2px 3px 2px 3px; border:#3c8dbc solid 1px; float:left; margin-left:3px;}
+.next-pagination-jump{float:left; line-height:24px;}
+.next-pagination-jump span{border:none;padding: 0px 0px 0px 0px;}
+.next-pagination-jump input{height:22px;width:50px;}
+.next-pagination-jump button{height:24px; line-height:22px;}
+.shadow_text{font-size:12px; width:90%; margin:5px auto; }
+
+.shadow-box {
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top:0;
+	left: 0;
+	background: rgba(0,0,0,0.3);
+	z-index:9999;
+}
+.shadow {
+	width:50%;
+	position: absolute;
+	top: 0%;
+	left:25%;
+	z-index:99999;
+}
+@media screen and (min-width: 0px) and (max-width: 580px){
+	.shadow-box {width: 100%;height: 100%;position:fixed;top:0;left: 0;background: rgba(0,0,0,0.3);z-index:9999;}
+    .shadow {width:70%;position:absolute;top:10%;left:15%;z-index:99999;}
+}
+
+.shadow-bg {
+	width:100%;
+	background:#FFF;
+	z-index:202;
+	border-radius: 0.5rem;
+	padding-bottom:0.5rem;
+	overflow:hidden;
+}
+.shadow-bg h4{width:90%; line-height:2rem; font-size:0.8rem; font-weight:bold; text-align:center; border-bottom:#eee solid 1px; margin:0.3rem auto;}
+.shadow-con{width:90%; margin:0 auto;border-bottom:#eee solid 1px; overflow:hidden;}
+.shadow-con dl{width:100%; height:2rem;line-height:2rem;font-size:0.65rem;}
+.shadow-con p{width:100%; padding-top:0.1rem;padding-bottom:0.1rem; line-height:150%;font-size:0.7rem;}
+.shadow-con span{color:red;}
+.shadow-con input{height:2rem;font-size:0.7rem;float:left;width:-webkit-calc(100% - 4rem);width:-moz-calc(100% -4rem);width:calc(100% - 4rem); }
+.shadow-con button{width:49%;height:2.8rem; line-height:2.8rem;border-radius: 0.3rem; font-size:0.7rem; margin-top:0.1rem; margin-bottom:0.1rem; text-align:center; border:none;}
+.shadow-con button.bg{background:#333;color:#fff;}
+.shadow-con button.bg1{background:#cc0000;color:#fff;}
+.send-code {width: 4rem;height: 1rem;text-align: center;line-height: 1rem;color: #666;box-sizing: border-box;cursor: pointer;float:right;margin-top:0.55rem;}
+.shadow-con button.up_but{height:1.6rem; line-height:1.6rem; background:#c89602;color:#FFF;}
+.shadow-img{height:0.9rem; margin-top:0.05rem;margin-left:0.2rem;}
+.shadow-con span.c6{color:#666;}
+.shadow-con select{border: 1px solid #eee;background: #FAFAFA;-webkit-appearance: none;color: #333;border-radius: 0;padding:0.2rem 0.3rem;z-index:10;}
+.shadow-con img{ height:3rem; float:right; margin:0.1rem 0;}
+header .right button{padding:0.1rem 0.5rem;border-radius: 0.2rem;background:#F00; color:#FFF;}
+.bt_tanchu{width:100%; background:rgb(255,255,255,0.9);  position:fixed; bottom:0;z-index:999; padding-top:0.6rem; padding-bottom:0.3rem; overflow:hidden; border-radius:0.8rem 0.8rem 0 0;}
+.bt_tanchu li{width:96%; height:1.6rem; line-height:1.6rem; text-align:center; margin:0 auto; border-radius:0.3rem; border-bottom:#eee solid 1px; color:#F00; margin-bottom:0.3rem;}
+.shadow-con-img{width:90%; text-align:center; margin:0 auto;border-bottom:#eee solid 1px; overflow:hidden;}
+.shadow-con-img img{width:50%; margin-bottom:0.3rem;}
+.shadow-con-img p{width:100%; margin:auto; line-height:1.2rem; text-align:left;}
+.shadow-int{width:90%; margin:0 auto;border-bottom:#eee solid 1px; height:1.6rem; line-height:1.6rem; overflow:hidden;}
+.nbor{border:none}
+.red{color:red;}
+.green{color:green;}
+</style>

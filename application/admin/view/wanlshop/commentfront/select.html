@@ -1,0 +1,21 @@
+<div class="panel panel-default panel-intro">
+
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+						<a href="javascript:;" class="btn btn-primary btn-refresh" title="{:__('Refresh')}" ><i class="fa fa-refresh"></i> </a>
+                        {if request()->get('multiple') == 'true'}
+                        <a class="btn btn-danger btn-choose-multi"><i class="fa fa-check"></i> {:__('Choose')}</a>
+                        {/if}
+                    </div>
+                    <table id="table" class="table table-bordered table-hover" width="100%">
+
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

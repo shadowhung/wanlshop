@@ -1,0 +1,701 @@
+<style type="text/css">
+
+	@media (max-width: 275px) {
+
+		.edit-form tr td input {
+
+			width: 100%;
+
+		}
+
+
+
+		.edit-form tr th:first-child,
+
+		.edit-form tr td:first-child {
+
+			width: 20%;
+
+		}
+
+
+
+		.edit-form tr th:nth-last-of-type(-n+2),
+
+		.edit-form tr td:nth-last-of-type(-n+2) {
+
+			display: none;
+
+		}
+
+	}
+
+
+
+	.edit-form table>tbody>tr td a.btn-delcfg {
+
+		visibility: hidden;
+
+	}
+
+
+
+	.edit-form table>tbody>tr:hover td a.btn-delcfg {
+
+		visibility: visible;
+
+	}
+
+</style>
+
+<div class="alert alert-success-light">
+
+	<i class="fa fa-warning"></i> 注意：1。ウェルカムメッセージを空白のままにして、有効になっていないことを示します。デフォルトではチャットメッセージは送信されません。
+
+</div>
+
+<div class="panel panel-default panel-intro">
+
+	<div class="panel-heading">
+
+		<ul class="nav nav-tabs">
+
+			{foreach name="typeList" item="vo"}
+
+			<li {empty name="type"} {eq name="key" value="freight"}class="active"{/eq} {else /} {eq name="type" value="$key"}class="active"{/eq} {/empty}> <a href="#{$key}" data-toggle="tab">{$vo}</a></li>
+
+			{/foreach}
+
+		</ul>
+
+	</div>
+
+
+
+	<div class="panel-body">
+
+		<div id="myTabContent" class="tab-content">
+
+			<div class="tab-pane fade {empty name='type'} active in {else /} {eq name='type' value='freight'}active in{/eq} {/empty}" id="freight">
+
+				<div class="widget-body no-padding">
+
+					<form id="freight-form" class="edit-form form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.config/index')}">
+
+						{:token()}
+
+						<table class="table table-striped">
+
+							<thead>
+
+								<tr>
+
+									<th width="120px">{:__('Title')}</th>
+
+									<th>{:__('Value')}</th>
+
+								</tr>
+
+							</thead>
+
+							<tbody>
+
+								<!--<tr>
+
+									<td>運費組合策略</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												{:Form::radios('row[freight]', ['0'=>'運費疊加', '1'=>'以最低結算', '2'=>'以最高結算'], $row.freight, ['data-rule'=>'required'])}
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>-->
+
+								<tr>
+
+									<td>ウェルカムメッセージ</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<textarea name="row[welcome]" class="form-control" rows="5" data-tip="空、ウェルカムメッセージが使用されていないことを意味します">{$row.welcome|htmlentities}</textarea>
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+							</tbody>
+
+							<tfoot>
+
+								<tr>
+
+									<td></td>
+
+									<td>
+
+										<button type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+
+										<button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+
+									</td>
+
+								</tr>
+
+							</tfoot>
+
+						</table>
+
+					</form>
+
+				</div>
+
+			</div>
+
+			<div class="tab-pane fade {notempty name='type'}{eq name='type' value='kuaidi'}active in{/eq}{/notempty}" id="kuaidi">
+
+				<div class="widget-body no-padding">
+
+					<form id="kuaidi-form" class="edit-form form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.config/index')}">
+
+						{:token()}
+
+						<table class="table table-striped">
+
+							<thead>
+
+								<tr>
+
+									<th width="120px">{:__('Title')}</th>
+
+									<th>{:__('Value')}</th>
+
+								</tr>
+
+							</thead>
+
+							<tbody>
+
+								<tr>
+
+									<td>クラウド印刷をオンにするかどうか</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												{:Form::switcher('row[iscloud]', $row.iscloud, ['color'=>'success', 'yes'=>'1', 'no'=>'0'])}
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>クラウド印刷が自動的に出荷されるかどうか</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												{:Form::switcher('row[isauto]', $row.isauto, ['color'=>'success', 'yes'=>'1', 'no'=>'0'])}
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>Secret</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="text" name="row[secret]" value="{$row.secret|htmlentities}" class="form-control" data-rule="" data-tip="Express100シークレットパラメータ">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>承認キー</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="text" name="row[key]" value="{$row.key|htmlentities}" class="form-control" data-rule="" data-tip="Express100の許可されたKEYパラメーター">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+								
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>対面アカウント</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="text" name="row[partnerId]" value="{$row.partnerId|htmlentities}" class="form-control" data-rule="" data-tip="宅配会社の電子請求書アカウントまたは月次アカウント">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>対面パスワード</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="text" name="row[partnerKey]" value="{$row.partnerKey|htmlentities}" class="form-control" data-rule="" data-tip="宅配会社によって割り当てられた電子対面パスワード">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+							</tbody>
+
+							<tfoot>
+
+								<tr>
+
+									<td></td>
+
+									<td>
+
+										<button type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+
+										<button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+
+									</td>
+
+								</tr>
+
+							</tfoot>
+
+						</table>
+
+					</form>
+
+				</div>
+
+			</div>
+
+			<div class="tab-pane fade {notempty name='type'}{eq name='type' value='facesheet'}active in{/eq}{/notempty}" id="facesheet">
+
+				<div class="widget-body no-padding">
+
+					<form id="facesheet-form" class="edit-form form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.config/edit')}">
+
+						{:token()}
+
+						<table class="table table-striped">
+
+							<thead>
+
+								<tr>
+
+									<th width="120px">{:__('Title')}</th>
+
+									<th>{:__('Value')}</th>
+
+								</tr>
+
+							</thead>
+
+							<tbody>
+
+								<tr>
+
+									<td>デバイスコードを印刷する</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="text" name="row[siid]" value="{$row.siid|htmlentities}" class="form-control" data-rule="required" data-tip="ACMD893784">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+								
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>テンプレートID</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="text" name="row[tempid]" value="{$row.tempid|htmlentities}" class="form-control" data-rule="required" data-tip="といった：ad8470013eb64c979120ca75c6bf7bae">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+								
+
+									</td>
+
+								</tr>
+
+							</tbody>
+
+							<tfoot>
+
+								<tr>
+
+									<td></td>
+
+									<td>
+
+										<button type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+
+										<button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+
+									</td>
+
+								</tr>
+
+							</tfoot>
+
+						</table>
+
+					</form>
+
+				</div>
+
+			</div>
+
+			<div class="tab-pane fade {notempty name='type'}{eq name='type' value='mailing'}active in{/eq}{/notempty}" id="mailing">
+
+				<div class="widget-body no-padding">
+
+					<form id="mailing-form" class="edit-form form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.config/index')}">
+
+						{:token()}
+
+						<table class="table table-striped">
+
+							<thead>
+
+								<tr>
+
+									<th width="120px">{:__('Title')}</th>
+
+									<th>{:__('Value')}</th>
+
+								</tr>
+
+							</thead>
+
+							<tbody>
+
+								<tr>
+
+									<td>名前（ショップ名）</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="text" name="row[sendName]" value="{$row.sendName|htmlentities}" class="form-control" data-tip="張三丰" data-rule="required">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>固定電話/携帯電話</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="number" name="row[sendPhoneNum]" value="{$row.sendPhoneNum|htmlentities}" class="form-control" data-tip="" data-rule="required">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>送り先</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<textarea name="row[sendAddr]" class="form-control" rows="5" data-tip="" data-rule="required">{$row.sendAddr|htmlentities}</textarea>
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+							</tbody>
+
+							<tfoot>
+
+								<tr>
+
+									<td></td>
+
+									<td>
+
+										<button type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+
+										<button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+
+									</td>
+
+								</tr>
+
+							</tfoot>
+
+						</table>
+
+					</form>
+
+				</div>
+
+			</div>
+
+			<div class="tab-pane fade {notempty name='type'}{eq name='type' value='return'}active in{/eq}{/notempty}" id="return">
+
+				<div class="widget-body no-padding">
+
+					<form id="return-form" class="edit-form form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.config/index')}">
+
+						{:token()}
+
+						<table class="table table-striped">
+
+							<thead>
+
+								<tr>
+
+									<th width="120px">{:__('Title')}</th>
+
+									<th>{:__('Value')}</th>
+
+								</tr>
+
+							</thead>
+
+							<tbody>
+
+								<tr>
+
+									<td>名前（ショップ名）</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="text" name="row[returnName]" value="{$row.returnName|htmlentities}" class="form-control" data-tip="張三丰" data-rule="required">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>固定電話/携帯電話</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<input type="number" name="row[returnPhoneNum]" value="{$row.returnPhoneNum|htmlentities}" class="form-control" data-tip="固定電話または携帯電話番号を入力してください" data-rule="required">
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+								<tr>
+
+									<td>差出人住所</td>
+
+									<td>
+
+										<div class="row">
+
+											<div class="col-sm-8 col-xs-12">
+
+												<textarea name="row[returnAddr]" class="form-control" rows="5" data-tip="" data-rule="required">{$row.returnAddr|htmlentities}</textarea>
+
+											</div>
+
+											<div class="col-sm-4"></div>
+
+										</div>
+
+									</td>
+
+								</tr>
+
+							</tbody>
+
+							<tfoot>
+
+								<tr>
+
+									<td></td>
+
+									<td>
+
+										<button type="submit" class="btn btn-success btn-embossed">{:__('OK')}</button>
+
+										<button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+
+									</td>
+
+								</tr>
+
+							</tfoot>
+
+						</table>
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

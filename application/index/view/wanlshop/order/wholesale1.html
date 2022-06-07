@@ -1,0 +1,831 @@
+<style type="text/css">
+
+	.content {
+
+		padding: 25px 20px;
+
+	}
+
+
+
+	/* 订单详情 */
+
+	.order-detail .order-block {
+
+		height: 31px;
+
+		line-height: 31px;
+
+		background: #e8edf0;
+
+		border-radius: 13px;
+
+		font-size: 14px;
+
+		text-align: center;
+
+		position: relative;
+
+		margin-bottom: 50px;
+
+	}
+
+
+
+	.order-detail .order-block:before,
+
+	.order-detail .order-block:after {
+
+		content: "";
+
+		position: absolute;
+
+		z-index: 2;
+
+		left: 0;
+
+		top: 0;
+
+		bottom: 0;
+
+		border-radius: 13px;
+
+		background: #18bc9c;
+
+	}
+
+
+
+	.order-detail .order-block:after {
+
+		background: #4dc7af;
+
+		z-index: 1;
+
+	}
+
+
+
+	.order-detail .order-block.progress-1:before {
+
+		width: 0;
+
+	}
+
+
+
+	.order-detail .order-block.progress-1:after {
+
+		width: 20%;
+
+	}
+
+
+
+	.order-detail .order-block.progress-2:before {
+
+		width: 20%;
+
+	}
+
+
+
+	.order-detail .order-block.progress-2:after {
+
+		width: 40%;
+
+	}
+
+
+
+	.order-detail .order-block.progress-3:before {
+
+		width: 40%;
+
+	}
+
+
+
+	.order-detail .order-block.progress-3:after {
+
+		width: 60%;
+
+	}
+
+
+
+	.order-detail .order-block.progress-4:before {
+
+		width: 60%;
+
+	}
+
+
+
+	.order-detail .order-block.progress-4:after {
+
+		width: 80%;
+
+	}
+
+
+
+	.order-detail .order-block.progress-5:before {
+
+		width: 100%;
+
+	}
+
+
+
+	.order-detail .order-block.progress-5:after {
+
+		width: 100%;
+
+	}
+
+
+
+	.order-detail .order-block.progress-5 li:nth-child(5) {
+
+		color: #fff;
+
+	}
+
+
+
+	.order-detail .order-block li {
+
+		width: 20%;
+
+		float: left;
+
+		list-style-type: none;
+
+		border-radius: 13px;
+
+		position: relative;
+
+		z-index: 3;
+
+	}
+
+
+
+	.order-detail .order-block .tip {
+
+		font-size: 12px;
+
+		padding-top: 10px;
+
+		color: #717171;
+
+	}
+
+
+
+	.order-detail .order-block.progress-1 li:nth-child(1),
+
+	.order-detail .order-block.progress-2 li:nth-child(1),
+
+	.order-detail .order-block.progress-3 li:nth-child(1),
+
+	.order-detail .order-block.progress-4 li:nth-child(1),
+
+	.order-detail .order-block.progress-5 li:nth-child(1) {
+
+		color: #fff;
+
+	}
+
+
+
+	.order-detail .order-block.progress-2 li:nth-child(2),
+
+	.order-detail .order-block.progress-3 li:nth-child(2),
+
+	.order-detail .order-block.progress-4 li:nth-child(2),
+
+	.order-detail .order-block.progress-5 li:nth-child(2) {
+
+		color: #fff;
+
+	}
+
+
+
+	.order-detail .order-block.progress-3 li:nth-child(3),
+
+	.order-detail .order-block.progress-4 li:nth-child(3),
+
+	.order-detail .order-block.progress-5 li:nth-child(3) {
+
+		color: #fff;
+
+	}
+
+
+
+	.order-detail .order-block.progress-4 li:nth-child(4),
+
+	.order-detail .order-block.progress-5 li:nth-child(4) {
+
+		color: #fff;
+
+	}
+
+
+
+	.order-detail .td__order-price {
+
+		width: 200px;
+
+		display: inline-block;
+
+	}
+
+
+
+	.order-head {
+
+		width: 100%;
+
+		padding: 12px 20px;
+
+		margin-top: 60px;
+
+		/* margin-bottom: 20px; */
+
+		/* border-bottom: 1px solid #eef1f5; */
+
+	}
+
+
+
+	.order-head:not(:first-child) {
+
+		margin-top: 0;
+
+	}
+
+
+
+	.order-head .title {
+
+		position: relative;
+
+		font-size: 1.5rem;
+
+		color: #333;
+
+	}
+
+
+
+	.order-head .title::before {
+
+		content: '';
+
+		position: absolute;
+
+		width: 4px;
+
+		height: 14px;
+
+		background: #18bc9c;
+
+		top: 4px;
+
+		left: -12px;
+
+	}
+
+
+
+	.table-responsive .table>tbody>tr>td {
+
+		text-align: center;
+
+		vertical-align: middle;
+
+		color: #676767;
+
+	}
+
+
+
+	.ordertext {
+
+		margin: 0 30px;
+
+	}
+
+
+
+	.table-bordered {
+
+		border: 1px solid #e8edf0;
+
+	}
+
+
+
+	.table-bordered>thead>tr>th,
+
+	.table-bordered>tbody>tr>th,
+
+	.table-bordered>tfoot>tr>th,
+
+	.table-bordered>thead>tr>td,
+
+	.table-bordered>tbody>tr>td,
+
+	.table-bordered>tfoot>tr>td {
+
+		border: 1px solid #e8edf0;
+
+	}
+
+
+
+	.table thead tr {
+
+		background: #f8f9fb;
+
+	}
+
+
+
+	.order_price span {
+
+		width: 70px;
+
+		display: inline-block;
+
+		text-align: right;
+
+	}
+	
+	.panel-body {
+        padding: 5px;
+    }
+	
+	.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+        padding: 0px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+    }
+    .table > tbody > tr > td, {
+        padding: 0px;
+        line-height: 1.42857143;
+        vertical-align: top;
+        border-top: 1px solid #ddd;
+    }
+
+</style>
+
+<form id="edit-form" role="form" data-toggle="validator" method="POST" action="">
+<div class="row">
+    <label class="control-label col-sm-2" style="color:red;font-size:22px;">支払いパスワード：<p style="font-size: 13px;
+    color: black;">[設定/変更なし]セラーセンター>>個人情報>>支払いパスワードの変更に移動してください</p><input id="c-password" class="form-control" name="password" type="text" maxlength="6" onkeyup="value=value.replace(/[^\d\.]/g,'')" placeholder="6桁の取引パスワードを入力してください" /></label> 
+	<!--<div class="pull-left"><a href="{:url('index/wanlshop.user/changepwd2')}" class="btn btn-primary"><i class="fa fa-user"></i> 修改支付密碼</a></div>-->
+    <p> </p>
+	<div class="col-md-12">
+
+		<div class="panel panel-default">
+
+			<div class="panel-heading">商品情報</div>
+
+			<div class="panel-body">
+
+				<p><span>注文番号：</span><small>{$row.order_no}</small> <span style="margin-left: 30px;">買い手：</span><small>{$row.user.nickname}</small><strong></strong></p>
+
+				<table class="table table-bordered">
+
+					<thead>
+
+						<tr>
+
+							<th class="text-center">
+
+								<div class="th-inner">商品コード</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">メイン画像</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">商品名</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">購入仕様</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">量</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">単価</div>
+
+							</th>
+
+
+							<th class="text-center">
+
+								<div class="th-inner">卸売価格</div>
+
+							</th>
+							<!-- <th class="text-center">
+
+								<div class="th-inner">总价</div>
+
+							</th> -->
+
+							<!-- <th class="text-center">
+
+								<div class="th-inner">运费</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">优惠</div>
+
+							</th> -->
+
+						</tr>
+
+					</thead>
+
+					<tbody>
+
+						{volist name="row.ordergoods" id="vo"}
+
+						<tr>
+
+							<td>{$vo.goods_sku_sn}</td>
+
+							<td><a href="javascript:"><img class="img-sm img-center" src="{$vo.image|cdnurl|htmlentities}"></a></td>
+
+							<td><strong>{$vo.title}</strong></td>
+
+							<td>{$vo.difference}</td>
+
+							<td>{$vo.number}</td>
+
+							<td>{$vo.price}</td>
+
+							<td>{$vo.wholesale_price}</td>
+
+							<!-- <td>{$vo.price * $vo.number}</td> -->
+
+							<!-- <td>{$vo.freight_price}</td> -->
+
+							<!-- <td>{$vo.discount_price}</td> -->
+
+						</tr>
+
+						{/volist}
+
+					</tbody>
+
+					<tfoot>
+
+						<tr>
+
+							<th colspan="9" style="text-align: right;">
+
+								<p class="ordertext">運送（{switch name="row.freight_type"} 
+
+								{case value="0"}貨物の積み重ね{/case} 
+
+								{case value="1"}最小決済{/case} 
+
+								{case value="2"}最大決済{/case} 
+
+								{/switch}）：<samp class="text-red">{$row.pay.freight_price} 円</samp> </p>
+
+								<p class="ordertext">割引価格：<samp class="text-red">{$row.pay.discount_price} 円</samp> </p>
+
+								<p class="ordertext">実際の売上高：<samp class="text-red">{$row.pay.price} 円</samp></p>
+
+								<p class="ordertext">卸売価格：<samp class="text-red">{$row.pay.wholesale_price} 円</samp></p>
+								
+								<p class="ordertext">注文利益：<samp class="text-red">{$row.pay.price-$row.pay.wholesale_price} 円</samp></p>
+
+							</th>
+
+						</tr>
+
+					</tfoot>
+
+				</table>
+
+				<div style="color: #333;">
+
+					
+
+					<p style="margin-bottom: 15px;">購入者の支払い方法：
+
+						{switch name="row.pay.pay_type"}
+
+							{case value="0"}<span class="label label-info">{$row.pay.pay_type_text|htmlentities}</span>{/case}
+
+							{case value="1"}<span class="label label-warning">{$row.pay.pay_type_text|htmlentities}</span>{/case}
+
+						    {case value="2"}<span class="label label-primary">{$row.pay.pay_type_text|htmlentities}</span>{/case}
+
+							{case value="3"}<span class="label label-success">{$row.pay.pay_type_text|htmlentities}</span>{/case}
+
+							{case value="4"}<span class="label label-success">{$row.pay.pay_type_text|htmlentities}</span>{/case}
+
+							{case value="5"}<span class="label label-danger">{$row.pay.pay_type_text|htmlentities}</span>{/case}
+
+							{case value="6"}<span class="label label-warning">{$row.pay.pay_type_text|htmlentities}</span>{/case}
+
+						{/switch}
+
+					</p>
+
+					<p style="margin-bottom: 15px;">取引状況：
+
+						{switch name="row.state"}
+
+							{case value="0"}<span class="label label-info">{$row.state_text|htmlentities}</span>{/case}
+
+							{case value="1"}<span class="label label-warning">{$row.state_text|htmlentities}</span>{/case}
+
+						    {case value="2"}<span class="label label-primary">{$row.state_text|htmlentities}</span>{/case}
+
+							{case value="3"}<span class="label label-success">{$row.state_text|htmlentities}</span>{/case}
+
+							{case value="4"}<span class="label label-success">{$row.state_text|htmlentities}</span>{/case}
+
+							{case value="5"}<span class="label label-danger">{$row.state_text|htmlentities}</span>{/case}
+
+							{case value="6"}<span class="label label-warning">{$row.state_text|htmlentities}</span>{/case}
+
+						{/switch}
+
+					</p>
+
+					{neq name="row.coupon_id" value="0"}
+
+						<p>ディスカウント：{$row.coupon.name}
+
+						</p>
+
+					{/neq}
+
+					<p>配送方法：<small>{$row.express_name ?: '配達の10日後にサプライヤーによって出荷され、買い手は異議を唱えませんシステムは自動的に受領を確認します'}</small></p>
+
+					{notempty name="row.remarks"}
+
+						<p>バイヤーメッセージ：{$row.remarks}</small></p>
+
+					{/notempty}
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	
+
+	{if condition="$row.state neq 7"}
+
+	{if condition="$row.state egt 2"}
+
+	<div class="col-md-12">
+
+		<div class="panel panel-default">
+
+			<div class="panel-heading">お届け先の住所</div>
+
+			<div class="panel-body">
+
+				<table class="table table-striped">
+
+					<tbody>
+
+						<tr>
+
+							<td>レシーバー</td>
+
+							<td>{$row.address.name}</td>
+
+						</tr>
+
+						<tr>
+
+							<td>連絡先番号</td>
+
+							<td><?php if($row['wholesale_id']!=0){echo substr($row['address']['mobile'],0,2).'****'.substr($row['address']['mobile'],6,strlen($row['address']['mobile']));}else{
+echo $row['address']['mobile'];
+}?></td>
+
+						</tr>
+
+						<tr>
+
+							<td>お届け先の住所</td>
+
+							<td><?php if($row['wholesale_id']!=0){
+							    $naddress = explode('/',$row['address']['address']);
+							    echo '/'.$naddress[1].'/'.$naddress[2].'/'.'****';
+							}else{
+                                echo $row.address.address;
+                            }?></td>
+
+						</tr>
+
+					</tbody>
+
+				</table>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="col-md-12">
+
+		<div class="panel panel-default">
+
+			<div class="panel-heading">支払情報</div>
+
+			<div class="panel-body">
+
+				<table class="table table-striped">
+
+					<tbody>
+
+						<tr>
+
+							<td>取引番号</td>
+
+							<td>{$row.pay.pay_no}</td>
+
+						</tr>
+
+						<tr>
+
+							<td>購入者の支払い方法</td>
+
+							<td>{$row.pay.pay_type_text}</td>
+
+						</tr>
+
+						<tr>
+
+							<td>取引注文番号</td>
+
+							<td>{$row.pay.trade_no}</td>
+
+						</tr>
+
+						<tr>
+
+							<td>購入者の支払い状況</td>
+
+							<td>{$row.pay.pay_state_text}</td>
+
+						</tr>
+
+						<tr>
+
+							<td>バイヤーの支払い時間</td>
+
+							<td>{$row.paymenttime_text}</td>
+
+						</tr>
+
+					</tbody>
+
+				</table>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	{/if}
+
+	{if condition="$row.state egt 3"}
+
+	<div class="col-md-12">
+
+		<div class="panel panel-default">
+
+			<div class="panel-heading">配送状況</div>
+
+			<div class="panel-body">
+
+				<table class="table table-bordered">
+
+					<thead>
+
+						<tr>
+
+							<th class="text-center">
+
+								<div class="th-inner">宅配会社</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">宅配便番号</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">配送状況</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">ロジスティクス情報</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">更新時間</div>
+
+							</th>
+
+							<th class="text-center">
+
+								<div class="th-inner">オペレーティング</div>
+
+							</th>
+
+						</tr>
+
+					</thead>
+
+					<tbody>
+
+						<tr>
+
+							<td>{$row.express_name}</td>
+
+							<td>{$row.express_no}</td>
+
+							<td>{$kuaidi.status}</td>
+
+							<td>{$kuaidi.context}</td>
+
+							<td>{$kuaidi.time}</td>
+
+							<td><a href="javascript:;" class="btn btn-xs btn-info btn-selected kuaidisub" data-id="{$row.id}" data-toggle="tooltip" data-original-title="ロジスティクスを見る"><i class="fa fa-eye"></i></a></td>
+
+						</tr>
+
+					</tbody>
+
+				</table>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	{/if}
+
+	{/if}
+
+</div>
+<div class="hide layer-footer">
+	<label class="control-label col-sm-2">卸売価格合計：<samp class="text-red">{$row.pay.wholesale_price} 円</samp></label>
+    <label class="control-label col-sm-2">残高：<samp class="text-red">{$user.money} 円</samp></label>
+    
+	<div class="col-xs-12 col-sm-8">
+        <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}卸売り支払い</button>
+		<button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();">{:__('Close')}</button>
+	</div>
+</div>
+</form>

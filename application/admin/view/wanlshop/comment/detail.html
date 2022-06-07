@@ -1,0 +1,180 @@
+<style type="text/css">
+	.star-rating {
+	    color: #ddd;
+	    font-size: 0;
+		display: table;
+	    position: relative;
+	}
+	.star-rating i {
+		padding: 5px;
+		padding-left: 0;
+		font-size: 16px;
+	}
+	.star-rating-top {
+		color: #f72b36;
+		padding: 0;
+		position: absolute;
+		z-index: 1;
+		display: block;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+
+	.star-rating-bottom {
+		padding: 0;
+		display: block;
+		z-index: 0;
+	}
+</style>
+<p><i class="fa fa-gift"></i> 商品详情</p>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th class="text-center">
+				<div class="th-inner">商品编码</div>
+			</th>
+			<th class="text-center">
+				<div class="th-inner">主图</div>
+			</th>
+			<th class="text-center">
+				<div class="th-inner">商品名称</div>
+			</th>
+			<th class="text-center">
+				<div class="th-inner">评论总数</div>
+			</th>
+			<th class="text-center">
+				<div class="th-inner">好评</div>
+			</th>
+			<th class="text-center">
+				<div class="th-inner">中评</div>
+			</th>
+			<th class="text-center">
+				<div class="th-inner">差评</div>
+			</th>
+			<th class="text-center">
+				<div class="th-inner">收藏数量</div>
+			</th>
+			<th class="text-center">
+				<div class="th-inner">付款人数</div>
+			</th>
+			<th class="text-center">
+				<div class="th-inner">操作</div>
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center; vertical-align: middle; ">{$row.goods.id}</td>
+			<td><a href="{$row.goods.image}" target="_blank"><img class="img-sm img-center" src="{$row.goods.image|cdnurl|htmlentities}"></a></td>
+			<td style="text-align: center; vertical-align: middle; ">{$row.goods.title}</td>
+			<td style="text-align: center; vertical-align: middle; ">{$row.goods.comment}</td>
+			<td style="text-align: center; vertical-align: middle; ">{$row.goods.praise}</td>
+			<td style="text-align: center; vertical-align: middle; ">{$row.goods.moderate}</td>
+			<td style="text-align: center; vertical-align: middle; ">{$row.goods.negative}</td>
+			<td style="text-align: center; vertical-align: middle; ">{$row.goods.like}</td>
+			<td style="text-align: center; vertical-align: middle; ">{$row.goods.payment}</td>
+			<td style="text-align: center; vertical-align: middle; ">
+				<a href="javascript:;" class="btn btn-xs btn-primary detail" data-toggle="tooltip" data-id="{$row.order_id}" data-original-title="查看订单详情"><i class="fa fa-eye"></i> 订单详情</a>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<p><i class="fa fa-pencil-square-o"></i> 评论详情</p>
+<table class="table table-striped">
+	<tr>
+		<td style="width: 30%;">{:__('用户')}</td>
+		<td>{$row.user.nickname}</td>
+	</tr>
+	<tr>
+		<td>{:__('评价')}</td>
+		<td>
+			{switch name="row.state"}
+				{case value="0"}<span class="label label-info">好评</span>{/case}
+				{case value="1"}<span class="label label-warning">中评</span>{/case}
+			    {case value="2"}<span class="label label-primary">差评</span>{/case}
+			{/switch}
+		</td>
+	</tr>
+	<tr>
+		<td>{:__('评论内容')}</td>
+		<td>{$row.content}</td>
+	</tr>
+	{notempty name="row.images"}
+	<tr>
+		<td>{:__('Images')}</td>
+		<td>
+			{volist name="row.images" id="vo"  }
+				<img class="img-sm img-center" src="{$vo|cdnurl|htmlentities}">
+			{/volist}
+		</td>
+	</tr>
+	{/notempty}
+	<tr>
+		<td>{:__('Score')}</td>
+		<td>
+			<div class="star-rating">
+				<div class="star-rating-top" style="width:{$row.score*2*10}%">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+				<div class="star-rating-bottom">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>{:__('Score_describe')}</td>
+		<td>
+			<div class="star-rating">
+				<div class="star-rating-top" style="width:{$row.score_describe*2*10}%">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+				<div class="star-rating-bottom">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>{:__('Score_service')}</td>
+		<td>
+			<div class="star-rating">
+				<div class="star-rating-top" style="width:{$row.score_service*2*10}%">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+				<div class="star-rating-bottom">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>{:__('Score_deliver')}</td>
+		<td>
+			<div class="star-rating">
+				<div class="star-rating-top" style="width:{$row.score_deliver*2*10}%">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+				<div class="star-rating-bottom">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>{:__('Score_logistics')}</td>
+		<td>
+			<div class="star-rating">
+				<div class="star-rating-top" style="width:{$row.score_logistics*2*10}%">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+				<div class="star-rating-bottom">
+					<i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+				</div>
+			</div>
+		</td>
+	</tr>
+	
+</table>

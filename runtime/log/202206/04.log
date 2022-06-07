@@ -1,0 +1,3813 @@
+---------------------------------------------------------------
+[ 2022-06-04T22:26:12+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/shop/page?id=27
+[运行时间：0.075787s] [吞吐率：13.19req/s] [内存消耗：4,389.66kb] [文件加载：151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001919s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000662s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000690s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000215s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.shop',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/shop/shop?id=27&type=',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '27',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001022s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000272s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Shop->page[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Shop.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:12+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/lists?search=&sort=weigh&order=asc&page=1&filter=%7B%22shop_id%22%3A%2227%22%7D&op=%7B%22shop_id%22%3A%22%3D%22%7D
+[运行时间：0.080377s] [吞吐率：12.44req/s] [内存消耗：4,438.02kb] [文件加载：154]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002098s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000740s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000764s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000225s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/shop/shop?id=27&type=',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+  'sort' => 'weigh',
+  'order' => 'asc',
+  'page' => '1',
+  'filter' => '{"shop_id":"27"}',
+  'op' => '{"shop_id":"="}',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001103s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000302s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->lists[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:19+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/shop/page?id=27
+[运行时间：0.071105s] [吞吐率：14.06req/s] [内存消耗：4,389.71kb] [文件加载：151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001862s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000676s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000693s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000196s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.shop',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/shop/shop?id=27&type=',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '27',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001054s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000284s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Shop->page[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Shop.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:20+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/lists?search=&sort=weigh&order=asc&page=1&filter=%7B%22shop_id%22%3A%2227%22%7D&op=%7B%22shop_id%22%3A%22%3D%22%7D
+[运行时间：0.083236s] [吞吐率：12.01req/s] [内存消耗：4,438.02kb] [文件加载：154]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001885s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000718s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000736s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000198s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/shop/shop?id=27&type=',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+  'sort' => 'weigh',
+  'order' => 'asc',
+  'page' => '1',
+  'filter' => '{"shop_id":"27"}',
+  'op' => '{"shop_id":"="}',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000988s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000264s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->lists[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:28+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/goods?id=418&wsaleid=4296
+[运行时间：0.162637s] [吞吐率：6.15req/s] [内存消耗：4,531.29kb] [文件加载：160]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.003662s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000996s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001023s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000301s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=418&wsaleid=4296',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '418',
+  'wsaleid' => '4296',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001476s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000415s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->goods[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:28+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/likes?pages=goods&page=1
+[运行时间：0.164121s] [吞吐率：6.09req/s] [内存消耗：4,446.98kb] [文件加载：155]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002759s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000663s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000689s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000285s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=418&wsaleid=4296',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'goods',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001537s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000365s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:30+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/coupon/query
+[运行时间：0.067992s] [吞吐率：14.71req/s] [内存消耗：4,148.16kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001881s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000691s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000713s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.coupon',
+    2 => 'query',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=418&wsaleid=4296',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '67',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'shop_id' => 27,
+  'goods_id' => 418,
+  'shop_category_id' => '1',
+  'price' => '2119',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000984s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000251s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/coupon.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Coupon->query[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Coupon.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:31+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/cart/storage
+[运行时间：0.057648s] [吞吐率：17.35req/s] [内存消耗：3,962.47kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001881s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000697s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000719s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.cart',
+    2 => 'storage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=418&wsaleid=4296',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '387',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'add',
+  'data' => 
+  array (
+    'shop_id' => 27,
+    'shop_name' => 'CasosnBC',
+    'goods_id' => 418,
+    'title' => '【第2類医薬品】クレンジル 大容量 60カプセル',
+    'number' => 1,
+    'image' => '/uploads/20211026/3020709e30f67d2c10c54f25dbff646c.jpg',
+    'sku' => 
+    array (
+      'id' => 1713,
+      'difference' => 
+      array (
+        0 => '1',
+      ),
+      'price' => '2119',
+      'market_price' => '2661',
+      'stock' => 10000,
+      'state' => '0',
+      'weigh' => 1713,
+      'sn' => 'JP416168',
+      'sales' => 0,
+    ),
+    'sku_id' => 1713,
+    'sum' => 2119,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000977s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000277s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Cart->storage[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Cart.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:34+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/goods?id=415&wsaleid=4358
+[运行时间：0.158222s] [吞吐率：6.32req/s] [内存消耗：4,526.52kb] [文件加载：160]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002784s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000992s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001016s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000295s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=415&wsaleid=4358',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '415',
+  'wsaleid' => '4358',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001484s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000362s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->goods[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:34+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/likes?pages=goods&page=1
+[运行时间：0.162356s] [吞吐率：6.16req/s] [内存消耗：4,446.98kb] [文件加载：155]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002796s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000992s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001016s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000290s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=415&wsaleid=4358',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'goods',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001486s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000317s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:36+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/coupon/query
+[运行时间：0.067312s] [吞吐率：14.86req/s] [内存消耗：4,148.16kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001864s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000673s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000689s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000202s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.coupon',
+    2 => 'query',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=415&wsaleid=4358',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '67',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'shop_id' => 27,
+  'goods_id' => 415,
+  'shop_category_id' => '1',
+  'price' => '2610',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000977s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000291s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/coupon.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Coupon->query[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Coupon.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:37+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/cart/storage
+[运行时间：0.058300s] [吞吐率：17.15req/s] [内存消耗：3,959.95kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000026s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001882s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000674s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000692s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.cart',
+    2 => 'storage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=415&wsaleid=4358',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '470',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'add',
+  'data' => 
+  array (
+    'shop_id' => 27,
+    'shop_name' => 'CasosnBC',
+    'goods_id' => 415,
+    'title' => 'Nutricost オオバコ殻 500mg、1瓶分当たり - 500カプセル、1食分あたり - 3カプセル (1500mg)、非GMO、グルテンフリー',
+    'number' => 1,
+    'image' => '/uploads/20211027/4edb3a3336507106cc82fff12b3191d8.jpg',
+    'sku' => 
+    array (
+      'id' => 1710,
+      'difference' => 
+      array (
+        0 => '1',
+      ),
+      'price' => '2610',
+      'market_price' => '3450',
+      'stock' => 10000,
+      'state' => '0',
+      'weigh' => 1710,
+      'sn' => 'JP685325',
+      'sales' => 0,
+    ),
+    'sku_id' => 1710,
+    'sum' => 2610,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001016s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000259s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Cart->storage[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Cart.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:39+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/goods?id=417&wsaleid=4297
+[运行时间：0.155266s] [吞吐率：6.44req/s] [内存消耗：4,531.29kb] [文件加载：160]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002709s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000991s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001015s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000303s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=417&wsaleid=4297',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '417',
+  'wsaleid' => '4297',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001515s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.001447s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->goods[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:39+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/likes?pages=goods&page=1
+[运行时间：0.165835s] [吞吐率：6.03req/s] [内存消耗：4,446.98kb] [文件加载：155]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000022s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002824s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.001016s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001041s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000292s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=417&wsaleid=4297',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'goods',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001530s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000371s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:41+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/coupon/query
+[运行时间：0.068425s] [吞吐率：14.61req/s] [内存消耗：4,148.16kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002063s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000694s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000715s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000198s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.coupon',
+    2 => 'query',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=417&wsaleid=4297',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '67',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'shop_id' => 27,
+  'goods_id' => 417,
+  'shop_category_id' => '1',
+  'price' => '1903',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001042s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000276s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/coupon.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Coupon->query[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Coupon.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:42+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/cart/storage
+[运行时间：0.055973s] [吞吐率：17.87req/s] [内存消耗：3,962.48kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001983s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000696s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000714s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000211s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.cart',
+    2 => 'storage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=417&wsaleid=4297',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '409',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'add',
+  'data' => 
+  array (
+    'shop_id' => 27,
+    'shop_name' => 'CasosnBC',
+    'goods_id' => 417,
+    'title' => '[指定医薬部外品] キューピーコーワゴールドドリンク 50mL×10本',
+    'number' => 1,
+    'image' => '/uploads/20211026/865f4e94d93948bb33a9d314fbed62cf.jpg',
+    'sku' => 
+    array (
+      'id' => 1712,
+      'difference' => 
+      array (
+        0 => '1',
+      ),
+      'price' => '1903',
+      'market_price' => '2530',
+      'stock' => 10000,
+      'state' => '0',
+      'weigh' => 1712,
+      'sn' => 'JP600350',
+      'sales' => 0,
+    ),
+    'sku_id' => 1712,
+    'sum' => 1903,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000998s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000262s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Cart->storage[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Cart.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:45+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/goods?id=414&wsaleid=4396
+[运行时间：0.157101s] [吞吐率：6.37req/s] [内存消耗：4,524.02kb] [文件加载：160]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002740s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.001009s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001035s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000289s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=414&wsaleid=4396',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '414',
+  'wsaleid' => '4396',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001513s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000376s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->goods[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:45+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/likes?pages=goods&page=1
+[运行时间：0.164624s] [吞吐率：6.07req/s] [内存消耗：4,446.98kb] [文件加载：155]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002786s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000969s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000994s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000290s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=414&wsaleid=4396',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'goods',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001554s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000337s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:48+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/coupon/query
+[运行时间：0.067846s] [吞吐率：14.74req/s] [内存消耗：4,148.16kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001854s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000661s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000678s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000198s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.coupon',
+    2 => 'query',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=414&wsaleid=4396',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '67',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'shop_id' => 27,
+  'goods_id' => 414,
+  'shop_category_id' => '1',
+  'price' => '2344',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001055s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000262s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/coupon.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Coupon->query[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Coupon.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:49+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/cart/storage
+[运行时间：0.053626s] [吞吐率：18.65req/s] [内存消耗：3,959.80kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001886s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000674s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000691s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000222s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.cart',
+    2 => 'storage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=414&wsaleid=4396',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '399',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'add',
+  'data' => 
+  array (
+    'shop_id' => 27,
+    'shop_name' => 'CasosnBC',
+    'goods_id' => 414,
+    'title' => 'アセチルＬ‐カルニチン(500mg)　60カプセル 海外直送品',
+    'number' => 1,
+    'image' => '/uploads/20211103/f5f7aa3a55b04d76b7a038aebf56f307.jpg',
+    'sku' => 
+    array (
+      'id' => 1709,
+      'difference' => 
+      array (
+        0 => '10',
+      ),
+      'price' => '2344',
+      'market_price' => '3082',
+      'stock' => 10000,
+      'state' => '0',
+      'weigh' => 1709,
+      'sn' => 'JP655067',
+      'sales' => 0,
+    ),
+    'sku_id' => 1709,
+    'sum' => 2344,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000972s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000295s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Cart->storage[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Cart.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:53+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/shop/page?id=27
+[运行时间：0.071909s] [吞吐率：13.91req/s] [内存消耗：4,389.71kb] [文件加载：151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001917s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000664s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000681s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000204s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.shop',
+    2 => 'page',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/shop/shop?id=27&type=',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '27',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000979s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000262s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Shop->page[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Shop.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:26:53+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/lists?search=&sort=weigh&order=asc&page=1&filter=%7B%22shop_id%22%3A%2227%22%7D&op=%7B%22shop_id%22%3A%22%3D%22%7D
+[运行时间：0.096247s] [吞吐率：10.39req/s] [内存消耗：4,438.02kb] [文件加载：154]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002006s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000673s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000691s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000201s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/shop/shop?id=27&type=',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'search' => '',
+  'sort' => 'weigh',
+  'order' => 'asc',
+  'page' => '1',
+  'filter' => '{"shop_id":"27"}',
+  'op' => '{"shop_id":"="}',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000978s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000309s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->lists[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:00+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/likes?pages=cart&page=2
+[运行时间：0.162462s] [吞吐率：6.16req/s] [内存消耗：4,446.41kb] [文件加载：155]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001914s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000676s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000693s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000199s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/cart/cart',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'cart',
+  'page' => '2',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001021s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000279s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:02+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/likes?pages=cart&page=3
+[运行时间：0.138220s] [吞吐率：7.23req/s] [内存消耗：4,441.79kb] [文件加载：155]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000024s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001912s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000673s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000690s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000200s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/cart/cart',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'cart',
+  'page' => '3',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001091s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000292s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:03+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/cart/storage
+[运行时间：0.057099s] [吞吐率：17.51req/s] [内存消耗：3,954.41kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001940s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000761s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000781s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000226s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.cart',
+    2 => 'storage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/cart/cart',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '67',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'bcsub',
+  'goods_id' => 415,
+  'sku_id' => 1710,
+  'number' => 1,
+  'sum' => 2610,
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001001s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000248s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Cart->storage[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Cart.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:03+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/cart/storage
+[运行时间：0.056792s] [吞吐率：17.61req/s] [内存消耗：3,954.41kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001895s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000686s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000703s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000198s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.cart',
+    2 => 'storage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/cart/cart',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '67',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'type' => 'bcsub',
+  'goods_id' => 414,
+  'sku_id' => 1709,
+  'number' => 1,
+  'sum' => 2344,
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001000s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000281s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Cart->storage[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Cart.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:06+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/order/getOrderGoodsList
+[运行时间：0.063492s] [吞吐率：15.75req/s] [内存消耗：4,277.36kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001867s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000667s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000684s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'getOrderGoodsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A413,%22number%22%3A1,%22sku_id%22%3A1708%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '43',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  0 => 
+  array (
+    'goods_id' => 413,
+    'number' => 1,
+    'sku_id' => 1708,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001019s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000262s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->getOrderGoodsList[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:21+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/address/address
+[运行时间：0.062500s] [吞吐率：16.00req/s] [内存消耗：4,070.82kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001878s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000677s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000695s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000196s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.address',
+    2 => 'address',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/address/addressManage?type=newadd',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '198',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'data' => 
+  array (
+    'name' => '12366',
+    'mobile' => '5555888555',
+    'default' => 1,
+    'city' => '秋田県',
+    'district' => '湯沢市',
+    'formatted_address' => '秋田県湯沢市',
+    'address' => '考虑考虑',
+    'address_name' => '',
+  ),
+  'type' => 'add',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000989s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000302s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Address->address[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Address.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:25+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/order/addOrder
+[运行时间：0.049597s] [吞吐率：20.16req/s] [内存消耗：4,137.55kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001875s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000657s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000682s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000222s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'addOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A413,%22number%22%3A1,%22sku_id%22%3A1708%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '22',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'order' => 
+  array (
+    'lists' => 
+    array (
+    ),
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001079s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000259s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->addOrder[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:28+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/order/addOrder
+[运行时间：0.049426s] [吞吐率：20.23req/s] [内存消耗：4,137.55kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001948s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000679s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000696s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000210s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'addOrder',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A413,%22number%22%3A1,%22sku_id%22%3A1708%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '22',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'order' => 
+  array (
+    'lists' => 
+    array (
+    ),
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000972s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000245s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->addOrder[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:36+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/order/getOrderGoodsList
+[运行时间：0.084467s] [吞吐率：11.84req/s] [内存消耗：4,277.36kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000031s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002805s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.001021s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001058s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000309s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'getOrderGoodsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A413,%22number%22%3A1,%22sku_id%22%3A1708%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '43',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  0 => 
+  array (
+    'goods_id' => 413,
+    'number' => 1,
+    'sku_id' => 1708,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001558s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000423s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->getOrderGoodsList[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:38+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/goods?id=413&wsaleid=0
+[运行时间：0.165531s] [吞吐率：6.04req/s] [内存消耗：4,530.52kb] [文件加载：160]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002790s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000991s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001015s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000295s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'goods',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=413&wsaleid=0',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '413',
+  'wsaleid' => '0',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001472s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000387s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->goods[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:38+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/likes?pages=goods&page=1
+[运行时间：0.168261s] [吞吐率：5.94req/s] [内存消耗：4,446.98kb] [文件加载：155]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002792s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000991s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001015s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000295s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=413&wsaleid=0',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'goods',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001480s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000368s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:41+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/coupon/query
+[运行时间：0.068199s] [吞吐率：14.66req/s] [内存消耗：4,149.08kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001894s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000667s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000684s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000212s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.coupon',
+    2 => 'query',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/product/goods?id=413&wsaleid=0',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '67',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'shop_id' => 27,
+  'goods_id' => 413,
+  'shop_category_id' => '1',
+  'price' => '6092',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000989s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000323s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/coupon.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Coupon->query[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Coupon.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:41+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/order/getOrderGoodsList
+[运行时间：0.065614s] [吞吐率：15.24req/s] [内存消耗：4,277.36kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001914s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000701s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000723s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000197s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'getOrderGoodsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=goods&data=%5B%7B%22goods_id%22%3A413,%22number%22%3A1,%22sku_id%22%3A1708%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '43',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  0 => 
+  array (
+    'goods_id' => 413,
+    'number' => 1,
+    'sku_id' => 1708,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000980s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000261s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->getOrderGoodsList[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:27:53+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/order/getOrderGoodsList
+[运行时间：0.066045s] [吞吐率：15.14req/s] [内存消耗：4,277.36kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001952s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000710s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000731s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000236s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'getOrderGoodsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A413,%22number%22%3A1,%22sku_id%22%3A1708%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '43',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  0 => 
+  array (
+    'goods_id' => 413,
+    'number' => 1,
+    'sku_id' => 1708,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000958s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000241s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->getOrderGoodsList[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:28:58+08:00 ] 125.79.81.163 GET www.fdadeal.com/index/user/login.html
+[运行时间：0.050211s] [吞吐率：19.92req/s] [内存消耗：4,083.53kb] [文件加载：142]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001932s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000676s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000703s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000247s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'user',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.fdadeal.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/index/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001031s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000271s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/index/lang/zh-cn/user.php
+[ info ] [ RUN ] app\index\controller\User->login[ /www/wwwroot/www.fdadeal.com/application/index/controller/User.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.fdadeal.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'user',
+  1 => 'site',
+  2 => 'config',
+  3 => 'code',
+  4 => 'msg',
+  5 => 'data',
+  6 => 'url',
+  7 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:00+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/token/check
+[运行时间：0.066547s] [吞吐率：15.03req/s] [内存消耗：3,949.30kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000021s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002722s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000969s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000995s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000282s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.token',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001473s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000396s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Token->check[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Token.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:01+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/chat/state
+[运行时间：0.061870s] [吞吐率：16.16req/s] [内存消耗：4,299.97kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002732s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000859s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000877s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000242s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'state',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001036s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000282s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Chat->state[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Chat.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:01+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/common/adverts?version=1.0.4
+[运行时间：0.073832s] [吞吐率：13.54req/s] [内存消耗：4,017.57kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002798s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000996s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001020s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000308s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'adverts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001473s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000389s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/common.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Common->adverts[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Common.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:01+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/chat/lists
+[运行时间：0.065780s] [吞吐率：15.20req/s] [内存消耗：4,276.54kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002283s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000834s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000852s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000223s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001119s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000368s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Chat->lists[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Chat.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:01+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/common/init?version=1.0.4
+[运行时间：0.141390s] [吞吐率：7.07req/s] [内存消耗：4,576.53kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002787s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000996s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001020s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000308s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'init',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001474s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000393s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/common.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Common->init[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Common.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:02+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/cart/synchro
+[运行时间：0.146496s] [吞吐率：6.83req/s] [内存消耗：4,345.05kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001877s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000663s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000680s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000212s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.cart',
+    2 => 'synchro',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '4550',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'cart' => 
+  array (
+    0 => 
+    array (
+      'shop_id' => 16,
+      'shop_name' => '家電量販店11',
+      'goods_id' => 293,
+      'title' => 'オーブンレンジ 18L フラットテーブル ヘルツフリー 自動メニュー18種類 YRP-F180V 電子レンジ 平面テーブル 一人暮らし 新生活 50Hz 60Hz 東日本 西日本',
+      'number' => 1,
+      'image' => '/uploads/20210729/e60033f5f32fb6710c36a2c6a1e05dba.png',
+      'sku' => 
+      array (
+        'id' => 1308,
+        'goods_id' => 293,
+        'difference' => 
+        array (
+          0 => 'ブラック',
+        ),
+        'price' => '14734',
+        'market_price' => '22277',
+        'wholesale_price' => '13054',
+        'stock' => 9958,
+        'weigh' => 1308,
+        'sn' => 'JP804679',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1637305306,
+        'updatetime' => 1637305306,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1308,
+      'sum' => '14734',
+      'checked' => false,
+    ),
+    1 => 
+    array (
+      'shop_id' => 14,
+      'shop_name' => '電子製品',
+      'goods_id' => 393,
+      'title' => 'NEW&OLDの雰囲気  RIDEZ ライズ Xヘルメット(クロスヘルメット) ネオクラシックフルフェイス SG規格 あすつく対応',
+      'number' => 1,
+      'image' => '/uploads/20210721/5b02c2c924420d8a128edff49a193775.png',
+      'sku' => 
+      array (
+        'id' => 1640,
+        'goods_id' => 393,
+        'difference' => 
+        array (
+          0 => 'Lサイズ',
+          1 => 'ホワイト',
+        ),
+        'price' => '16225',
+        'market_price' => '19730',
+        'wholesale_price' => '14538',
+        'stock' => 10000,
+        'weigh' => 1640,
+        'sn' => 'JP619943',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1637381141,
+        'updatetime' => 1637381141,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1640,
+      'sum' => '16225',
+      'checked' => false,
+    ),
+    2 => 
+    array (
+      'shop_id' => 14,
+      'shop_name' => '電子製品',
+      'goods_id' => 205,
+      'title' => 'Salvatore Marra サルバトーレマーラ 電波 ソーラー 腕時計 メンズ クロノグラフ クロノ 限定モデル SM15114 ギフト 10気圧防水',
+      'number' => 1,
+      'image' => '/uploads/20210809/a5800459629002c8c409cf8378da2dfe.png',
+      'sku' => 
+      array (
+        'id' => 676,
+        'goods_id' => 205,
+        'difference' => 
+        array (
+          0 => 'ブラックPG×ブラウンレザー',
+        ),
+        'price' => '24828',
+        'market_price' => '32326',
+        'wholesale_price' => '22072',
+        'stock' => 10000,
+        'weigh' => 676,
+        'sn' => 'JP554355',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1637303299,
+        'updatetime' => 1637303299,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 676,
+      'sum' => '24828',
+      'checked' => false,
+    ),
+    3 => 
+    array (
+      'shop_id' => 15,
+      'shop_name' => '松原香織11',
+      'goods_id' => 271,
+      'title' => 'ネクタイ シルク セット 白 黒 フォーマル 冠婚葬祭 プレゼント ギフト',
+      'number' => 1,
+      'image' => '/uploads/20210716/872bfbb5679b3ed03065b1ee2277743f.png',
+      'sku' => 
+      array (
+        'id' => 1178,
+        'goods_id' => 271,
+        'difference' => 
+        array (
+          0 => '単一の製品',
+        ),
+        'price' => '2163',
+        'market_price' => '3441',
+        'wholesale_price' => '1940',
+        'stock' => 9994,
+        'weigh' => 1178,
+        'sn' => 'JP980524',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1637305195,
+        'updatetime' => 1637305195,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1178,
+      'sum' => '2163',
+      'checked' => false,
+    ),
+    4 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 413,
+      'title' => 'サボン ボディスクラブ マンゴー キウイ 600g サボン SABON',
+      'number' => 1,
+      'image' => '/uploads/20211103/47e8fb9fbd2b2bcd69bf4e8a97f59d19.jpg',
+      'sku' => 
+      array (
+        'id' => 1708,
+        'difference' => 
+        array (
+          0 => '13',
+        ),
+        'price' => '6092',
+        'market_price' => '9144',
+        'stock' => 10000,
+        'state' => '0',
+        'weigh' => 1708,
+        'sn' => 'JP700841',
+        'sales' => 0,
+      ),
+      'sku_id' => 1708,
+      'sum' => 6092,
+      'checked' => false,
+    ),
+    5 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 414,
+      'title' => 'アセチルＬ‐カルニチン(500mg)　60カプセル 海外直送品',
+      'number' => 1,
+      'image' => '/uploads/20211103/f5f7aa3a55b04d76b7a038aebf56f307.jpg',
+      'sku' => 
+      array (
+        'id' => 1709,
+        'difference' => 
+        array (
+          0 => '10',
+        ),
+        'price' => '2344',
+        'market_price' => '3082',
+        'stock' => 10000,
+        'state' => '0',
+        'weigh' => 1709,
+        'sn' => 'JP655067',
+        'sales' => 0,
+      ),
+      'sku_id' => 1709,
+      'sum' => 2344,
+      'checked' => false,
+    ),
+    6 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 415,
+      'title' => 'Nutricost オオバコ殻 500mg、1瓶分当たり - 500カプセル、1食分あたり - 3カプセル (1500mg)、非GMO、グルテンフリー',
+      'number' => 1,
+      'image' => '/uploads/20211027/4edb3a3336507106cc82fff12b3191d8.jpg',
+      'sku' => 
+      array (
+        'id' => 1710,
+        'difference' => 
+        array (
+          0 => '1',
+        ),
+        'price' => '2610',
+        'market_price' => '3450',
+        'stock' => 10000,
+        'state' => '0',
+        'weigh' => 1710,
+        'sn' => 'JP685325',
+        'sales' => 0,
+      ),
+      'sku_id' => 1710,
+      'sum' => 2610,
+      'checked' => false,
+    ),
+    7 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 418,
+      'title' => '【第2類医薬品】クレンジル 大容量 60カプセル',
+      'number' => 1,
+      'image' => '/uploads/20211026/3020709e30f67d2c10c54f25dbff646c.jpg',
+      'sku' => 
+      array (
+        'id' => 1713,
+        'difference' => 
+        array (
+          0 => '1',
+        ),
+        'price' => '2119',
+        'market_price' => '2661',
+        'stock' => 10000,
+        'state' => '0',
+        'weigh' => 1713,
+        'sn' => 'JP416168',
+        'sales' => 0,
+      ),
+      'sku_id' => 1713,
+      'sum' => 2119,
+      'checked' => false,
+    ),
+    8 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 417,
+      'title' => '[指定医薬部外品] キューピーコーワゴールドドリンク 50mL×10本',
+      'number' => 1,
+      'image' => '/uploads/20211026/865f4e94d93948bb33a9d314fbed62cf.jpg',
+      'sku' => 
+      array (
+        'id' => 1712,
+        'difference' => 
+        array (
+          0 => '1',
+        ),
+        'price' => '1903',
+        'market_price' => '2530',
+        'stock' => 10000,
+        'state' => '0',
+        'weigh' => 1712,
+        'sn' => 'JP600350',
+        'sales' => 0,
+      ),
+      'sku_id' => 1712,
+      'sum' => 1903,
+      'checked' => false,
+    ),
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000999s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000298s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Cart->synchro[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Cart.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:03+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/page/headlines
+[运行时间：0.092730s] [吞吐率：10.78req/s] [内存消耗：4,109.49kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002779s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000990s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001015s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000296s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.page',
+    2 => 'headlines',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/twshop/index',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001517s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000399s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Page->headlines[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Page.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:03+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/page/category?col=col-2-2_1&data=%5B%7B%22categoryId%22%3A%22589%22%2C%22textColor%22%3A%22text-red%22%2C%22describe%22%3A%22%22%2C%22tags%22%3A%22%E6%96%B0%E8%A3%BD%E5%93%81%22%7D%2C%7B%22categoryId%22%3A%22590%22%2C%22textColor%22%3A%22text-red%22%2C%22describe%22%3A%22%22%2C%22tags%22%3A%22%E7%89%B9%E5%88%A5%E3%82%AA%E3%83%95%E3%82%A1%E3%83%BC%22%7D%5D
+[运行时间：0.099473s] [吞吐率：10.05req/s] [内存消耗：4,115.55kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002799s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000983s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001018s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000287s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.page',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/twshop/index',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'col' => 'col-2-2_1',
+  'data' => '[{"categoryId":"589","textColor":"text-red","describe":"","tags":"新製品"},{"categoryId":"590","textColor":"text-red","describe":"","tags":"特別オファー"}]',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001490s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000364s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Page->category[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Page.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:03+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/likes?pages=index&page=1
+[运行时间：0.159404s] [吞吐率：6.27req/s] [内存消耗：4,430.27kb] [文件加载：154]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002798s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.001058s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001082s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000281s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/twshop/index',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'index',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001475s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000254s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:04+08:00 ] 125.79.81.163 GET www.fdadeal.com/api/wanlshop/product/likes?pages=cart&page=1
+[运行时间：0.146131s] [吞吐率：6.84req/s] [内存消耗：4,446.41kb] [文件加载：155]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002081s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000723s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000743s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000239s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/cart/cart',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'cart',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001012s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000274s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:06+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/order/getOrderGoodsList
+[运行时间：0.084475s] [吞吐率：11.84req/s] [内存消耗：4,401.21kb] [文件加载：151]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001870s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000680s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000698s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000209s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'getOrderGoodsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A293,%22number%22%3A1,%22sku_id%22%3A1308%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '43',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  0 => 
+  array (
+    'goods_id' => 293,
+    'number' => 1,
+    'sku_id' => 1308,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000992s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000246s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->getOrderGoodsList[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:13+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/order/getOrderGoodsList
+[运行时间：0.064423s] [吞吐率：15.52req/s] [内存消耗：4,277.36kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001955s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000665s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000683s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000229s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'getOrderGoodsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A413,%22number%22%3A1,%22sku_id%22%3A1708%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '43',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  0 => 
+  array (
+    'goods_id' => 413,
+    'number' => 1,
+    'sku_id' => 1708,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000986s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000269s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->getOrderGoodsList[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:29:18+08:00 ] 125.79.81.163 POST www.fdadeal.com/api/wanlshop/order/getOrderGoodsList
+[运行时间：0.066051s] [吞吐率：15.14req/s] [内存消耗：4,278.39kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001867s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000692s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000712s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000218s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'getOrderGoodsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A413,%22number%22%3A1,%22sku_id%22%3A1708%7D,%7B%22goods_id%22%3A414,%22number%22%3A1,%22sku_id%22%3A1709%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'content-length' => '85',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  0 => 
+  array (
+    'goods_id' => 413,
+    'number' => 1,
+    'sku_id' => 1708,
+  ),
+  1 => 
+  array (
+    'goods_id' => 414,
+    'number' => 1,
+    'sku_id' => 1709,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001039s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000291s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->getOrderGoodsList[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:30:32+08:00 ] 125.79.81.163 GET www.fdadeal.com/jp.php
+[运行时间：0.029911s] [吞吐率：33.43req/s] [内存消耗：2,997.18kb] [文件加载：131]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001899s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000724s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000745s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000214s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.fdadeal.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000980s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /www/wwwroot/www.fdadeal.com/public/../application/common/view/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000129s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:30:38+08:00 ] 125.79.81.163 GET www.fdadeal.com/jp.php/index/login?url=%2Fjp.php
+[运行时间：0.032222s] [吞吐率：31.03req/s] [内存消耗：3,516.45kb] [文件加载：135]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001916s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000690s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000707s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000209s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/jp.php',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'host' => 'www.fdadeal.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/jp.php',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001015s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000287s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/www.fdadeal.com/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /www/wwwroot/www.fdadeal.com/public/../application/admin/view/index/login.html [ array (
+  0 => 'breadcrumb',
+  1 => 'site',
+  2 => 'config',
+  3 => 'auth',
+  4 => 'admin',
+  5 => 'background',
+  6 => 'title',
+) ]
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000119s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:30:38+08:00 ] 125.79.81.163 GET www.fdadeal.com/index.php?s=/captcha
+[运行时间：0.024157s] [吞吐率：41.40req/s] [内存消耗：2,365.60kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001882s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000658s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000674s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000195s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'accept' => 'image/webp,image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'host' => 'www.fdadeal.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/www.fdadeal.com/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:30:41+08:00 ] 125.79.81.163 GET www.fdadeal.com/jp.php/ajax/lang?callback=define&controllername=index&lang=zh-cn&v=1654353038&v=1654353038
+[运行时间：0.031948s] [吞吐率：31.30req/s] [内存消耗：3,469.69kb] [文件加载：136]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001879s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000675s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000693s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000208s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'ajax',
+    2 => 'lang',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'define',
+  'controllername' => 'index',
+  'lang' => 'zh-cn',
+  'v' => '1654353038',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001288s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000255s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/admin/lang/zh-cn/ajax.php
+[ info ] [ RUN ] app\admin\controller\Ajax->lang[ /www/wwwroot/www.fdadeal.com/application/admin/controller/Ajax.php ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.000130s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:30:54+08:00 ] 125.79.81.163 POST www.fdadeal.com/jp.php/index/login?url=%2Fjp.php
+[运行时间：0.046383s] [吞吐率：21.56req/s] [内存消耗：4,289.22kb] [文件加载：143]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001927s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000697s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000715s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000225s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'content-length' => '98',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept-language' => 'zh-cn',
+  'origin' => 'https://www.fdadeal.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'url' => '/jp.php',
+  '__token__' => '0219e1d4bc4f1d45d47c604ffbe2e670',
+  'username' => 'admin',
+  'password' => '123456',
+  'captcha' => 'rhhu',
+  'keeplogin' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/admin/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000966s ]
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000283s ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/admin/lang/zh-cn/index.php
+[ info ] [ RUN ] app\admin\controller\Index->login[ /www/wwwroot/www.fdadeal.com/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run app\admin\behavior\AdminLog @app_end [ RunTime:0.014629s ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T22:30:54+08:00 ] 125.79.81.163 GET www.fdadeal.com/index.php?s=/captcha&r=0.9753873898188327
+[运行时间：0.024488s] [吞吐率：40.84req/s] [内存消耗：2,365.91kb] [文件加载：119]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001905s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000668s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000684s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000204s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN',
+  'accept' => 'image/webp,image/png,image/svg+xml,image/*;q=0.8,video/*;q=0.8,*/*;q=0.5',
+  'host' => 'www.fdadeal.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'r' => '0.9753873898188327',
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ /www/wwwroot/www.fdadeal.com/vendor/topthink/think-captcha/src/CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:18:55+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/token/check
+[运行时间：0.049955s] [吞吐率：20.02req/s] [内存消耗：3,949.39kb] [文件加载：141]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001903s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000671s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000691s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000199s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.token',
+    2 => 'check',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-cn',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000967s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000287s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Token->check[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Token.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:18:55+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/common/adverts?version=1.0.4
+[运行时间：0.084505s] [吞吐率：11.83req/s] [内存消耗：4,018.16kb] [文件加载：144]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002762s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.001038s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001065s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000309s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'adverts',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001561s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000262s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/common.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Common->adverts[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Common.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:18:55+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/chat/lists
+[运行时间：0.080203s] [吞吐率：12.47req/s] [内存消耗：4,276.63kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002532s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000978s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001002s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000204s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001448s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000338s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Chat->lists[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Chat.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:18:55+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/common/init?version=1.0.4
+[运行时间：0.136531s] [吞吐率：7.32req/s] [内存消耗：4,576.63kb] [文件加载：148]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000017s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002718s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000980s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001005s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000277s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.common',
+    2 => 'init',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'version' => '1.0.4',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001454s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000367s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/common.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Common->init[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Common.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:18:56+08:00 ] 106.122.94.145 POST www.fdadeal.com/api/wanlshop/cart/synchro
+[运行时间：0.144535s] [吞吐率：6.92req/s] [内存消耗：4,355.00kb] [文件加载：149]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001864s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000671s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000688s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000209s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.cart',
+    2 => 'synchro',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'content-length' => '5180',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  'cart' => 
+  array (
+    0 => 
+    array (
+      'shop_id' => 16,
+      'shop_name' => '家電量販店11',
+      'goods_id' => 293,
+      'title' => 'オーブンレンジ 18L フラットテーブル ヘルツフリー 自動メニュー18種類 YRP-F180V 電子レンジ 平面テーブル 一人暮らし 新生活 50Hz 60Hz 東日本 西日本',
+      'number' => 1,
+      'image' => '/uploads/20210729/e60033f5f32fb6710c36a2c6a1e05dba.png',
+      'sku' => 
+      array (
+        'id' => 1308,
+        'goods_id' => 293,
+        'difference' => 
+        array (
+          0 => 'ブラック',
+        ),
+        'price' => '14734',
+        'market_price' => '22277',
+        'wholesale_price' => '13054',
+        'stock' => 9958,
+        'weigh' => 1308,
+        'sn' => 'JP804679',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1637305306,
+        'updatetime' => 1637305306,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1308,
+      'sum' => '14734',
+      'checked' => false,
+    ),
+    1 => 
+    array (
+      'shop_id' => 14,
+      'shop_name' => '電子製品',
+      'goods_id' => 393,
+      'title' => 'NEW&OLDの雰囲気  RIDEZ ライズ Xヘルメット(クロスヘルメット) ネオクラシックフルフェイス SG規格 あすつく対応',
+      'number' => 1,
+      'image' => '/uploads/20210721/5b02c2c924420d8a128edff49a193775.png',
+      'sku' => 
+      array (
+        'id' => 1640,
+        'goods_id' => 393,
+        'difference' => 
+        array (
+          0 => 'Lサイズ',
+          1 => 'ホワイト',
+        ),
+        'price' => '16225',
+        'market_price' => '19730',
+        'wholesale_price' => '14538',
+        'stock' => 10000,
+        'weigh' => 1640,
+        'sn' => 'JP619943',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1637381141,
+        'updatetime' => 1637381141,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1640,
+      'sum' => '16225',
+      'checked' => false,
+    ),
+    2 => 
+    array (
+      'shop_id' => 14,
+      'shop_name' => '電子製品',
+      'goods_id' => 205,
+      'title' => 'Salvatore Marra サルバトーレマーラ 電波 ソーラー 腕時計 メンズ クロノグラフ クロノ 限定モデル SM15114 ギフト 10気圧防水',
+      'number' => 1,
+      'image' => '/uploads/20210809/a5800459629002c8c409cf8378da2dfe.png',
+      'sku' => 
+      array (
+        'id' => 676,
+        'goods_id' => 205,
+        'difference' => 
+        array (
+          0 => 'ブラックPG×ブラウンレザー',
+        ),
+        'price' => '24828',
+        'market_price' => '32326',
+        'wholesale_price' => '22072',
+        'stock' => 10000,
+        'weigh' => 676,
+        'sn' => 'JP554355',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1637303299,
+        'updatetime' => 1637303299,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 676,
+      'sum' => '24828',
+      'checked' => false,
+    ),
+    3 => 
+    array (
+      'shop_id' => 15,
+      'shop_name' => '松原香織11',
+      'goods_id' => 271,
+      'title' => 'ネクタイ シルク セット 白 黒 フォーマル 冠婚葬祭 プレゼント ギフト',
+      'number' => 1,
+      'image' => '/uploads/20210716/872bfbb5679b3ed03065b1ee2277743f.png',
+      'sku' => 
+      array (
+        'id' => 1178,
+        'goods_id' => 271,
+        'difference' => 
+        array (
+          0 => '単一の製品',
+        ),
+        'price' => '2163',
+        'market_price' => '3441',
+        'wholesale_price' => '1940',
+        'stock' => 9994,
+        'weigh' => 1178,
+        'sn' => 'JP980524',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1637305195,
+        'updatetime' => 1637305195,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1178,
+      'sum' => '2163',
+      'checked' => false,
+    ),
+    4 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 413,
+      'title' => 'サボン ボディスクラブ マンゴー キウイ 600g サボン SABON',
+      'number' => 1,
+      'image' => '/uploads/20211103/47e8fb9fbd2b2bcd69bf4e8a97f59d19.jpg',
+      'sku' => 
+      array (
+        'id' => 1708,
+        'goods_id' => 413,
+        'difference' => 
+        array (
+          0 => '13',
+        ),
+        'price' => '6092',
+        'market_price' => '9144',
+        'wholesale_price' => '5373',
+        'stock' => 10000,
+        'weigh' => 1708,
+        'sn' => 'JP700841',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1654177142,
+        'updatetime' => 1654177142,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1708,
+      'sum' => '6092',
+      'checked' => false,
+    ),
+    5 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 414,
+      'title' => 'アセチルＬ‐カルニチン(500mg)　60カプセル 海外直送品',
+      'number' => 1,
+      'image' => '/uploads/20211103/f5f7aa3a55b04d76b7a038aebf56f307.jpg',
+      'sku' => 
+      array (
+        'id' => 1709,
+        'goods_id' => 414,
+        'difference' => 
+        array (
+          0 => '10',
+        ),
+        'price' => '2344',
+        'market_price' => '3082',
+        'wholesale_price' => '2072',
+        'stock' => 10000,
+        'weigh' => 1709,
+        'sn' => 'JP655067',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1654178084,
+        'updatetime' => 1654178084,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1709,
+      'sum' => '2344',
+      'checked' => false,
+    ),
+    6 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 415,
+      'title' => 'Nutricost オオバコ殻 500mg、1瓶分当たり - 500カプセル、1食分あたり - 3カプセル (1500mg)、非GMO、グルテンフリー',
+      'number' => 1,
+      'image' => '/uploads/20211027/4edb3a3336507106cc82fff12b3191d8.jpg',
+      'sku' => 
+      array (
+        'id' => 1710,
+        'goods_id' => 415,
+        'difference' => 
+        array (
+          0 => '1',
+        ),
+        'price' => '2610',
+        'market_price' => '3450',
+        'wholesale_price' => '2333',
+        'stock' => 10000,
+        'weigh' => 1710,
+        'sn' => 'JP685325',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1654178113,
+        'updatetime' => 1654178113,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1710,
+      'sum' => '2610',
+      'checked' => false,
+    ),
+    7 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 418,
+      'title' => '【第2類医薬品】クレンジル 大容量 60カプセル',
+      'number' => 1,
+      'image' => '/uploads/20211026/3020709e30f67d2c10c54f25dbff646c.jpg',
+      'sku' => 
+      array (
+        'id' => 1713,
+        'goods_id' => 418,
+        'difference' => 
+        array (
+          0 => '1',
+        ),
+        'price' => '2119',
+        'market_price' => '2661',
+        'wholesale_price' => '1875',
+        'stock' => 10000,
+        'weigh' => 1713,
+        'sn' => 'JP416168',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1654178243,
+        'updatetime' => 1654178243,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1713,
+      'sum' => '2119',
+      'checked' => false,
+    ),
+    8 => 
+    array (
+      'shop_id' => 27,
+      'shop_name' => 'CasosnBC',
+      'goods_id' => 417,
+      'title' => '[指定医薬部外品] キューピーコーワゴールドドリンク 50mL×10本',
+      'number' => 1,
+      'image' => '/uploads/20211026/865f4e94d93948bb33a9d314fbed62cf.jpg',
+      'sku' => 
+      array (
+        'id' => 1712,
+        'goods_id' => 417,
+        'difference' => 
+        array (
+          0 => '1',
+        ),
+        'price' => '1903',
+        'market_price' => '2530',
+        'wholesale_price' => '1680',
+        'stock' => 10000,
+        'weigh' => 1712,
+        'sn' => 'JP600350',
+        'sales' => 0,
+        'state' => '0',
+        'createtime' => 1654178220,
+        'updatetime' => 1654178220,
+        'deletetime' => NULL,
+        'status' => 'normal',
+      ),
+      'sku_id' => 1712,
+      'sum' => '1903',
+      'checked' => false,
+    ),
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001063s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000245s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Cart->synchro[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Cart.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:18:56+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/chat/state
+[运行时间：0.050706s] [吞吐率：19.72req/s] [内存消耗：4,300.06kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000013s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001948s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000652s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000669s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000200s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'state',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001045s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000253s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Chat->state[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Chat.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:19:01+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/page/headlines
+[运行时间：0.086140s] [吞吐率：11.61req/s] [内存消耗：4,109.71kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002864s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.001007s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001036s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000281s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.page',
+    2 => 'headlines',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/twshop/index',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001498s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000266s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Page->headlines[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Page.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:19:01+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/page/category?col=col-2-2_1&data=%5B%7B%22categoryId%22%3A%22589%22%2C%22textColor%22%3A%22text-red%22%2C%22describe%22%3A%22%22%2C%22tags%22%3A%22%E6%96%B0%E8%A3%BD%E5%93%81%22%7D%2C%7B%22categoryId%22%3A%22590%22%2C%22textColor%22%3A%22text-red%22%2C%22describe%22%3A%22%22%2C%22tags%22%3A%22%E7%89%B9%E5%88%A5%E3%82%AA%E3%83%95%E3%82%A1%E3%83%BC%22%7D%5D
+[运行时间：0.106573s] [吞吐率：9.38req/s] [内存消耗：4,115.77kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002932s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000974s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000999s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000304s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.page',
+    2 => 'category',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/twshop/index',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'col' => 'col-2-2_1',
+  'data' => '[{"categoryId":"589","textColor":"text-red","describe":"","tags":"新製品"},{"categoryId":"590","textColor":"text-red","describe":"","tags":"特別オファー"}]',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001566s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000271s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Page->category[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Page.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:19:01+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/product/likes?pages=index&page=1
+[运行时间：0.144261s] [吞吐率：6.93req/s] [内存消耗：4,430.98kb] [文件加载：154]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002565s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000982s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001007s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000289s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/twshop/index',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'index',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001505s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000420s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:19:08+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/product/likes?pages=cart&page=1
+[运行时间：0.147511s] [吞吐率：6.78req/s] [内存消耗：4,447.01kb] [文件加载：155]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000015s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001871s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000704s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000720s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000219s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.product',
+    2 => 'likes',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/cart/cart',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'pages' => 'cart',
+  'page' => '1',
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001040s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000316s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn/wanlshop/product.php
+[ info ] [ RUN ] app\api\controller\wanlshop\Product->likes[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Product.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:19:12+08:00 ] 106.122.94.145 POST www.fdadeal.com/api/wanlshop/order/getOrderGoodsList
+[运行时间：0.065437s] [吞吐率：15.28req/s] [内存消耗：4,277.70kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000018s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001877s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000662s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000683s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000195s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'getOrderGoodsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A413,%22number%22%3A1,%22sku_id%22%3A1708%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'content-length' => '43',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  0 => 
+  array (
+    'goods_id' => 413,
+    'number' => 1,
+    'sku_id' => 1708,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001058s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000267s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->getOrderGoodsList[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:19:17+08:00 ] 106.122.94.145 POST www.fdadeal.com/api/wanlshop/order/getOrderGoodsList
+[运行时间：0.067683s] [吞吐率：14.77req/s] [内存消耗：4,277.70kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001936s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000671s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000688s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000205s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.order',
+    2 => 'getOrderGoodsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'referer' => 'https://www.fdadeal.com/pages/user/order/addorder?type=cart&data=%5B%7B%22goods_id%22%3A414,%22number%22%3A1,%22sku_id%22%3A1709%7D%5D',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'content-length' => '43',
+  'origin' => 'https://www.fdadeal.com',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => '*/*',
+  'content-type' => 'application/json;charset=UTF-8',
+  'host' => 'www.fdadeal.com',
+)
+[ info ] [ PARAM ] array (
+  0 => 
+  array (
+    'goods_id' => 414,
+    'number' => 1,
+    'sku_id' => 1709,
+  ),
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001010s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000264s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Order->getOrderGoodsList[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Order.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:34:27+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/chat/state
+[运行时间：0.052054s] [吞吐率：19.21req/s] [内存消耗：4,300.08kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000014s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.001902s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000657s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000677s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000199s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'state',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/cart/cart',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000998s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000279s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Chat->state[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Chat.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:35:05+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/chat/state
+[运行时间：0.065024s] [吞吐率：15.38req/s] [内存消耗：4,300.08kb] [文件加载：146]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000019s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002755s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000987s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001013s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000298s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'state',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/cart/cart',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001704s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000288s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Chat->state[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Chat.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-06-04T23:35:05+08:00 ] 106.122.94.145 GET www.fdadeal.com/api/wanlshop/chat/lists
+[运行时间：0.069503s] [吞吐率：14.39req/s] [内存消耗：4,276.65kb] [文件加载：145]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000016s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002736s ]
+[ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000979s ]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001004s ]
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/thinkphp/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @app_dispatch [ RunTime:0.000280s ]
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'api',
+    1 => 'wanlshop.chat',
+    2 => 'lists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'think_var=zh-cn; PHPSESSID=lcsp2v48p4ls4nk2tin94ojoiq; keeplogin=1%7C86400%7C1654275870%7Cac29010d3b9e27aabf3b2337deffa811; token=3957b7bd-1612-4652-a033-804bd21c088a; uid=258',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 14_7_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/4G Language/zh_CN',
+  'token' => '33194949-cb32-4f49-bac6-94364f9effd4',
+  'referer' => 'https://www.fdadeal.com/pages/cart/cart',
+  'content-type' => 'application/json;charset=UTF-8',
+  'accept' => '*/*',
+  'host' => 'www.fdadeal.com',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] /www/wwwroot/www.fdadeal.com/public/../application/api/lang/zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001547s ]
+[ info ] [ TOKEN ] INIT Mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @upload_config_init [ RunTime:0.000299s ]
+[ info ] [ RUN ] app\api\controller\wanlshop\Chat->lists[ /www/wwwroot/www.fdadeal.com/application/api/controller/wanlshop/Chat.php ]
+[ info ] [ LOG ] INIT File

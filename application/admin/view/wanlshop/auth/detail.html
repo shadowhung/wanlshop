@@ -1,0 +1,86 @@
+<table class="table table-striped">
+	<tbody>
+		<tr>
+			<td>{:__('State')}</td>
+			<td>
+				{switch name="row.state"}
+					{case value="0"}<span class="label label-info">{$row.state_text}</span>{/case}
+				    {case value="1"}<span class="label label-default">{$row.state_text}</span>{/case}
+					{case value="2"}<span class="label label-danger">{$row.state_text}</span>{/case}
+				{/switch}
+			</td>
+		</tr>
+		<tr>
+			<td>{:__('Name')}</td>
+			<td>{$row.name|htmlentities}</td>
+		</tr>
+		<tr>
+			<td>{:__('Number')}</td>
+			<td>{$row.number|htmlentities}</td>
+		</tr>
+		
+		<tr>
+			<td>{:__('Image')}</td>
+			<td><a href="{$row.image|cdnurl|htmlentities}" target="_blank"><img class="img-sm img-center" src="{$row.image|cdnurl|htmlentities}"></a></td>
+		</tr>
+		<tr>
+			<td>{:__('Mobile')}</td>
+			<td>{$row.mobile|htmlentities}</td>
+		</tr>
+		<tr>
+			<td>{:__('Wechat')}</td>
+			<td>{$row.wechat|htmlentities}</td>
+		</tr>
+		<tr>
+			<td>{:__('Shopname')}</td>
+			<td>{$row.shopname|htmlentities}</td>
+		</tr>
+		
+		<tr>
+			<td>{:__('Avatar')}</td>
+			<td><a href="{$row.avatar|cdnurl|htmlentities}" target="_blank"><img class="img-sm img-center" src="{$row.avatar|cdnurl|htmlentities}"></a></td>
+		</tr>
+		{eq name="row.state" value="2"}
+		<tr>
+			<td>{:__('Trademark')}</td>
+			<td><a href="{$row.trademark|cdnurl|htmlentities}" target="_blank"><img class="img-sm img-center" src="{$row.trademark|cdnurl|htmlentities}"></a></td>
+		</tr>
+		{/eq}
+		<tr>
+			<td>{:__('Bio')}</td>
+			<td>{$row.bio|htmlentities}</td>
+		</tr>
+		<tr>
+			<td>{:__('Content')}</td>
+			<td>{$row.content|htmlentities}</td>
+		</tr>
+		<tr>
+			<td>{:__('City')}</td>
+			<td>{$row.city|htmlentities}</td>
+		</tr>
+		<tr>
+			<td>{:__('当前状态')}</td>
+			<td>
+				{switch name="row.verify"}
+					{case value="0"}<span class="label label-info">{$row.verify_text}</span>{/case}
+				    {case value="1"}<span class="label label-primary">{$row.verify_text}</span>{/case}
+					{case value="2"}<span class="label label-warning">{$row.verify_text}</span>{/case}
+					{case value="3"}<span class="label label-success">{$row.verify_text}</span>{/case}
+					{case value="4"}<span class="label label-danger">{$row.verify_text}</span>{/case}
+				{/switch}
+			</td>
+		</tr>
+		{eq name="row.verify" value="4"}
+		<tr>
+			<td>{:__('理由')}</td>
+			<td>{$row.refuse|htmlentities}</td>
+		</tr>
+		{/eq}
+	</tbody>
+</table> 
+<div class="form-group layer-footer">
+	<label class="control-label col-xs-12 col-sm-2"></label>
+	<div class="col-xs-12 col-sm-8">
+		<button type="reset" class="btn btn-primary btn-embossed btn-close" onclick="Layer.closeAll();">{:__('Close')}</button>
+	</div>
+</div>

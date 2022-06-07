@@ -1,0 +1,7 @@
+投放模块:
+
+open=开屏广告,
+page=自定义页面广告,
+category=类目广告,
+first=首次欢迎广告,
+other=其他广告

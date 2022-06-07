@@ -1,0 +1,782 @@
+<!-- 
+	版本声明：
+	* 由于 WanlLive、WanlChat、以下代码开发难度较大，已将相关代码独立申请著作权，受法律保护！！！
+	* 无论你购买任何版本，均不允许复制到第三方直接、间接使用，且也不能以学习为目的参考和借鉴！！
+	* 你仅有在 WanlShop 中使用、二次开发权利，否则我们会追究法律责任 
+	* 福建度虎科技有限公司 @www.i36k.com
+-->
+<template>
+	<view class="page">
+		<!-- #ifndef H5 -->
+		<live-pusher
+			id="livePusher"
+			ref="livePusher"
+			class="livePusher"
+			:url="liveData.pushurl"
+			:style="{width: screenWidth,height: screenHeight}"
+			mode="SD"
+			aspect="9:16"
+			@statechange="statechange"
+			@netstatus="netstatus"
+			@error="error"
+		></live-pusher>
+		<wanl-live-header :statusBarHeight="statusBarHeight" :userinfo="shopData" :state="state" :online="liveStatis.online" :isFollow="true"/>
+		<!-- 准备开始 -->
+		<view class="wanl-live-ready" :style="{top: statusBarHeight + 80 +'px', bottom: statusFootHeight + 100 +'px'}" v-if="state == 0">
+			<view class="wanl-live-ready-content">
+				<view class="wanl-live-ready-content-img" @tap="chooseImg()">
+					<image class="wanl-live-ready-content-img-image" :src="stcOss(liveReady.image)" mode="aspectFill"></image>
+					<view class="wanl-live-ready-content-tag">
+						<text class="wanl-live-ready-content-tag-text">选择封面</text>
+					</view>
+				</view>
+				<view class="wanl-live-ready-content-title">
+					<textarea class="wanl-live-ready-content-title-input" v-model="liveReady.content"/>
+				</view>
+			</view>
+			<view class="wanl-live-ready-btn" @tap="startLive">
+				<view class="wanl-live-ready-btn-bg">
+					<text class="wanl-live-ready-btn-text">开始直播</text>
+				</view>
+			</view>
+		</view>
+		<!-- 即时消息 -->
+		<block v-else>
+			<wanl-live-comment :statusFootHeight="statusFootHeight" :state="state" :liveid="liveData.liveid"/>
+		</block>
+		<!-- 底部 -->
+		<view class="wanl-live-footer" :style="{bottom:statusFootHeight +'px'}">
+			<view class="wanl-live-footer-left">
+				<!-- 商品列表 -->
+				<view class="wanl-live-footer-bottom" @tap="upGoodsList">
+					<image class="wanl-live-footer-bottom-img" src="/static/images/live/list.png" mode=""></image>
+				</view>
+				<!-- 同步商品数据 -->
+				<view class="wanl-live-footer-bottom" @tap="cloud">
+					<image class="wanl-live-footer-bottom-img" src="/static/images/live/flip.png" mode=""></image>
+				</view>
+				<!-- 切换摄像头 -->
+				<view class="wanl-live-footer-bottom" @tap="switchCamera">
+					<image class="wanl-live-footer-bottom-img" src="/static/images/live/synchro.png" mode=""></image>
+				</view>
+			</view>
+			
+			<!-- 右侧 -->
+			<view class="wanl-live-footer-right">
+				<view class="wanl-live-footer-bottom_goods" @tap="upGoods">
+					<image class="wanl-live-footer-bottom_goods-btn" src="/static/images/live/shop.png" mode=""></image>
+					<view class="wanl-live-footer-bottom_goods-tag" v-if="goodsSelected.length > 0">
+						<text class="wanl-live-footer-bottom_goods-tag-text">{{numFormat(goodsSelected.length)}}</text>
+					</view>
+				</view>
+				<view class="wanl-live-footer-bottom_praise" @tap="onLike">
+					<image class="wanl-live-footer-bottom_praise-btn" src="/static/images/live/like.png" mode=""></image>
+					<view class="wanl-live-footer-bottom_praise-tag" v-if="liveStatis.like > 0">
+						<text class="wanl-live-footer-bottom_praise-tag-text">{{numFormat(liveStatis.like)}}</text>
+					</view>
+				</view>
+			</view>
+		</view>
+		<!-- 弹出层 -->
+		<uni-popup ref="listPopup" type="bottom">
+			<view class="wanl-live-popup">
+				<view class="wanl-live-popup-title">
+					<text class="wanl-live-popup-title-text">选择直播商品</text>
+				</view>
+				
+				<scroll-view scroll-y="true" class="wanl-live-popup-list">
+					<view class="wanl-live-popup-list-item" v-for="(item, index) in goodsData" :key="item.id" @tap="addGoods(index)">
+						<view class="wanl-live-popup-list-item-img">
+							<image :src="stcOss(item.image)" class="wanl-live-popup-list-item-image"></image>
+						</view>
+						<view class="wanl-live-popup-list-item-subject">
+							<view class="wanl-live-popup-list-item-subject-title">
+								<text class="wanl-live-popup-list-item-subject-title-text">{{item.title}}</text>
+							</view>
+							<view class="wanl-live-popup-list-item-subject-operation">
+								<view class="wanl-live-popup-list-item-subject-operation-price">
+									<text class="wanl-live-popup-list-item-subject-operation-price-text">￥{{item.price}}</text>
+								</view>
+								<view class="wanl-live-popup-list-item-subject-operation-button">
+									<view class="wanl-live-popup-list-item-subject-operation-button-shopping">
+										<image v-if="item.choose" src="/static/images/live/choice_on.png" class="wanl-live-popup-list-item-subject-operation-button-shopping-img" mode=""></image>
+										<image v-else src="/static/images/live/choice.png" class="wanl-live-popup-list-item-subject-operation-button-shopping-img" mode=""></image>
+									</view>
+								</view>
+							</view>
+						</view>
+					</view>
+				</scroll-view>
+				<!-- 多终端兼容性 -->
+				<view :style="{height: statusFootHeight + 'px'}"></view>
+			</view>
+		</uni-popup>
+		<!-- 选择完成的商品 -->
+		<uni-popup ref="goodsPopup" type="bottom">
+			<view class="wanl-live-popup">
+				<view class="wanl-live-popup-title">
+					<text class="wanl-live-popup-title-text">共{{goodsSelected.length}}件商品（预览）</text>
+				</view>
+				
+				<scroll-view scroll-y="true" class="wanl-live-popup-list">
+					<view class="wanl-live-popup-list-item" v-for="(item, index) in goodsSelected" :key="item.id">
+						<view class="wanl-live-popup-list-item-img">
+							<image :src="stcOss(item.image)" class="wanl-live-popup-list-item-image"></image>
+							<view class="wanl-live-popup-list-item-img-tag">
+								<text class="wanl-live-popup-list-item-img-tag-text">{{index+1}}</text>
+							</view>
+						</view>
+						<view class="wanl-live-popup-list-item-subject">
+							<view class="wanl-live-popup-list-item-subject-title">
+								<text class="wanl-live-popup-list-item-subject-title-text">{{item.title}}</text>
+							</view>
+							<view class="wanl-live-popup-list-item-subject-operation">
+								<view class="wanl-live-popup-list-item-subject-operation-price">
+									<text class="wanl-live-popup-list-item-subject-operation-price-text">￥{{item.price}}</text>
+								</view>
+								<view class="wanl-live-popup-list-item-subject-operation-button" @tap="delGoods(item.id)">
+									<view class="wanl-live-popup-list-item-subject-operation-button-shopping">
+										<image src="/static/images/live/del.png" class="wanl-live-popup-list-item-subject-operation-button-shopping-img" mode=""></image>
+									</view>
+								</view>
+							</view>
+						</view>
+					</view>
+				</scroll-view>
+				<!-- 多终端兼容性 -->
+				<view :style="{height: statusFootHeight + 'px'}"></view>
+			</view>
+		</uni-popup>
+		<!-- #endif -->
+	</view>
+</template>
+
+<script>
+var system = uni.getSystemInfoSync();
+import wanlLiveHeader from '@/components/wanl-live/header';
+import wanlLiveComment from '@/components/wanl-live/comment';
+export default {
+	components: {
+		wanlLiveHeader,
+		wanlLiveComment
+	},
+	data() {
+		return {
+			statusBarHeight: system.safeAreaInsets.top,
+			statusFootHeight: system.safeAreaInsets.bottom,
+			screenHeight: system.screenHeight + 'px',
+			screenWidth: system.screenWidth + 'px',
+			state: 0,
+			publish: true, // 推流状态
+			startTimer: null,
+			liveReady: {
+				content: '哇~直播间上新啦！',
+				image: '',
+				goods_ids: ''
+			},
+			liveStatis: {
+				online: 0,
+				like: 0
+			},
+			liveData: {
+				id: 0,
+				liveid: ''
+			},
+			shopData: {},
+			goodsData: [],
+			goodsSelected: []
+		};
+	},
+	// 监听页面卸载
+	onUnload() {
+		this.publish = false;
+		this.pageUnload();
+	},
+	// 监听返回
+	onBackPress() {
+		this.publish = false;
+		if (this.liveData.id == 0) {
+			this.$wanlshop.back(1);
+		}else{
+			uni.showModal({
+			    title: '提示',
+			    content: '您确定要结束直播吗？',
+			    success: (res) =>{
+			        if (res.confirm) {
+						this.stop();
+			            uni.reLaunch({
+			                url: `/pages/page/end_live?id=${this.liveData.id}`
+			            });
+			        }
+			    }
+			});
+		}
+	},
+	onReady() {
+		// 获取直播权限
+		this.loadData();
+		// 注意：需要在onReady中 或 onLoad 延时
+		setTimeout(() => {
+			this.context = uni.createLivePusherContext('livePusher', this);
+			this.context.startPreview();
+		}, 100);
+		// 监听直播消息
+		uni.$on('onLive', this.onSocketLive);
+	},
+	methods: {
+		async loadData(){
+			uni.request({
+				url: `${this.$store.state.common.appUrl.api}/wanlshop/live/live`,
+				header: { token: this.$store.state.user.token },
+				success: res => {
+					if (res.data.code == 1) {
+						this.shopData = res.data.data;
+					}else if(res.data.code == 401){
+						uni.navigateTo({
+						    url: '/pages/user/auth/auth'
+						});
+					}else{
+						uni.showToast({
+						    title: res.data.msg,
+						    icon: 'none'
+						});
+					}
+				}
+			});
+		},
+		// 接受直播群组消息
+		onSocketLive(msg) {
+			if(this.liveData.liveid == msg.group){
+				if(msg.message.type == 'publish'){ // 推流成功
+					uni.hideLoading();
+					clearTimeout(this.startTimer);
+				}else if(msg.message.type == 'publish_done'){ // 中断
+					// 如果不是手动关闭，自动恢复直播推流
+					if (this.publish) {
+						let intervalID = setInterval(() => {
+							this.$wanlshop.msg('网络状态不佳');
+							this.context.resume({
+							    success: (a) => {
+									clearInterval(intervalID);
+							    }
+							});
+						}, 1500);
+					}
+				}else if(msg.message.type == 'ban'){ // 封禁
+					//封禁直播跳转结束页
+				}
+				this.liveStatis.like = msg.like;
+				this.liveStatis.online = msg.online;
+			}
+		},
+		// 监听页面是否卸载，只卸载已播放
+		pageUnload(){
+			if (this.state == 1) {
+				uni.request({
+					url: `${this.$store.state.common.appUrl.api}/wanlshop/live/unload`,
+					data: { 
+						group: this.liveData.liveid,
+						type: 'rtmp'
+					},
+					header: { token: this.$store.state.user.token }
+				});
+			}
+		},
+		async upGoodsList(){
+			if (this.goodsData.length == 0) {
+				uni.request({
+					url: `${this.$store.state.common.appUrl.api}/wanlshop/live/goods`,
+					header: { token: this.$store.state.user.token },
+					success: res => {
+						this.goodsData = res.data.data;
+					}
+				});
+			}
+			this.$refs.listPopup.open();
+		},
+		upGoods(){
+			this.$refs.goodsPopup.open();
+		},
+		// 上传封面
+		async chooseImg() { //选择图片
+		    uni.chooseImage({
+		        sourceType: ["camera", "album"],
+		        sizeType: "compressed",
+		        count: 1,
+		        success: res => {
+					let token = this.$store.state.user.token;
+					uni.request({
+						url: this.$store.state.common.appUrl.api + '/wanlshop/common/uploadData',
+						header: { token: token },
+						success: updata => {
+							uni.uploadFile({
+							    url: updata.data.data.uploadurl,
+							    filePath: res.tempFilePaths[0],
+								formData: updata.data.data.multipart,
+								header: { token: token },
+							    name: 'file',
+							    success: data => {
+									this.liveReady.image = JSON.parse(data.data).data.fullurl;
+							    }
+							});
+						}
+					});
+		        }
+		    });
+		},
+		stcOss(url){
+			let oss = this.$store.state.common.appUrl.oss;
+			let image = '';
+			if (url) {
+				if((/^(http|https):\/\/.+/.test(url))){
+					image = url;
+				}else{
+					image = oss + url;
+				}
+			}else{
+				image = oss + '/assets/addons/wanlshop/img/common/img_default3x.png';
+			}
+			return image;
+		},
+		addGoods(index){
+			this.goodsData[index].choose = !this.goodsData[index].choose;
+			this.formatGoods();
+		},
+		delGoods(id){
+			this.goodsData.forEach((item, index, arr) => {
+				if (item.id == id) {
+					item.choose = false;
+				}
+			});
+			this.formatGoods();
+		},
+		formatGoods(){
+			var list = [];
+			var ids = [];
+			this.goodsData.forEach((item, index, arr) => {
+				if (item.choose) {
+					list.push(item);
+					ids.push(item.id);
+				}
+			});
+			this.goodsSelected = list;
+			this.liveReady.goods_ids = ids;
+		},
+		async cloud(){
+			if (this.state == 0) {
+				uni.showToast({
+				    title: '首次不需要同步，点击直播即可',
+				    icon: 'none'
+				});
+				return false; 
+			}
+			if (this.goodsSelected.length == 0){
+				uni.showToast({
+				    title: '商品至少选一个',
+				    icon: 'none'
+				});
+				this.upGoodsList();
+				return false; 
+			}
+			uni.showModal({
+			    title: '同步商品列表',
+			    content: '将把右侧选择的商品同步到直播间',
+			    success: res => {
+			        if (res.confirm) {
+			            uni.request({
+							url: `${this.$store.state.common.appUrl.api}/wanlshop/live/cloud`,
+			            	data: {
+								id: this.liveData.id,
+								goods_ids: this.liveReady.goods_ids
+							},
+			            	header: { token: this.$store.state.user.token },
+			            	success: res => {
+								if (res.data.code != 1) {
+									uni.showToast({
+									    title: res.data.msg,
+									    icon: 'none'
+									});
+								}
+			            	}
+			            });
+			        }
+			    }
+			});
+		},
+		// 开始推流
+		async startLive() {
+			var image = this.liveReady.image;
+			var content = this.liveReady.content;
+			if (this.goodsSelected.length < 2) {
+				uni.showToast({
+				    title: '直播商品至少2件',
+				    icon: 'none'
+				});
+				this.upGoodsList();
+			}else if(!image){
+				uni.showToast({
+				    title: '直播封面不能为空',
+				    icon: 'none'
+				});
+			}else if(!content){
+				uni.showToast({
+				    title: '直播标题不能为空',
+				    icon: 'none'
+				});
+			}else{
+				uni.showLoading({
+				    title: '直播启动中'
+				});
+				this.startTimer = setTimeout(() => {
+					uni.hideLoading();
+					this.stop();
+					this.$wanlshop.msg('回执超时，请检查直播配置');
+				}, 10000);
+				uni.request({
+					url: `${this.$store.state.common.appUrl.api}/wanlshop/live/startLive`,
+					method: 'POST',
+					data: this.liveReady,
+					header: { token: this.$store.state.user.token },
+					success: res => {
+						// 储存返回详情
+						if (res.data.code == 0) {
+							uni.showToast({
+							    title: res.data.msg,
+							    icon: 'none'
+							});
+						}else{
+							this.liveData = res.data.data;
+							this.state = 1;
+							setTimeout(() => {
+								this.context.start({
+									success: e => {}
+								});
+							}, 100);
+							
+						}
+					}
+				});
+			}
+		},
+		onLike(){
+			if (this.state == 1) {
+				this.liveStatis.like += 1;
+				uni.request({
+					url: `${this.$store.state.common.appUrl.api}/wanlshop/live/like`,
+					data: {
+						id: this.liveData.id,
+					},
+					header: { token: this.$store.state.user.token }
+				});
+			}else{
+				uni.showToast({
+				    title: '直播还没有开始',
+				    icon: 'none'
+				});
+			}
+		},
+		// 切换摄像头
+		switchCamera() {
+			this.context.switchCamera();
+		},
+		// 数字格式化
+		numFormat(num){
+			return num > 9999 ? ((num-num%1000)/10000 + '万') : num
+		},
+		statechange(e) {
+			console.log('statechange:' + JSON.stringify(e));
+		},
+		netstatus(e) {
+			console.log('netstatus:' + JSON.stringify(e));
+		},
+		error(e) {
+			console.log('error:' + JSON.stringify(e));
+		},
+		stop() {
+			this.context.stop({
+				success: a => {
+					console.log(JSON.stringify(a));
+				}
+			});
+		}
+	}
+};
+</script>
+
+<style scoped>
+.page {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #000000;
+}
+.wanl-live-ready{
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding-left: 40rpx;
+	padding-right: 40rpx;
+	justify-content: space-between;
+}
+
+	.wanl-live-ready-btn{
+		align-items: center;
+	}
+		.wanl-live-ready-btn-bg{
+			background-color: #f72b36;
+			align-items: center;
+			justify-content: center;
+			border-radius: 100px;
+			height: 92rpx;
+			width: 500rpx;
+		}
+			.wanl-live-ready-btn-text{
+				color: #ffffff;
+				font-size: 32rpx;
+				font-weight: 500;
+			}
+	.wanl-live-ready-content{
+		background-color: rgba(0, 0, 0, 0.1);
+		border-radius: 18rpx;
+		padding: 25rpx;
+		flex-direction: row;
+	}	
+		.wanl-live-ready-content-img{
+			position: relative;
+			height: 200rpx;
+			width: 200rpx;
+			border-radius: 18rpx;
+			background-color: #f7f7f7;
+			overflow: hidden;
+			margin-right: 20rpx;
+		}
+			.wanl-live-ready-content-img-image{
+				height: 200rpx;
+				width: 200rpx;
+			}
+				.wanl-live-ready-content-tag{
+					position: absolute;
+					align-items: center;
+					justify-content: center;
+					background-color: rgba(0, 0, 0, 0.2);
+					height: 50rpx;
+					bottom: 0;
+					left: 0;
+					right: 0;
+				}
+				.wanl-live-ready-content-tag-text{
+					color: #ffffff;
+					font-size: 26rpx;
+				}
+		.wanl-live-ready-content-title{
+			flex: 1;
+		}
+			.wanl-live-ready-content-title-input{
+				flex: 1;
+				height: 200rpx;
+				color: #ffffff;
+				font-size: 30rpx;
+			}
+			
+	.wanl-live-footer {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		align-items: center;
+		justify-content: space-between;
+		flex-direction: row;
+		padding-top: 18rpx;
+		padding-bottom: 18rpx;
+		padding-left: 25rpx;
+		padding-right: 25rpx;
+	}
+	
+	/* POPUP */
+	.wanl-live-popup{
+		background-color: #ffffff;
+		border-top-left-radius: 18rpx;
+		border-top-right-radius: 18rpx;
+		overflow: hidden;
+	}
+		.wanl-live-popup-title{
+			position: relative;
+			align-items: center;
+			margin-top: 30rpx;
+			margin-bottom: 40rpx;
+		}
+		.wanl-live-popup-title-text{
+			font-size: 30rpx;
+			color: #333;
+			font-weight: 500;
+		}
+		
+	.wanl-live-popup-list{
+		padding-left: 25rpx;
+		padding-right: 25rpx;
+		height: 800rpx;
+	}	
+		.wanl-live-popup-list-item{
+			flex-direction: row;
+			margin-bottom: 25rpx;
+		}
+			.wanl-live-popup-list-item-img{
+				position: relative;
+				width: 180rpx;
+				height: 180rpx;
+				border-top-left-radius: 12rpx;
+				border-top-right-radius: 12rpx;
+				border-bottom-right-radius: 12rpx;
+				border-bottom-left-radius: 12rpx;
+				overflow: hidden;
+				background-color: #f7f7f7;
+				margin-right: 20rpx;
+			}
+				.wanl-live-popup-list-item-image{
+					width: 180rpx;
+					height: 180rpx;
+				}
+				.wanl-live-popup-list-item-img-tag{
+					position: absolute;
+					align-items: center;
+					justify-content: center;
+					top: 0;
+					left: 0;
+					background-color: rgba(50,50,50,.5);
+					padding-left: 14rpx;
+					padding-right: 14rpx;
+					padding-top: 2rpx;
+					padding-bottom: 2rpx;
+					border-bottom-right-radius: 12rpx;
+				}
+				
+				.wanl-live-popup-list-item-img-tag-text{
+					color: #ffffff;
+					font-size: 24rpx;
+				}
+				
+			.wanl-live-popup-list-item-subject{
+				flex: 1;
+				justify-content: space-between;
+			}
+				
+				.wanl-live-popup-list-item-subject-title-text{
+					color: #222222;
+					font-size: 28rpx;
+					lines:2;
+					text-overflow:ellipsis;
+					/* #ifdef APP-PLUS */
+					line-height: 36rpx;
+					/* #endif */
+				}
+				
+				.wanl-live-popup-list-item-subject-operation{
+					align-items: center;
+					justify-content: space-between;
+					flex-direction: row;
+				}
+				.wanl-live-popup-list-item-subject-operation-price{
+					
+				}
+					.wanl-live-popup-list-item-subject-operation-price-text{
+						color: #f72b36;
+						font-size: 32rpx;
+						font-weight: 500;
+					}
+				.wanl-live-popup-list-item-subject-operation-button{
+					flex-direction: row;
+					
+				}
+					
+					.wanl-live-popup-list-item-subject-operation-button-shopping{
+						border-radius: 100px;
+						justify-content: center;
+						align-items: center;
+						width: 36rpx;
+						height: 36rpx;
+					}
+						.wanl-live-popup-list-item-subject-operation-button-shopping-img{
+							width: 36rpx;
+							height: 36rpx;
+						}
+	
+	/* 商品 */
+	.wanl-live-footer-bottom_goods {
+		position: relative;
+		flex: 1;
+		justify-content: center;
+		align-items: center;
+	}
+		.wanl-live-footer-bottom_goods-btn{
+			height: 76rpx;
+			width: 76rpx;
+		}
+		.wanl-live-footer-bottom_goods-tag{
+			position: absolute;
+			top: -16rpx;
+			right: 12rpx;
+			background-color: #f02b57;
+			border-radius: 100px;
+			padding-left: 10rpx;
+			padding-right: 10rpx;
+			padding-top: 2rpx;
+			padding-bottom: 2rpx;
+		}
+		.wanl-live-footer-bottom_goods-tag-text{
+			color: #ffffff;
+			font-size: 22rpx;
+		}
+	/* 点赞 */
+	.wanl-live-footer-bottom_praise {
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		flex: 1;
+		margin-left: 30rpx;
+	}
+		.wanl-live-footer-bottom_praise-btn{
+			height: 76rpx;
+			width: 76rpx;
+		}
+		.wanl-live-footer-bottom_praise-tag{
+			position: absolute;
+			top: -16rpx;
+			left: 12rpx;
+			background-color: #f02b57;
+			border-radius: 100px;
+			padding-left: 6rpx;
+			padding-right: 6rpx;
+			padding-top: 2rpx;
+			padding-bottom: 2rpx;
+		}
+		.wanl-live-footer-bottom_praise-tag-text{
+			color: #ffffff;
+			font-size: 22rpx;
+		}
+		
+		.wanl-live-footer-left{
+			flex-direction: row;
+		}
+		.wanl-live-footer-right{
+			flex-direction: row;
+		}
+	/* 通用 */
+	.wanl-live-footer-bottom{
+		background-color: rgba(0,0,0,.2);
+		border-radius: 100px;
+		overflow: hidden;
+		width: 76rpx;
+		height: 76rpx;
+		justify-content: center;
+		align-items: center;
+		margin-right: 30rpx;
+	}
+	.wanl-live-footer-bottom-img{
+		width: 76rpx;
+		height: 76rpx;
+	}
+</style>

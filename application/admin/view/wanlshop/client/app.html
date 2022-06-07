@@ -1,0 +1,97 @@
+<div class="alert alert-success-light">
+	<i class="fa fa-warning"></i> 温馨提示：如不搭建【APP客户端】则不用配置此页，如要搭建请完善此页，点击【更新】后系统将更新客户端配置文件，更新完请在【客户端配置】重新生成源码导入HBuilder X
+</div>
+<div class="panel panel-default panel-intro">
+	<div class="panel-heading">
+		<div class="panel-lead"><em>APP客户端</em>用于App客户端参数配置和本地一键打包安卓 & 苹果应用</div>
+	</div>
+	<div class="panel-body">
+		<div id="myTabContent" class="tab-content">
+			<div class="tab-pane fade active in" id="ini">
+				<div class="widget-body no-padding">
+					<form id="ini-form" class="edit-form form-horizontal" role="form" data-toggle="validator" method="POST" action="{:url('wanlshop.client/edit')}">
+					    {:token()}	
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th width="15%">配置项</th>
+									<th width="85%">参数</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>应用名称</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::text('row[ini][name]', $wanlshop.ini.name, ['data-rule'=>'required','data-tip'=>'请填写应用名称','placeholder'=>'应用名称，同等于app名称'])}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>UrlSchemes</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::text('row[ini][urlschemes]', $wanlshop.ini.urlschemes, ['data-rule'=>'required','data-tip'=>'请填写UrlSchemes','placeholder'=>'可以理解为http打开页面，自定义UrlSchemes，在网页中拉起APP，如：wanlshop'])}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>应用包名</td>
+									<td>
+										<div class="row">
+											<div class="col-sm-8 col-xs-12">
+												{:Form::text('row[ini][package_name]', $wanlshop.ini.package_name, ['data-rule'=>'required','data-tip'=>'请填写应用包名','placeholder'=>'包名一般域名倒序，如com.def.abc'])}
+											</div>
+											<div class="col-sm-4"></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td></td>
+									<td>
+										<button type="submit" class="btn btn-success btn-embossed">{:__('更新')}</button>
+										<button type="reset" class="btn btn-default btn-embossed">重置</button>
+									</td>
+									<td></td>
+								</tr>
+							</tfoot>
+						</table>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+	@media (max-width: 375px) {
+		.edit-form tr td input {
+			width: 100%;
+		}
+
+		.edit-form tr th:first-child,
+		.edit-form tr td:first-child {
+			width: 20%;
+		}
+
+		.edit-form tr th:nth-last-of-type(-n+2),
+		.edit-form tr td:nth-last-of-type(-n+2) {
+			display: none;
+		}
+	}
+
+	.edit-form table>tbody>tr td a.btn-delcfg {
+		visibility: hidden;
+	}
+
+	.edit-form table>tbody>tr:hover td a.btn-delcfg {
+		visibility: visible;
+	}
+</style>

@@ -1,0 +1,278 @@
+<link rel="stylesheet" href="__CDN__/assets/addons/wanlshop/css/entry.css">
+
+<div id="content-container" class="container">
+
+	<div class="row" id="app" v-cloak>
+
+		<form class="form-horizontal" role="form" data-toggle="validator" method="POST">
+
+			<div class="wanl-entry col-md-12">
+
+				<div class="head">
+
+					<div class="title">
+
+						<p>ストアアプリケーション</p>
+
+					</div>
+
+					<div class="entry-content">
+
+						<ol class="ui-step ui-step-4">
+
+							<li class="step-start step-done">
+
+								<div class="ui-step-line"></div>
+
+								<div class="ui-step-cont">
+
+									<span class="ui-step-cont-number">1</span>
+
+									<span class="ui-step-cont-text">アカウント登録</span>
+
+								</div>
+
+							</li>
+
+							<li class="step-active">
+
+								<div class="ui-step-line"></div>
+
+								<div class="ui-step-cont">
+
+									<span class="ui-step-cont-number">2</span>
+
+									<span class="ui-step-cont-text">対象資格</span>
+
+								</div>
+
+							</li>
+
+							<li class="step-start">
+
+								<div class="ui-step-line"></div>
+
+								<div class="ui-step-cont">
+
+									<span class="ui-step-cont-number">3</span>
+
+									<span class="ui-step-cont-text">店舗情報</span>
+
+								</div>
+
+							</li>
+
+							<li class="step-end">
+
+								<div class="ui-step-line"></div>
+
+								<div class="ui-step-cont">
+
+									<span class="ui-step-cont-number">4</span>
+
+									<span class="ui-step-cont-text">監査のために提出する</span>
+
+								</div>
+
+							</li>
+
+						</ol>
+
+						
+
+					</div>
+
+				</div>
+
+				<div>
+
+					<div class="title-container">
+
+						<span class="title">資格認定</span>
+
+					</div>
+
+					<div class="entry-content">
+
+						<div class="form-group" style="display: none;">
+
+							<label class="control-label col-xs-12 col-sm-2">{:__('店舗タイプ')}:</label>
+
+							<div class="col-xs-12 col-sm-8">
+
+								<div class="radio">
+
+									<label for="state-0"><input id="state-0" name="state" type="radio" value="0" v-model="state"> 個人</label> 
+
+									<!--<label for="state-1"><input id="state-1" name="state" type="radio" value="1" v-model="state"> 企业</label> 
+
+									<label for="state-2"><input id="state-2" name="state" type="radio" value="2" v-model="state"> 旗舰店</label>-->
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="form-group">
+
+							<label class="control-label col-xs-12 col-sm-2"><span id="t-name">氏名</span>:</label>
+
+							<div class="col-xs-12 col-sm-8">
+
+								{:Form::text('name', $entry.name, ['data-rule'=>'required'])}
+
+							</div>
+
+						</div>
+
+						<!--<div class="form-group">
+
+							<label class="control-label col-xs-12 col-sm-2"><span id="t-identify">ID番号{{getNumber(state)}}</span>:</label>
+
+							<div class="col-xs-12 col-sm-8">
+
+								{:Form::text('number', $entry.number, ['data-rule'=>'required'])}
+
+							</div>
+
+						</div>-->
+
+						
+
+						<!--<div class="form-group">
+
+						    <label class="control-label col-xs-12 col-sm-2"><span id="t-image">{{getImage(state)}}</span>:</label>
+
+						    <div class="col-xs-12 col-sm-8">
+
+						        <div class="input-group">
+
+						            <input id="c-image" data-rule="required" class="form-control" size="50" name="image" type="text" value="{$entry.image}">
+
+						            <div class="input-group-addon no-border no-padding">
+
+						                <span><button type="button" id="plupload-image" class="btn btn-danger plupload" data-input-id="c-image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+
+						            </div>
+
+						            <span class="msg-box n-right" for="c-image"></span>
+
+						        </div>
+
+						        <ul class="row list-inline plupload-preview" id="p-image"></ul>
+
+						    </div>
+
+						</div>-->
+
+						<div class="form-group" v-show="state == 2">
+
+							<label class="control-label col-xs-12 col-sm-2">{:__('商標証明書')}:</label>
+
+							<div class="col-xs-12 col-sm-8">
+
+							    <div class="input-group">
+
+							        <input id="c-trademark"  class="form-control" size="50" name="trademark" type="text" value="{$entry.trademark}">
+
+							        <div class="input-group-addon no-border no-padding">
+
+							            <span><button type="button" id="plupload-trademark" class="btn btn-danger plupload" data-input-id="c-trademark" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-trademark"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+
+							        </div>
+
+							        <span class="msg-box n-right" for="c-trademark"></span>
+
+							    </div>
+
+							    <ul class="row list-inline plupload-preview" id="p-trademark"></ul>
+
+							</div>
+
+						</div>
+
+						
+
+						
+
+						<div class="form-group">
+
+							<label class="control-label col-xs-12 col-sm-2">Line:</label>
+
+							<div class="col-xs-12 col-sm-8">
+
+								{:Form::text('wechat', $entry.wechat, ['data-rule'=>'required'])}
+
+							</div>
+
+						</div>
+
+						<div class="form-group">
+
+							<label class="control-label col-xs-12 col-sm-2">招待はを積み重ねて:</label>
+
+							<div class="col-xs-12 col-sm-8">
+
+								{:Form::text('invitation', 88888888, ['data-rule'=>'required'])}
+
+							</div>
+
+						</div>
+
+						{eq name="mobile" value=""}
+
+						<div class="form-group">
+
+							<label class="control-label col-xs-12 col-sm-2">{:__('携帯番号')}:</label>
+
+							<div class="col-xs-12 col-sm-8">
+
+								<!-- 判断是否存在手机号？ -->
+
+								{:Form::text('mobile', $entry.mobile, ['data-rule'=>'required'])}
+
+							</div>
+
+						</div>
+
+						{else/}
+
+						<div class="form-group">
+
+							<label class="control-label col-xs-12 col-sm-2">{:__('携帯番号')}:</label>
+
+							<div class="col-xs-12 col-sm-8">
+
+								<!-- 判断是否存在手机号？ -->
+
+								<input type="text" class="form-control" id="mobile" name="mobile" value="{$mobile}" readonly="" placeholder="">
+
+							</div>
+
+						</div>
+
+						{/eq}
+
+					</div>
+
+				</div>
+
+				<div align="center">
+
+					<div class="entry-content">
+
+						<button type="submit" class="btn btn-success btn-lg">次のステップ</button>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</form>
+
+	</div>
+
+</div>
+

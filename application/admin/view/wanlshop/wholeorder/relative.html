@@ -1,0 +1,251 @@
+<style type="text/css">
+
+	.content{
+
+		padding: 0;
+
+	}
+
+	/* 框架 */
+
+	.wanl_kuaidi{
+
+		background: url(/assets/addons/wanlshop/img/kuaidi/spider_search_v4.png) 0px 0px repeat-x;
+
+		padding: 20px 15px;
+
+	}
+
+	.wanl_kuaidi td{
+
+	  padding: 7px;
+
+	}
+
+	.wanl_kuaidi th{
+
+		padding: 7px;
+
+		font-weight: inherit;
+
+		font-size: 16px;
+
+	}
+
+	.wanl_kuaidi .last td,  .wanl_kuaidi .last td a{
+
+	  color: #ff7800;
+
+	  border-bottom: none;
+
+	}
+
+	/* 图标线段 */
+
+	.wanl_kuaidi .process{
+
+		position: relative;
+
+		color: #b3b3b3;
+
+	    width: 60px;
+
+	    text-align: center;
+
+	}
+
+	.wanl_kuaidi .process .line{
+
+		background: #b3b3b3;
+
+		position: absolute;
+
+		width: 1px;
+
+		height: 72%;
+
+		left: 29px;
+
+		bottom: -17px;
+
+	}
+
+	/* 时间 */
+
+	.wanl_kuaidi .status {
+
+	  width: 105px;
+
+	  text-align: center;
+
+	  padding-left: 14px;
+
+	  padding-right: 0;
+
+	}
+
+	.wanl_kuaidi .status .day {
+
+	  display:block;
+
+	}
+
+	.wanl_kuaidi .status .time {
+
+	  font-size: 13px;
+
+	}
+
+	/* 内容 */
+
+	.wanl_kuaidi .info span{
+
+		display: block;
+
+		font-weight: bold;
+
+	}
+
+</style>
+
+
+
+<div class="wanl_kuaidi">
+
+	
+
+
+
+	<table class="">
+
+		<thead>
+
+		    <tr>
+
+		      <th style="text-align: center;padding-left: 14px;">时间</th>
+
+		      <th></th>
+
+			  <th>地点和跟踪进度</th>
+
+		    </tr>
+
+		  </thead>
+
+		<tbody>
+
+		{switch name="row.state" }
+
+		    {case value="1"}
+
+				<tr>
+
+					<td class="status"><span class="day">{$row.createtime|date="Y.m.d",###}</span><span class="time">{$row.createtime|date="H:i",###}</span><span class="week">{$week[date('w', $row.paymenttime)]}</span></td>
+
+					<td class="process">
+
+						<i class="fa fa-credit-card"></i>
+
+					</td>
+
+					<td class="info"><span>尚未付款</span>付款后，即可将商品发出</td>
+
+				</tr>
+
+			{/case}
+
+		    {case value="2"}
+
+				<tr>
+
+					<td class="status"><span class="day">{$row.paymenttime|date="Y.m.d",###}</span><span class="time">{$row.paymenttime|date="H:i",###}</span> <span class="week">{$week[date('w', $row.paymenttime)]}</span></td>
+
+					<td class="process">
+
+						<i class="fa fa-shopping-cart"></i>
+
+					</td>
+
+					<td class="info"><span>已付款</span>商家正在处理订单</td>
+
+				</tr>
+
+			{/case}
+
+		    {default /}
+
+				{empty name="list"}
+
+				<tr>
+
+					<td class="status">
+
+						<span class="day">{$row.paymenttime|date="Y.m.d",###}</span>
+
+						<span class="time">{$row.paymenttime|date="H:i",###}</span>
+
+						<span class="week"></span>
+
+					</td>
+
+					<td class="process">
+
+						<i class="fa fa-truck"></i>
+
+					</td>
+
+					<td class="info"><span>已发货</span>包裹正在等待快递小哥揽收~</td>
+
+				</tr>
+
+				{else /}
+
+				<!-- 快递单当前状态，包括0在途，1揽收，2疑难，3签收，4退签，5派件，6退回，7转投 等7个状态 -->
+
+					{volist name="list" id="vo"}
+
+					<tr class="{in name="key" value="0"} last {/in}">
+
+						<td class="status"><span class="day">{$vo.time|date="Y.m.d",###}</span><span class="time">{$vo.time|date="H:i",###}</span><span class="week">{$vo.week}</span></td>
+
+						<td class="process">
+
+							{switch name="vo.status"}
+
+							    {case value="在途"}<i class="fa fa-chevron-circle-up"></i>{/case}
+
+							    {case value="揽收"}<i class="fa fa-archive"></i>{/case}
+
+								{case value="疑难"}<i class="fa fa-exclamation-circle"></i>{/case}
+
+								{case value="签收"}<i class="fa fa-check"></i>{/case}
+
+								{case value="退签"}<i class="fa fa-reply"></i>{/case}
+
+								{case value="派件"}<i class="fa fa-user"></i>{/case}
+
+								{case value="退回"}<i class="fa fa-hand-paper-o"></i>{/case}
+
+								{case value="转投"}<i class="fa fa-share-square"></i>{/case}
+
+							{/switch}
+
+							<div class="line"></div>
+
+						</td>
+
+						<td class="info"><span>{if condition="$vo.status neq '在途'"}{$vo.status}{/if}</span>{$vo.context}</td>
+
+					</tr>
+
+					{/volist}
+
+				{/empty}
+
+		{/switch}	
+
+		</tbody>
+
+	</table>
+
+</div>
