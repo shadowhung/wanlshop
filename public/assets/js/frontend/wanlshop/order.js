@@ -64,7 +64,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 			$(document).on("click", ".refund[data-id]", function () {
 
-			    Backend.api.open('wanlshop/refund/detail/ids/' + $(this).data('id'), __('払い戻しを確認してください'));
+			    Backend.api.open('wanlshop/refund/detail/ids/' + $(this).data('id'), __('Please check the refund'));
 
 			});
 
@@ -161,7 +161,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 			$(document).on("click", ".kuaidisub[data-id]", function () {
 
-			    Backend.api.open('wanlshop/order/relative/id/' + $(this).data('id'), __('エクスプレスお問い合わせ'),{area:['800px', '600px']});
+			    Backend.api.open('wanlshop/order/relative/id/' + $(this).data('id'), __('Shipment progress'),{area:['800px', '600px']});
 
 			});
 
@@ -292,7 +292,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 			$(document).on("click", ".kuaidisub[data-id]", function () {
 
-			    Backend.api.open('wanlshop/order/relative/id/' + $(this).data('id'), __('エクスプレスお問い合わせ'),{area:['800px', '600px']});
+			    Backend.api.open('wanlshop/order/relative/id/' + $(this).data('id'), __('Shipment progress'),{area:['800px', '600px']});
 
 			});
 
