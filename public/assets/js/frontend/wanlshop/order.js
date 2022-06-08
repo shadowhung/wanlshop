@@ -56,7 +56,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 			$(document).on("click", ".detail[data-id]", function () {
 
-			    Backend.api.open('wanlshop/order/detail/id/' + $(this).data('id'), __('詳細を確認してください'),{area:['1200px', '780px']});
+			    Backend.api.open('wanlshop/order/detail/id/' + $(this).data('id'), __('Order detail'),{area:['1200px', '780px']});
 
 			});
 
