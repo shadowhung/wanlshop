@@ -56,7 +56,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 			$(document).on("click", ".detail[data-id]", function () {
 
-			    Backend.api.open('wanlshop/order/detail/id/' + $(this).data('id'), __('詳細を確認してください'),{area:['1200px', '780px']});
+			    Backend.api.open('wanlshop/order/detail/id/' + $(this).data('id'), __('Order detail'),{area:['1200px', '780px']});
 
 			});
 
@@ -64,7 +64,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 			$(document).on("click", ".refund[data-id]", function () {
 
-			    Backend.api.open('wanlshop/refund/detail/ids/' + $(this).data('id'), __('払い戻しを確認してください'));
+			    Backend.api.open('wanlshop/refund/detail/ids/' + $(this).data('id'), __('Please check the refund'));
 
 			});
 
@@ -147,11 +147,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 				if($(this).data('id')){
 
-					Backend.api.open('wanlshop/order/invoice/ids/' + $(this).data('id'), __('船の眺め'),{area:['1100px', '750px']});
+					Backend.api.open('wanlshop/order/invoice/ids/' + $(this).data('id'), __('Shipment'),{area:['1100px', '750px']});
 
 				}else{
 
-					Backend.api.open('wanlshop/order/invoice/ids/' + Table.api.selectedids(table), __('バッチビュー出荷'),{area:['1100px', '750px']});
+					Backend.api.open('wanlshop/order/invoice/ids/' + Table.api.selectedids(table), __('Batch view invoice'),{area:['1100px', '750px']});
 
 				}
 
@@ -161,7 +161,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 			$(document).on("click", ".kuaidisub[data-id]", function () {
 
-			    Backend.api.open('wanlshop/order/relative/id/' + $(this).data('id'), __('エクスプレスお問い合わせ'),{area:['800px', '600px']});
+			    Backend.api.open('wanlshop/order/relative/id/' + $(this).data('id'), __('Shipment progress'),{area:['800px', '600px']});
 
 			});
 
@@ -292,7 +292,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 			$(document).on("click", ".kuaidisub[data-id]", function () {
 
-			    Backend.api.open('wanlshop/order/relative/id/' + $(this).data('id'), __('エクスプレスお問い合わせ'),{area:['800px', '600px']});
+			    Backend.api.open('wanlshop/order/relative/id/' + $(this).data('id'), __('Shipment progress'),{area:['800px', '600px']});
 
 			});
 

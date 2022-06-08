@@ -115,30 +115,30 @@
 		<thead>
 		    <?php if(isset($data['name'])){?>
             <tr>
-    	    <th style="text-align: center;padding-left: 14px;">宅配会社：</th>
+    	    <th style="text-align: center;padding-left: 14px;">{:__('Carrier')}: </th>
             <th style="text-align: center;padding-left: 14px;"><?php echo isset($data['name'])?$data['name']:'';?></th>
             </tr>
             <tr>
-    	    <th style="text-align: center;padding-left: 14px;">追跡番号：</th>
+    	    <th style="text-align: center;padding-left: 14px;">{:__('Express_no')}: </th>
             <th style="text-align: center;padding-left: 14px;"><?php echo isset($row['express_no'])?$row['express_no']:'';?></th>
             </tr>
             <?php }else{?>
             <tr>
-    	    <th style="text-align: center;padding-left: 14px;">宅配会社：</th>
+    	    <th style="text-align: center;padding-left: 14px;">{:__('Carrier')}: </th>
             <th style="text-align: center;padding-left: 14px;">雪のロジスティクス</th>
             </tr>
             <tr>
-    	    <th style="text-align: center;padding-left: 14px;">追跡番号：</th>
+    	    <th style="text-align: center;padding-left: 14px;">{:__('Express_no')}: </th>
             <th style="text-align: center;padding-left: 14px;">{$address.order_no}</th>
             </tr>
             <?php }?>
 		    <tr>
 
-		      <th style="text-align: center;padding-left: 14px;">時間</th>
+		      <th style="text-align: center;padding-left: 14px;">{:__('Date')}</th>
 
 		      <th></th>
 
-			  <th>場所と追跡の進捗状況</th>
+			  <th>{:__('Progress')}</th>
 
 		    </tr>
 
