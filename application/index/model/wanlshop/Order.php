@@ -35,7 +35,7 @@ class Order extends Model
     
     public function getStateList()
     {
-        return ['1' => '未払い', '2' => '未出荷', '3' => 'は商品を受け取りを待って', '4' => 'はを評論するのを待って', '6' => 'はすでにを完成して', '7' => 'はすでにをキャンセルして', '8' => 'は注文書に卸売りをして'];
+        return ['1' => 'Unpaid', '2' => 'Unfulfilled', '3' => 'Fulfilled', '4' => 'Received', '6' => 'Completed', '7' => 'Closed', '8' => 'Wholesale'];
     }
 
     public function getStatusList()

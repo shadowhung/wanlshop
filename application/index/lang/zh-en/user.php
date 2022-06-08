@@ -13,7 +13,7 @@ return [
     'Score' => 'Score',
     'Day' => 'Days',
     'Intro' => 'Personal info',
-    'Successions' => '連續登錄',
+    'Successions' => 'Sign in days',
     'Maxsuccessions' => 'Max online days',
     'Logintime' => 'Login time',
     'Prevtime' => 'Last login time',
