@@ -147,11 +147,11 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 				if($(this).data('id')){
 
-					Backend.api.open('wanlshop/order/invoice/ids/' + $(this).data('id'), __('船の眺め'),{area:['1100px', '750px']});
+					Backend.api.open('wanlshop/order/invoice/ids/' + $(this).data('id'), __('Shipment'),{area:['1100px', '750px']});
 
 				}else{
 
-					Backend.api.open('wanlshop/order/invoice/ids/' + Table.api.selectedids(table), __('バッチビュー出荷'),{area:['1100px', '750px']});
+					Backend.api.open('wanlshop/order/invoice/ids/' + Table.api.selectedids(table), __('Batch view invoice'),{area:['1100px', '750px']});
 
 				}
 
