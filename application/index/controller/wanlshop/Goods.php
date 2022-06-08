@@ -309,7 +309,7 @@ class Goods extends Wanlshop
                 Db::startTrans();
                 try {
 					$this->model2->shop_id    = $shop_id;
-					$this->model2->name       = '送料無料';
+					$this->model2->name       = 'Free Shipping';
 					$this->model2->delivery   = 5;
 					$this->model2->isdelivery = 1;
 					if($this->model2->save()){
