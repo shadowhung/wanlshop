@@ -2,23 +2,23 @@
 
 return [
     'Id' => 'ID',
-    'User_id' => '用戶ID',
-    'Shop_id' => '店鋪ID',
-    'Title' => '消息標題',
-    'Content' => '消息內容',
-    'Type' => '分類',
+    'User_id' => 'User ID',
+    'Shop_id' => 'Shop ID',
+    'Title' => 'Title',
+    'Content' => 'Content',
+    'Type' => 'Type',
     'Modules' => '類型',
-    'Modules deliver' => '發貨提示',
-    'Modules sign' => '簽收',
-    'Modules agree' => '同意退款',
-    'Modules refuse' => '拒絕退款',
-    'Modules live' => '直播',
-    'Modules new' => '商家上新',
+    'Modules deliver' => 'Shipping',
+    'Modules sign' => 'Received',
+    'Modules agree' => 'Refund accept',
+    'Modules refuse' => 'Refund refuse',
+    'Modules live' => 'Live',
+    'Modules new' => 'New coming',
     'Modules_id' => '所屬ID',
-    'Createtime' => '記入時間',
-    'Updatetime' => '更新時間',
-    'Deletetime' => '删除時間',
-    'Status' => '狀態'
+    'Createtime' => 'Create time',
+    'Updatetime' => 'Update time',
+    'Deletetime' => 'Delete time',
+    'Status' => 'Status'
 ];
 /*return [
     'Id'                    => 'ID',
