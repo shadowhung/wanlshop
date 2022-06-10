@@ -186,17 +186,17 @@
 
 		<ul class="nav nav-tabs">
 
-			<li class="active"><a href="#basics">基本情報</a></li>
+			<li class="active"><a href="#basics">{:__('Basic information')}</a></li>
 
-			<li><a href="#sale">商品属性</a></li>
+			<li><a href="#sale">{:__('Variant')}</a></li>
 
-			<li><a href="#wanlinfo">グラフィックの説明</a></li>
+			<li><a href="#wanlinfo">{:__('Description')}</a></li>
 
-			<li><a href="#payment">支払情報</a></li>
+			<li><a href="#payment">{:__('Inventory tracking')}</a></li>
 
-			<li><a href="#logistics">ロジスティクス情報</a></li>
+			<li><a href="#logistics">{:__('Shipment')}</a></li>
 
-			<li><a href="#service">アフター情報</a></li>
+			<li><a href="#service">{:__('Published')}</a></li>
 
 		</ul>
 
@@ -220,7 +220,7 @@
 
 									<div class="panel panel-default">
 
-										<div class="panel-heading">基本情報</div>
+										<div class="panel-heading">{:__('Basic information')}</div>
 
 										<div class="panel-body">
 
@@ -230,7 +230,7 @@
 
 												<div class="col-xs-12 col-sm-8">
 
-													<input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" placeholder="製品タイトルを入力してください" value="{$row.title|htmlentities}">
+													<input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" placeholder="Please enter the product title" value="{$row.title|htmlentities}">
 
 												</div>
 
@@ -286,11 +286,11 @@
 
 											<div class="form-group">
 
-												<label class="control-label col-xs-12 col-sm-2">{:__('製品ブランド')}:</label>
+												<label class="control-label col-xs-12 col-sm-2">{:__('Brand')}:</label>
 
 												<div class="col-xs-12 col-sm-8">
 
-													<input id="c-brand" data-rule="required" class="form-control" name="row[brand]" type="text" placeholder="製品タイトルを入力してください" value="{$row.brand|htmlentities}">
+													<input id="c-brand" data-rule="required" class="form-control" name="row[brand]" type="text" placeholder="Please enter the product brand" value="{$row.brand|htmlentities}">
 
 												</div>
 
@@ -372,21 +372,21 @@
 
 									<div class="panel panel-default">
 
-										<div class="panel-heading">商品属性</div>
+										<div class="panel-heading">{:__('Variant')}</div>
 
 										<div class="panel-body">
 
 											<div class="form-group wanl-specs">
 
-												<label class="control-label col-xs-12 col-sm-2">{:__('商品属性')}:</label>
+												<label class="control-label col-xs-12 col-sm-2">{:__('Variant')}: </label>
 
 												<div class="col-xs-12 col-sm-8">
 
 													<div class="input-group add-option">
 
-														<input type="text" class="form-control" ref="specs-name" placeholder="複数の製品属性はスペースで区切られます">
+														<input type="text" class="form-control" ref="specs-name" placeholder="Separate options with 'space'">
 
-														<span class="input-group-addon pointer" @click="spuAdd">新しい属性</span>
+														<span class="input-group-addon pointer" @click="spuAdd">{:__('New variant')}</span>
 
 													</div>
 
@@ -398,7 +398,7 @@
 
 															<b>{{item}}</b>
 
-															<span class="remove" title="削除する" @click="spuRemove(i)">×</span>
+															<span class="remove" title="{:__('Clear')}" @click="spuRemove(i)">×</span>
 
 														</header>
 
@@ -408,7 +408,7 @@
 
 																<div class="input-group">
 
-																	<input type="text" class="form-control" :ref="'specs-name-' + i" placeholder="バリアントはスペースで区切られます">
+																	<input type="text" class="form-control" :ref="'specs-name-' + i" placeholder="Variants are separated by spaces">
 
 																	<span class="input-group-addon pointer" @click="skuAdd(i)"><i class="fa fa-plus"></i></span>
 
@@ -420,7 +420,7 @@
 
 																<div class="wanl-specs-tag" v-for="(v, j) in spuItem[i]" :key="j">
 
-																	{{v}}<span class="remove" title="削除する" @click="skuRemove(i, j)">×</span>
+																	{{v}}<span class="remove" title="{:__('Clear')}" @click="skuRemove(i, j)">×</span>
 
 																</div>
 
@@ -460,15 +460,15 @@
 
 																		<th v-for="item in spu"> {{item}} </th>
 
-																		<th width="80">元値</th>
+																		<th width="80">{:__('Original price')}</th>
 
-																		<th width="80">現在の価格</th>
+																		<th width="80">{:__('Sell price')}</th>
 
-																		<th width="80">在庫あり</th>
+																		<th width="80">{:__('Inventory')}</th>
 
-																		<th width="83">重量(kg)</th>
+																		<th width="83">{:__('Weight')}(kg)</th>
 
-																		<th width="80">コーディング</th>
+																		<th width="80">{:__('Code')}</th>
 
 																	</tr>
 
@@ -502,13 +502,13 @@
 
 																<span v-if="batch == 0">
 
-																	バッチで設定しますか？
+																	Do you want to set it in batch?
 
 																</span>
 
 																<span v-else>
 
-																	バッチ設定をキャンセル？
+																	Cancel batch settings?
 
 																</span>
 
@@ -524,51 +524,51 @@
 
 														<div class="input-group">
 
-															<div class="input-group-addon">元値 円</div>
+															<div class="input-group-addon">{:__('Original price')} $</div>
 
-															<input type="number" class="form-control" id="batch-market_price" placeholder="ワンクリックで元の価格を設定">
+															<input type="number" class="form-control" id="batch-market_price" placeholder="Set original price with one click">
 
-															<div class="input-group-addon" onclick="batchSet('market_price')">バッチ設定</div>
-
-														</div>
-
-														<div class="input-group">
-
-															<div class="input-group-addon">現在の価格 円</div>
-
-															<input type="number" class="form-control" id="batch-price" placeholder="ワンクリックで現在の価格を設定">
-
-															<div class="input-group-addon" onclick="batchSet('price')">バッチ設定</div>
+															<div class="input-group-addon" onclick="batchSet('market_price')">{:__('Batch setting')}</div>
 
 														</div>
 
 														<div class="input-group">
 
-															<div class="input-group-addon">在庫あり</div>
+															<div class="input-group-addon">{:__('Sell price')} $</div>
 
-															<input type="number" class="form-control" id="batch-stock" placeholder="ワンクリック在庫設定">
+															<input type="number" class="form-control" id="batch-price" placeholder="Click to set current price">
 
-															<div class="input-group-addon" onclick="batchSet('stock')">バッチ設定</div>
-
-														</div>
-
-														<div class="input-group">
-
-															<div class="input-group-addon">重量</div>
-
-															<input type="number" class="form-control" id="batch-weigh" placeholder="体重を設定するための1つの鍵">
-
-															<div class="input-group-addon" onclick="batchSet('weigh')">バッチ設定</div>
+															<div class="input-group-addon" onclick="batchSet('price')">{:__('Batch setting')}</div>
 
 														</div>
 
 														<div class="input-group">
 
-															<div class="input-group-addon">コーディング</div>
+															<div class="input-group-addon">{:__('In stock')}</div>
 
-															<input type="text" class="form-control" id="batch-sn" placeholder="コードを設定するための1つのキー">
+															<input type="number" class="form-control" id="batch-stock" placeholder="Inventory setting">
 
-															<div class="input-group-addon" onclick="batchSet('sn')">バッチ設定</div>
+															<div class="input-group-addon" onclick="batchSet('stock')">{:__('Batch setting')}</div>
+
+														</div>
+
+														<div class="input-group">
+
+															<div class="input-group-addon">{:__('Weight')}</div>
+
+															<input type="number" class="form-control" id="batch-weigh" placeholder="{:__('Click to set weight')}">
+
+															<div class="input-group-addon" onclick="batchSet('weigh')">{:__('Batch setting')}</div>
+
+														</div>
+
+														<div class="input-group">
+
+															<div class="input-group-addon">{:__('Code')}</div>
+
+															<input type="text" class="form-control" id="batch-sn" placeholder="{:__('Click to set the code')}">
+
+															<div class="input-group-addon" onclick="batchSet('sn')">{:__('Batch setting')}</div>
 
 														</div>
 
@@ -598,7 +598,7 @@
 
 								<div class="panel panel-default">
 
-									<div class="panel-heading">グラフィックの説明</div>
+									<div class="panel-heading">{:__('Description')}</div>
 
 									<div class="panel-body">
 
@@ -686,7 +686,7 @@
 
 										<div class="form-group">
 
-											<label class="control-label col-xs-12 col-sm-2">{:__('ショップのカテゴリー')}:</label>
+											<label class="control-label col-xs-12 col-sm-2">{:__('Category_id')}:</label>
 
 											<div class="col-xs-12 col-sm-8">
 
@@ -714,7 +714,7 @@
 
 													<div class="input-group-addon no-border no-padding">
 
-														<span><button type="button" class="btn btn-danger btn-shopsort" >{:__('新たなカテゴリー')}</button></span>
+														<span><button type="button" class="btn btn-danger btn-shopsort" >{:__('New category')}</button></span>
 
 													</div>
 
@@ -738,7 +738,7 @@
 
 								<div class="panel panel-default">
 
-									<div class="panel-heading">支払情報</div>
+									<div class="panel-heading">{:__('Inventory tracking')}</div>
 
 									<div class="panel-body">
 
@@ -780,7 +780,7 @@
 
 								<div class="panel panel-default">
 
-									<div class="panel-heading">ロジスティクス情報</div>
+									<div class="panel-heading">{:__('Shipment')}</div>
 
 									<div class="panel-body">
 
@@ -796,7 +796,7 @@
 
 													<div class="input-group-addon no-border no-padding">
 
-														<span><button type="button" class="btn btn-danger btn-freight" >{:__('新しいテンプレート')}</button></span>
+														<span><button type="button" class="btn btn-danger btn-freight" >{:__('New template')}</button></span>
 
 													</div>
 
@@ -820,7 +820,7 @@
 
 								<div class="panel panel-default">
 
-									<div class="panel-heading">アフター情報</div>
+									<div class="panel-heading">{:__('Published')}</div>
 
 									<div class="panel-body">
 

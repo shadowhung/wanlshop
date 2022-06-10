@@ -71,9 +71,9 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 						{field: 'shopsort.name', title: __('Shopsort.name'), formatter: Table.api.formatter.search},
 						
-						{field: 'wholesaleprice',title: 'Wholesale価格',operate: 'BETWEEN'},
+						{field: 'wholesaleprice',title:  __('Purchase price'),operate: 'BETWEEN'},
 
-						{field: 'price',title: '販売価格',operate: 'BETWEEN'},
+						{field: 'price',title: __('Sell price'),operate: 'BETWEEN'},
 
 						// {field: 'distribution',title: __('Distribution'),searchList: {"true": __('Distribution true'),"false": __('Distribution false')},formatter: Table.api.formatter.normal},
 
@@ -521,7 +521,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 					return {
 
-						spu: ["色","サイズ","仕様"],
+						spu: ["Color","Size","Specification"],
 
 						spuItem: [],
 
@@ -619,7 +619,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 						if (!str){
 
-							Toastr.error("製品のプロパティを空にすることはできません");
+							Toastr.error("Product properties cannot be empty");
 
 							return
 
@@ -665,7 +665,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 						if (!str){
 
-							Toastr.error("製品のプロパティを空にすることはできません")
+							Toastr.error("Product properties cannot be empty")
 
 							return
 
@@ -781,7 +781,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 			$(document).on("click", ".btn-send", function () {
 
-				Backend.api.open('wanlshop/config/index/type/mailing/', __('送信者情報を改善します'), {
+				Backend.api.open('wanlshop/config/index/type/mailing/', __('Improve sender information'), {
 
 					callback:function(value){
 
@@ -797,7 +797,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 			$(document).on("click", ".btn-return", function () {
 
-				Backend.api.open('wanlshop/config/index/type/return/', __('返品情報を改善します'), {
+				Backend.api.open('wanlshop/config/index/type/return/', __('Improve return information'), {
 
 					callback:function(value){
 
@@ -813,7 +813,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 			$(document).on("click", ".btn-brand", function () {
 
-				Backend.api.open('wanlshop/brand/add/', __('アプリケーションブランド'), {
+				Backend.api.open('wanlshop/brand/add/', __('Application brand'), {
 
 					callback:function(value){
 
@@ -829,7 +829,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 			$(document).on("click", ".btn-freight", function () {
 
-				Backend.api.open('wanlshop/freight/add', __('新しい送料テンプレート'), {
+				Backend.api.open('wanlshop/freight/add', __('New shipping template'), {
 
 					callback:function(value){
 
@@ -845,7 +845,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 			$(document).on("click", ".btn-shopsort", function () {
 
-				Backend.api.open('wanlshop/shopsort/add', __('新しいショップの分類'), {
+				Backend.api.open('wanlshop/shopsort/add', __('New shop classification'), {
 
 					callback:function(value){
 
@@ -1087,7 +1087,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 						if (!str){
 
-							Toastr.error("製品のプロパティを空にすることはできません");
+							Toastr.error("Product properties cannot be empty");
 
 							return
 
@@ -1121,7 +1121,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'vue'], function($, u
 
 						if (!str){
 
-							Toastr.error("製品のプロパティを空にすることはできません")
+							Toastr.error("Product properties cannot be empty")
 
 							return
 

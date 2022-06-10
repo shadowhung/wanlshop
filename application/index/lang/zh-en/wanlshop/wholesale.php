@@ -3,7 +3,7 @@
 
 return [
     'Id' => 'ID',
-    'Shop_category_id' => '店鋪內類目',
+    'Shop_category_id' => 'Category',
     'Shopsort.name' => '店鋪內類目',
     'Category_id' => '商品類目',
     'Category.name' => '商品類目',
@@ -11,6 +11,8 @@ return [
     'Image' => 'Image',
     'Images' => 'Images',
     'Description' => 'Description',
+    'On sale' => 'On sale',
+    'Warehouse' => 'Warehouse',
     'Flag' => '標誌（多選）',
     'Flag hot' => 'Hot',
     'Flag index' => 'Home page',

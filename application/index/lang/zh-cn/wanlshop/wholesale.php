@@ -3,7 +3,7 @@
 
 return [
     'Id' => 'ID',
-    'Shop_category_id' => '店鋪內類目',
+    'Shop_category_id' => 'Category',
     'Shopsort.name' => '店鋪內類目',
     'Category_id' => '商品類目',
     'Category.name' => '商品類目',

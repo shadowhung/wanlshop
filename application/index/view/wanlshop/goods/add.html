@@ -112,7 +112,7 @@
 
 	}
 
-	
+
 
 	.wanl-specs .batch .input-group{
 
@@ -186,15 +186,15 @@
 
 	<!--<strong>暫不可發佈商品：</strong>-->
 
-	{in name="row.brand" value="0"}<p> システムにブランドがありません。【メイン舞台裏】>マルチユーザーモール>商品管理>ブランド管理追加に移動してください。。</p>{/in} 
+	{in name="row.brand" value="0"}<p> The system has no brand. Go to [Main Behind the Scenes]> Multi-User Mall> Product Management> Add Brand Management..</p>{/in}
 
-	{in name="row.shopsort" value="0"}<p> 「ショップカテゴリ」は作成されていません，お願いします <a class="btn-shopsort" href="#">[作成]をクリックします</a>。</p>{/in}
+	{in name="row.shopsort" value="0"}<p> "Shop category" has not been created, please <a class="btn-shopsort" href="#">click Create</a>.</p>{/in}
 
-	{in name="row.freight" value="0"}<p> 尚未創建“運費範本”，お願いします<a class="btn-freight" href="#">[作成]をクリックします<</a>。</p>{/in}
+	{in name="row.freight" value="0"}<p> Please note that the unbuilt "transportation cost model", please <a class="btn-freight" href="#">[click Create<</a>。</p>{/in}
 
-	{empty name="row.config.sendPhoneNum"}<p> まだ完了していません“送信者情報”，お願いします <a class="btn-send" href="#">クリックして記入</a> 送信者情報。</p>{/empty}
+	{empty name="row.config.sendPhoneNum"}<p> Not completed yet “Sender information”, please <a class="btn-send" href="#">click to fill in</a> Sender information. </p>{/empty}
 
-	{empty name="row.config.returnPhoneNum"}<p> まだ完了していません“返品情報”，お願いします <a class="btn-return" href="#">クリックして記入</a> 返品情報。</p>{/empty}
+	{empty name="row.config.returnPhoneNum"}<p> Not completed yet “Return Information”, please <a class="btn-return" href="#">click to fill in</a> Return information.</p>{/empty}
 
 </div>
 
@@ -206,17 +206,17 @@
 
 		<ul class="nav nav-tabs">
 
-			<li class="active"><a href="#basics">基本情報</a></li>
+			<li class="active"><a href="#basics">{:__('Basic information')}</a></li>
 
-			<li><a href="#sale">商品属性</a></li>
+			<li><a href="#sale">{:__('Variant')}</a></li>
 
-			<li><a href="#wanlinfo">グラフィックの説明</a></li>
+			<li><a href="#wanlinfo">{:__('Description')}</a></li>
 
-			<li><a href="#payment">支払情報</a></li>
+			<li><a href="#payment">{:__('Inventory tracking')}</a></li>
 
-			<li><a href="#logistics">ロジスティクス情報</a></li>
+			<li><a href="#logistics">{:__('Shipment')}</a></li>
 
-			<li><a href="#service">アフター情報</a></li>
+			<li><a href="#service">{:__('Published')}</a></li>
 
 		</ul>
 
@@ -232,7 +232,7 @@
 
 					<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
 
-						
+
 
 						<div id="app" v-cloak>
 
@@ -242,7 +242,7 @@
 
 									<div class="panel panel-default">
 
-										<div class="panel-heading">基本情報</div>
+										<div class="panel-heading">{:__('Basic information')}</div>
 
 										<div class="panel-body">
 
@@ -252,7 +252,7 @@
 
 												<div class="col-xs-12 col-sm-8">
 
-													<input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text"  placeholder="製品タイトルを入力してください">
+													<input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text"  placeholder="Please enter the product title">
 
 												</div>
 
@@ -268,31 +268,31 @@
 
 														<select id="c-category_1" data-rule="required" v-model="categoryOne" class="form-control" @change="getCategory(1)">
 
-														    <option :value="key" v-for="(item,key) in categoryList" :key="item.id">{{item.name}}</option>                                    
+														    <option :value="key" v-for="(item,key) in categoryList" :key="item.id">{{item.name}}</option>
 
 														</select>
 
 														<select id="c-category_2" data-rule="required" v-if="categoryOne != null && categoryList[categoryOne].childlist.length != 0" v-model="categoryTwo" class="form-control" @change="getCategory()">
 
-														    <option :value="key" v-for="(item,key) in categoryList[categoryOne].childlist" :key="item.id">{{item.name}}</option>                                    
+														    <option :value="key" v-for="(item,key) in categoryList[categoryOne].childlist" :key="item.id">{{item.name}}</option>
 
 														</select>
 
 														<select id="c-category_3" data-rule="required" v-if="categoryTwo != null && categoryList[categoryOne].childlist[categoryTwo].childlist.length != 0" v-model="categoryThree" class="form-control" @change="getCategory()">
 
-														    <option :value="key" v-for="(item,key) in categoryList[categoryOne].childlist[categoryTwo].childlist" :key="item.id">{{item.name}}</option>                                    
+														    <option :value="key" v-for="(item,key) in categoryList[categoryOne].childlist[categoryTwo].childlist" :key="item.id">{{item.name}}</option>
 
 														</select>
 
 														<select id="c-category_4" data-rule="required" v-if="categoryThree != null && categoryList[categoryOne].childlist[categoryTwo].childlist[categoryThree].childlist.length != 0" v-model="categoryFour" class="form-control" @change="getCategory()">
 
-														    <option :value="key" v-for="(item,key) in categoryList[categoryOne].childlist[categoryTwo].childlist[categoryThree].childlist" :key="item.id">{{item.name}}</option>                                    
+														    <option :value="key" v-for="(item,key) in categoryList[categoryOne].childlist[categoryTwo].childlist[categoryThree].childlist" :key="item.id">{{item.name}}</option>
 
 														</select>
 
 														<select id="c-category_5" data-rule="required" v-if="categoryFour != null && categoryList[categoryOne].childlist[categoryTwo].childlist[categoryThree].childlist[categoryFour].childlist.length != 0" v-model="categoryFive" class="form-control" @change="getCategory()">
 
-														    <option :value="key" v-for="(item,key) in categoryList[categoryOne].childlist[categoryTwo].childlist[categoryThree].childlist[categoryFour].childlist" :key="item.id">{{item.name}}</option>                                    
+														    <option :value="key" v-for="(item,key) in categoryList[categoryOne].childlist[categoryTwo].childlist[categoryThree].childlist[categoryFour].childlist" :key="item.id">{{item.name}}</option>
 
 														</select>
 
@@ -303,22 +303,22 @@
 											    </div>
 
 											</div>
-											
-											
-											
+
+
+
 											<div class="form-group">
 
-												<label class="control-label col-xs-12 col-sm-2">{:__('製品ブランド')}:</label>
+												<label class="control-label col-xs-12 col-sm-2">{:__('Brand')}:</label>
 
 												<div class="col-xs-12 col-sm-8">
 
-													<input id="c-brand" data-rule="required" value="其他" class="form-control" name="row[brand]" type="text"  placeholder="製品ブランドを入力してください">
+													<input id="c-brand" data-rule="required" value="Other" class="form-control" name="row[brand]" type="text"  placeholder="Please enter the product brand">
 
 												</div>
 
 											</div>
 
-											
+
 
 											<!--<div class="form-group">
 
@@ -328,13 +328,13 @@
 
 													<div class="input-group">
 
-														<input id="c-brand_id" data-rule="required" 
+														<input id="c-brand_id" data-rule="required"
 
-														data-source="wanlshop/brand/selectpage" 
+														data-source="wanlshop/brand/selectpage"
 
-														class="form-control selectpage" 
+														class="form-control selectpage"
 
-														name="row[brand_id]" 
+														name="row[brand_id]"
 
 														type="text" placeholder="點擊獲取品牌列表">
 
@@ -350,11 +350,11 @@
 
 											</div>-->
 
-											
 
-											
 
-											
+
+
+
 
 											<div class="form-group" v-if="attributeData.length != 0">
 
@@ -372,7 +372,7 @@
 
 															<select :id="'c-attribute_' + item.name" :name="'row[attribute]['+item.name+']'" data-rule="required" class="form-control">
 
-															    <option :value="data.name" v-for="(data,key) in item.value" :key="key">{{data.name}}</option>                                   
+															    <option :value="data.name" v-for="(data,key) in item.value" :key="key">{{data.name}}</option>
 
 															</select>
 
@@ -386,17 +386,17 @@
 
 											</div>
 
-											
 
-											
 
-											
+
+
+
 
 										</div>
 
 									</div>
 
-									
+
 
 								</div>
 
@@ -408,37 +408,37 @@
 
 									<div class="panel panel-default">
 
-										<div class="panel-heading">商品属性</div>
+										<div class="panel-heading">{:__('Variant')}</div>
 
 										<div class="panel-body">
 
 											<div class="form-group wanl-specs">
 
-												<label class="control-label col-xs-12 col-sm-2">{:__('商品属性')}:</label>
+												<label class="control-label col-xs-12 col-sm-2">{:__('Variant')}: </label>
 
 												<div class="col-xs-12 col-sm-8">
 
 													<div class="input-group add-option">
 
-														<input type="text" class="form-control" ref="specs-name" placeholder="複数の製品属性はスペースで区切られます">
+														<input type="text" class="form-control" ref="specs-name" placeholder="Separate options with 'space'">
 
-														<span class="input-group-addon pointer" @click="spuAdd">新しい属性</span>
-														
-														
+														<span class="input-group-addon pointer" @click="spuAdd">{:__('New variant')}</span>
+
+
 
 													</div>
-							
-<span style="color:red;">1、製品価格を設定するには、次の1つの属性を入力する必要があります<br/>
-2、色、サイズ、仕様の要件がない場合は、右側の対応する属性を削除してください<br/>
-3、3番目の仕様は、次のように記入できます：単一製品、XXギフトパッケージ<br/>
-4、特別な製品属性要件がある場合は、上記の新しい属性の内容をカスタマイズし、色、サイズ、および仕様の属性を削除できます。</span><br/>
+
+<span style="color:red;">1. To set the product price, you need to enter one of the following attributes<br/>
+2. If you don't have color, size, or spec requirements, remove the corresponding attribute on the right<br/>
+3. The third specification can be filled in as follows: Single product, XX gift package<br/>
+4. If you have special product attribute requirements, you can customize the content of the new attributes above and remove the color, size, and specification attributes. </span><br/>
 													<div class="panel panel-default" v-for="(item, i) in spu" :key="i">
 
 														<header class="panel-heading">
 
 															<b>{{item}}</b>
 
-															<span class="remove" title="削除する" @click="spuRemove(i)">×</span>
+															<span class="remove" title="{:__('Clear')}" @click="spuRemove(i)">×</span>
 
 														</header>
 
@@ -448,7 +448,7 @@
 
 																<div class="input-group">
 
-																	<input type="text" class="form-control" :ref="'specs-name-' + i" placeholder="バリアントはスペースで区切られます">
+																	<input type="text" class="form-control" :ref="'specs-name-' + i" placeholder="Variants are separated by spaces">
 
 																	<span class="input-group-addon pointer" @click="skuAdd(i)"><i class="fa fa-plus"></i></span>
 
@@ -460,7 +460,7 @@
 
 																<div class="wanl-specs-tag" v-for="(v, j) in spuItem[i]" :key="j">
 
-																	{{v}}<span class="remove" title="削除する" @click="skuRemove(i, j)">×</span>
+																	{{v}}<span class="remove" title="{:__('Clear')}" @click="skuRemove(i, j)">×</span>
 
 																</div>
 
@@ -500,15 +500,15 @@
 
 																		<th v-for="item in spu"> {{item}} </th>
 
-																		<th width="80">元値</th>
+																		<th width="80">{:__('Original price')}</th>
 
-																		<th width="80">現在の価格</th>
+																		<th width="80">{:__('Sell price')}</th>
 
-																		<th width="80">在庫あり</th>
+																		<th width="80">{:__('Inventory')}</th>
 
-																		<th width="80">重量(kg)</th>
+																		<th width="83">{:__('Weight')}(kg)</th>
 
-																		<th width="80">コーディング</th>
+																		<th width="80">{:__('Code')}</th>
 
 																	</tr>
 
@@ -540,13 +540,13 @@
 
 																<span v-if="batch == 0">
 
-																	バッチで設定しますか？
+																	Do you want to set it in batch?
 
 																</span>
 
 																<span v-else>
 
-																	バッチ設定をキャンセル？
+																	Cancel batch settings?
 
 																</span>
 
@@ -556,69 +556,69 @@
 
 													</div>
 
-							
+
 
 													<div class="batch" v-show="batch == 1">
 
 														<div class="input-group">
 
-															<div class="input-group-addon">元値 円</div>
+															<div class="input-group-addon">{:__('Original price')} $</div>
 
-															<input type="number" class="form-control" id="batch-market_price" placeholder="ワンクリックで元の価格を設定">
+															<input type="number" class="form-control" id="batch-market_price" placeholder="Set original price with one click">
 
-															<div class="input-group-addon" onclick="batchSet('market_price')">バッチ設定</div>
-
-														</div>
-
-														<div class="input-group">
-
-															<div class="input-group-addon">現在の価格 円</div>
-
-															<input type="number" class="form-control" id="batch-price" placeholder="ワンクリックで現在の価格を設定">
-
-															<div class="input-group-addon" onclick="batchSet('price')">バッチ設定</div>
+															<div class="input-group-addon" onclick="batchSet('market_price')">{:__('Batch setting')}</div>
 
 														</div>
 
 														<div class="input-group">
 
-															<div class="input-group-addon">在庫あり</div>
+															<div class="input-group-addon">{:__('Sell price')} $</div>
 
-															<input type="number" class="form-control" id="batch-stock" placeholder="ワンクリック在庫設定">
+															<input type="number" class="form-control" id="batch-price" placeholder="Click to set current price">
 
-															<div class="input-group-addon" onclick="batchSet('stock')">バッチ設定</div>
-
-														</div>
-
-														<div class="input-group">
-
-															<div class="input-group-addon">重量</div>
-
-															<input type="number" class="form-control" id="batch-weigh" placeholder="体重を設定するための1つの鍵">
-
-															<div class="input-group-addon" onclick="batchSet('weigh')">バッチ設定</div>
+															<div class="input-group-addon" onclick="batchSet('price')">{:__('Batch setting')}</div>
 
 														</div>
 
 														<div class="input-group">
 
-															<div class="input-group-addon">コーディング</div>
+															<div class="input-group-addon">{:__('In stock')}</div>
 
-															<input type="text" class="form-control" id="batch-sn" placeholder="コードを設定するための1つのキー">
+															<input type="number" class="form-control" id="batch-stock" placeholder="Inventory setting">
 
-															<div class="input-group-addon" onclick="batchSet('sn')">バッチ設定</div>
+															<div class="input-group-addon" onclick="batchSet('stock')">{:__('Batch setting')}</div>
+
+														</div>
+
+														<div class="input-group">
+
+															<div class="input-group-addon">{:__('Weight')}</div>
+
+															<input type="number" class="form-control" id="batch-weigh" placeholder="{:__('Click to set weight')}">
+
+															<div class="input-group-addon" onclick="batchSet('weigh')">{:__('Batch setting')}</div>
+
+														</div>
+
+														<div class="input-group">
+
+															<div class="input-group-addon">{:__('Code')}</div>
+
+															<input type="text" class="form-control" id="batch-sn" placeholder="{:__('Click to set the code')}">
+
+															<div class="input-group-addon" onclick="batchSet('sn')">{:__('Batch setting')}</div>
 
 														</div>
 
 													</div>
 
-							
+
 
 												</div>
 
 											</div>
 
-							
+
 
 										</div>
 
@@ -628,11 +628,11 @@
 
 							</div>
 
-							
+
 
 						</div>
 
-						
+
 
 						<div class="row" id="wanlinfo">
 
@@ -640,7 +640,7 @@
 
 								<div class="panel panel-default">
 
-									<div class="panel-heading">グラフィックの説明</div>
+									<div class="panel-heading">{:__('Description')}</div>
 
 									<div class="panel-body">
 
@@ -652,7 +652,7 @@
 
 												<div class="input-group">
 
-													<input id="c-image" data-rule="required" class="form-control" size="50" name="row[image]" type="text" placeholder="商品のメイン画像をアップロードしてください">
+													<input id="c-image" data-rule="required" class="form-control" size="50" name="row[image]" type="text" placeholder="Please upload the main image of the product">
 
 													<div class="input-group-addon no-border no-padding">
 
@@ -680,7 +680,7 @@
 
 												<div class="input-group">
 
-													<input id="c-images" data-rule="required" class="form-control" size="50" name="row[images]" type="text" placeholder="製品アルバムをアップロードしてください">
+													<input id="c-images" data-rule="required" class="form-control" size="50" name="row[images]" type="text" placeholder="Please upload the product album">
 
 													<div class="input-group-addon no-border no-padding">
 
@@ -706,7 +706,7 @@
 
 										    <div class="col-xs-12 col-sm-8">
 
-										        <input id="c-description" data-rule="required" class="form-control" name="row[description]" type="text" placeholder="製品の説明を入力してください">
+										        <input id="c-description" data-rule="required" class="form-control" name="row[description]" type="text" placeholder="Please enter a product description">
 
 										    </div>
 
@@ -726,7 +726,7 @@
 
 										<div class="form-group">
 
-											<label class="control-label col-xs-12 col-sm-2">{:__('ショップのカテゴリー')}:</label>
+											<label class="control-label col-xs-12 col-sm-2">{:__('Category_id')}:</label>
 
 											<div class="col-xs-12 col-sm-8">
 
@@ -750,11 +750,11 @@
 
 													type="text"
 
-													placeholder="クリックしてストアカテゴリを選択します">
+													placeholder="Click to select a store category">
 
 													<div class="input-group-addon no-border no-padding">
 
-														<span><button type="button" class="btn btn-danger btn-shopsort" >{:__('新たなカテゴリー')}</button></span>
+														<span><button type="button" class="btn btn-danger btn-shopsort" >{:__('New category')}</button></span>
 
 													</div>
 
@@ -778,7 +778,7 @@
 
 								<div class="panel panel-default">
 
-									<div class="panel-heading">支払情報</div>
+									<div class="panel-heading">{:__('Inventory tracking')}</div>
 
 									<div class="panel-body">
 
@@ -820,7 +820,7 @@
 
 								<div class="panel panel-default">
 
-									<div class="panel-heading">ロジスティクス情報</div>
+									<div class="panel-heading">{:__('Shipment')}</div>
 
 									<div class="panel-body">
 
@@ -832,11 +832,11 @@
 
 												<div class="input-group">
 
-													<input id="c-freight_id" data-rule="required" data-source="wanlshop/freight" class="form-control selectpage" name="row[freight_id]" type="text" placeholder="クリックして配送テンプレートを選択します">
+													<input id="c-freight_id" data-rule="required" data-source="wanlshop/freight" class="form-control selectpage" name="row[freight_id]" type="text" placeholder="Click to select a shipping template">
 
 													<div class="input-group-addon no-border no-padding">
 
-														<span><button type="button" class="btn btn-danger btn-freight" >{:__('新しいテンプレート')}</button></span>
+														<span><button type="button" class="btn btn-danger btn-freight" >{:__('New template')}</button></span>
 
 													</div>
 
@@ -845,10 +845,6 @@
 										    </div>
 
 										</div>
-
-										
-
-
 
 									</div>
 
@@ -864,7 +860,7 @@
 
 								<div class="panel panel-default">
 
-									<div class="panel-heading">アフター情報</div>
+									<div class="panel-heading">{:__('Published')}</div>
 
 									<div class="panel-body">
 
@@ -878,7 +874,7 @@
 
 										        {foreach name="statusList" item="vo"}
 
-										        <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="normal"}checked{/in} /> {$vo}</label> 
+										        <label for="row[status]-{$key}"><input id="row[status]-{$key}" name="row[status]" type="radio" value="{$key}" {in name="key" value="normal"}checked{/in} /> {$vo}</label>
 
 										        {/foreach}
 
@@ -888,7 +884,7 @@
 
 										</div>
 
-										
+
 
 
 

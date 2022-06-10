@@ -69,7 +69,7 @@ class Goods extends Model
 
     public function getStatusList()
     {
-        return ['normal' => __('販売中の商品'), 'hidden' => __('倉庫内の商品')];
+        return ['normal' => __('On sale'), 'hidden' => __('Warehouse')];
     }
 
 
