@@ -166,8 +166,8 @@ function(e, t, a, r, n, i) {
                     type: "reduction",
                     rangetype: "all",
                     rangename: {
-                        goods: "商品を選択してください",
-                        category: "カテゴリを選んでください"
+                        goods: "Please select a product",
+                        category: "Please select a category"
                     },
                     range: "",
                     usertype: "reduction",
@@ -207,8 +207,8 @@ function(e, t, a, r, n, i) {
                     type: Config.row.type,
                     rangetype: Config.row.rangetype,
                     rangename: {
-                        goods: "商品を選択してください",
-                        category: "カテゴリを選んでください"
+                        goods: "Please select a product",
+                        category: "Please select a category"
                     },
                     range: Config.row.range,
                     usertype: Config.row.usertype,

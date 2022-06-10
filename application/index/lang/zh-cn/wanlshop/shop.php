@@ -62,7 +62,7 @@ return [
     'Restore all'=> 'Restore all',
     'Destroy' => 'Destroy',
     'Destroy all'=> 'Destroy all',
-    'Recycle bin'=> '歷史頁面',
+    'Recycle bin'=> 'Recycle bin',
     //品牌
     'Category.name' => 'Category name',
     'State 0' => 'In review',

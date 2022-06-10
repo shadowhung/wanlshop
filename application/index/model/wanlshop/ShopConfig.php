@@ -33,15 +33,15 @@ class ShopConfig extends Model
 
 	    return [
 
-			'freight' => __('店舗の構成'), 
+			'freight' => __('Store composition'),
 
 			//'kuaidi' => __('快遞100雲列印配寘'),
 
 			//'facesheet' => __('面單參數'),
 
-			'mailing' => __('送信者情報'),
+			'mailing' => __('Sender information'),
 
-			'return' => __('返品情報')
+			'return' => __('Return information')
 
 		];
 
