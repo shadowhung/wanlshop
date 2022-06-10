@@ -29,7 +29,7 @@ class Logistics extends Wanlshop
      */
     public function deliver()
     {
-        $this->view->assign("stateList", ['2' => __('保留中の注文'), '3' => __('出荷注文')]);
+        $this->view->assign("stateList", ['2' => __('Pending orders'), '3' => __('Shipping orders')]);
         return $this->view->fetch('wanlshop/order/index');
     }
     
