@@ -249,7 +249,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form', 'template', 'jquery-j
 
 			            {field: 'status', title: __('Status'), searchList: {"normal":__('Normal'),"hidden":__('Hidden')}, formatter: Table.api.formatter.status},
 
-			            {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate,buttons: [{name: 'detail',title: __('查看評論'),classname: 'btn btn-xs btn-info btn-dialog',icon: 'fa fa-eye',url: 'wanlshop/comment/detail'}],formatter: Table.api.formatter.operate}
+			            {field: 'operate', title: __('Operate'), table: table, events: Table.api.events.operate,buttons: [{name: 'detail',title: __('View detail'),classname: 'btn btn-xs btn-info btn-dialog',icon: 'fa fa-eye',url: 'wanlshop/comment/detail'}],formatter: Table.api.formatter.operate}
 
 			        ]
 

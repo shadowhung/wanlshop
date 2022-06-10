@@ -553,7 +553,7 @@
         simple: false,
         responsive: true,
         render: 'text',//填充為代碼還是文本，可選code或text
-        placeholder: '請選擇省/市/區',
+        placeholder: 'Please select area',
         level: 'district',
         province: '',
         city: '',
