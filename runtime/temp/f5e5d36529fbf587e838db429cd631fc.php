@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/www/wwwroot/www.fdadeal.com/public/../application/index/view/wanlshop/page/add.html";i:1626753958;s:72:"/www/wwwroot/www.fdadeal.com/application/index/view/layout/wanlshop.html";i:1636510733;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:84:"/www/wwwroot/www.fdadeal.com/public/../application/index/view/wanlshop/page/add.html";i:1654745621;s:72:"/www/wwwroot/www.fdadeal.com/application/index/view/layout/wanlshop.html";i:1636510733;}*/ ?>
 <!DOCTYPE html>
 
 <html lang="<?php echo $config['language']; ?>">

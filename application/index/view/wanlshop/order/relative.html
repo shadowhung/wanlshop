@@ -185,28 +185,23 @@
 			{/case}
 
 		    {default /}
+		        
 				{empty name="list"}
-				<tr>
-					<td class="status">
-						<span class="day">{$row.delivertime|date="Y.m.d",###}</span>
-						<span class="time">{$row.delivertime|date="H:i",###}</span>
-						<span class="week"></span>
-					</td>
-					<td class="process">
-						<i class="fa fa-truck"></i>
-					</td>
-					<td class="info"><span>図書館から出るには</span>メーカーは在庫があり、24時間以内に発送される予定です。
-					<?php $time1 = date('H',$row['delivertime']);
-					    $time2 = 259200;
-					if($time1 >= 0 && $time1 < 7){
-					    $time2 = 259200;
-					}else if($time1 >= 18 && $time1 < 24){
-					    $time2 = 259200+3600*24;
-					} 
-					?>
-                    {$row.delivertime+$time2|date="Y.m.d",###}納品されましたので、しばらくお待ちください。~</td>
-					<!---包裹正在等待快遞小哥攬收-->
-				</tr>
+                	{volist name="track_list" id="vo"}
+                	    <tr>
+                	        <td class="status">
+        						<span class="day">{$vo.date}</span>
+        						<span class="time">{$vo.time}</span>
+        						<span class="week"></span>
+        					</td>
+        					<td class="process">
+        						<i class="fa fa-truck"></i>
+        					</td>
+        					<td class="info">{$vo.location}--{$vo.milestoneName.name}--{$vo.milestoneName.nameKey}</td>
+                	    </tr>
+                	{/volist}
+				
+				
 				
 				<?php if(!isset($data['name'])){ ?>
     				<?php $time1 = date('H',$row['delivertime']);

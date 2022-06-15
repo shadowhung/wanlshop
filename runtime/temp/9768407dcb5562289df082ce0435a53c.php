@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"/www/wwwroot/www.fdadeal.com/public/../application/index/view/wanlshop/entry/index.html";i:1635926071;s:71:"/www/wwwroot/www.fdadeal.com/application/index/view/layout/default.html";i:1614642256;s:68:"/www/wwwroot/www.fdadeal.com/application/index/view/common/meta.html";i:1608355012;s:70:"/www/wwwroot/www.fdadeal.com/application/index/view/common/script.html";i:1612489358;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:87:"/www/wwwroot/www.fdadeal.com/public/../application/index/view/wanlshop/entry/index.html";i:1654875677;s:71:"/www/wwwroot/www.fdadeal.com/application/index/view/layout/default.html";i:1654875635;s:68:"/www/wwwroot/www.fdadeal.com/application/index/view/common/meta.html";i:1608355012;s:70:"/www/wwwroot/www.fdadeal.com/application/index/view/common/script.html";i:1612489358;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>

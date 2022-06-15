@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"/www/wwwroot/www.fdadeal.com/public/../application/admin/view/user/user/edit.html";i:1630745742;s:71:"/www/wwwroot/www.fdadeal.com/application/admin/view/layout/default.html";i:1608326192;s:68:"/www/wwwroot/www.fdadeal.com/application/admin/view/common/meta.html";i:1608326192;s:70:"/www/wwwroot/www.fdadeal.com/application/admin/view/common/script.html";i:1608326190;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:81:"/www/wwwroot/www.fdadeal.com/public/../application/admin/view/user/user/edit.html";i:1655197307;s:71:"/www/wwwroot/www.fdadeal.com/application/admin/view/layout/default.html";i:1608326192;s:68:"/www/wwwroot/www.fdadeal.com/application/admin/view/common/meta.html";i:1608326192;s:70:"/www/wwwroot/www.fdadeal.com/application/admin/view/common/script.html";i:1608326190;}*/ ?>
 <!DOCTYPE html>
 <html lang="<?php echo $config['language']; ?>">
     <head>
@@ -133,6 +133,18 @@
         <label for="c-money" class="control-label col-xs-12 col-sm-2"><?php echo __('Money'); ?>:</label>
         <div class="col-xs-12 col-sm-4">
             <input id="c-money" data-rule="required" class="form-control" name="row[money]" type="number" value="<?php echo $row['money']; ?>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-score" class="control-label col-xs-12 col-sm-2"><?php echo __('Score'); ?>:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-score" data-rule="required" class="form-control" name="row[score]" type="number" value="<?php echo $row['score']; ?>">
+        </div>
+    </div>
+     <div class="form-group">
+        <label for="c-score" class="control-label col-xs-12 col-sm-2"><?php echo __('Coin'); ?>:</label>
+        <div class="col-xs-12 col-sm-4">
+            <input id="c-score" data-rule="required" class="form-control" name="row[coin]" type="number" value="<?php echo $row['coin']; ?>">
         </div>
     </div>
     <!--

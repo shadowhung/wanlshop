@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/www/wwwroot/www.fdadeal.com/public/../application/index/view/wanlshop/order/index.html";i:1637073392;s:72:"/www/wwwroot/www.fdadeal.com/application/index/view/layout/wanlshop.html";i:1636510733;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:87:"/www/wwwroot/www.fdadeal.com/public/../application/index/view/wanlshop/order/index.html";i:1654875669;s:72:"/www/wwwroot/www.fdadeal.com/application/index/view/layout/wanlshop.html";i:1654875636;}*/ ?>
 <!DOCTYPE html>
 
 <html lang="<?php echo $config['language']; ?>">
@@ -170,15 +170,15 @@
 
 										<ul class="dropdown-menu wipecache">
 
-											<li><a href="<?php echo url('index/wanlshop.goods/add'); ?>"><i class="fa fa-circle-o"></i> 商品を公開する</a></li>
+											<li><a href="<?php echo url('index/wanlshop.goods/add'); ?>"><i class="fa fa-circle-o"></i> Publish product</a></li>
 
 											<li class="divider"></li>
 
-											<li><a href="javascript:;" @click="toFind('new')"><i class="fa fa-circle-o"></i> 新製品を投稿する</a></li>
+											<li><a href="javascript:;" @click="toFind('new')"><i class="fa fa-circle-o"></i> Post a new product</a></li>
 
 											<!--<li><a href="javascript:;" @click="toFind('want')"><i class="fa fa-circle-o"></i> 發佈種草</a></li>-->
 
-											<li><a href="javascript:;" @click="toFind('show')"><i class="fa fa-circle-o"></i> ポストバイヤーショー</a></li>
+											<li><a href="javascript:;" @click="toFind('show')"><i class="fa fa-circle-o"></i> Post Buyer Show</a></li>
 
 										</ul>
 
@@ -544,7 +544,7 @@
 
 														<div class="text-orange">
 
-															￥ {{order.price * order.number}}
+															$ {{order.price * order.number}}
 
 														</div>
 
@@ -600,7 +600,7 @@
 
 							<div class="operation">
 
-								<button type="button" class="btn btn-danger" @click="submit">送信 Ctrl+Enter</button>
+								<button type="button" class="btn btn-danger" @click="submit">Send Ctrl+Enter</button>
 
 							</div>
 
@@ -674,9 +674,9 @@
 
 									<div v-cloak>
 
-										<span v-if="shopOnline == 1"><i class="fa fa-circle text-success margin-r-5"></i> 私はオンラインです</span>
+										<span v-if="shopOnline == 1"><i class="fa fa-circle text-success margin-r-5"></i> Online</span>
 
-										<span v-else><i class="fa fa-circle text-gray margin-r-5"></i> IM接続異常</span>
+										<span v-else><i class="fa fa-circle text-gray margin-r-5"></i> IM error</span>
 
 									</div>
 
@@ -690,7 +690,7 @@
 
 								<div class="input-group">
 
-									<input type="text" name="q" class="form-control" placeholder="蒐索選單">
+									<input type="text" name="q" class="form-control" placeholder="Menu selection">
 
 									<span class="input-group-btn">
 
@@ -720,7 +720,7 @@
 
 									<a href="<?php echo url('index/wanlshop.console/index'); ?>">
 
-										<i class="fa fa-dashboard fa-fw"></i> <span>コンソール</span>
+										<i class="fa fa-dashboard fa-fw"></i> <span>Overview</span>
 
 										<span class="pull-right-container"><small class="label pull-right bg-blue">hot</small></span>
 
@@ -732,7 +732,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-user"></i> <span>個人情報</span>
+										<i class="fa fa-user"></i> <span>Member center</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i></span>
 
@@ -746,7 +746,7 @@
 
 											<a href="<?php echo url('index/wanlshop.user/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>メンバーセンター</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>User info</span>
 
 											</a>
 
@@ -765,7 +765,7 @@
 
 											<a href="<?php echo url('index/wanlshop.user/changepwd2'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>支払いパスワードを変更する</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Payment password</span>
 
 											</a>
 
@@ -775,7 +775,7 @@
 
 											<a href="<?php echo url('index/wanlshop.user/changepwd'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>パスワードを変更する</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Password</span>
 
 											</a>
 
@@ -801,7 +801,7 @@
 
 									<a href="<?php echo url('index/wanlshop.shop/invitation'); ?>">
 
-										<i class="fa fa-wpforms"></i> <span>お友達招待</span>
+										<i class="fa fa-wpforms"></i> <span>Invitation</span>
 
 										<span class="pull-right-container"></span>
 
@@ -813,7 +813,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-leaf fa-fw"></i> <span>トランザクション管理</span>
+										<i class="fa fa-leaf fa-fw"></i> <span>Transaction</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i></span>
 
@@ -827,7 +827,7 @@
 
 											<a href="<?php echo url('index/wanlshop.order/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>注文管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Orders</span>
 
 											</a>
 
@@ -837,7 +837,7 @@
 
 											<a href="<?php echo url('index/wanlshop.order/comment'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>コメント管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Comments</span>
 
 											</a>
 
@@ -847,7 +847,7 @@
 
 											<a href="<?php echo url('index/wanlshop.refund/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>払い戻し管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Refund</span>
 
 											</a>
 
@@ -861,7 +861,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-rocket fa-fw"></i> <span>ロジスティクス管理</span>
+										<i class="fa fa-rocket fa-fw"></i> <span>Shipment</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i> </span>
 
@@ -873,7 +873,7 @@
 
 											<a href="<?php echo url('index/wanlshop.logistics/deliver'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>輸送する</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Transport</span>
 
 											</a>
 
@@ -883,7 +883,7 @@
 
 											<a href="<?php echo url('index/wanlshop.logistics/template'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>配送テンプレート</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Shipping template</span>
 
 											</a>
 
@@ -897,7 +897,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-shopping-bag fa-fw"></i> <span>商品管理</span>
+										<i class="fa fa-shopping-bag fa-fw"></i> <span>Products</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i> </span>
 
@@ -919,7 +919,7 @@
 
 											<a href="<?php echo url('index/wanlshop.goods/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>セール品</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Sale items</span>
 
 											</a>
 
@@ -929,7 +929,7 @@
 
 											<a href="<?php echo url('index/wanlshop.goods/stock'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>倉庫内の商品</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Warehouse</span>
 
 											</a>
 
@@ -943,7 +943,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-archive fa-fw"></i> <span>店舗管理</span>
+										<i class="fa fa-archive fa-fw"></i> <span>Online store</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i> </span>
 
@@ -957,7 +957,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/attachment'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>画像スペース</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Images</span>
 
 											</a>
 
@@ -967,7 +967,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>店舗建設</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Customize</span>
 
 											</a>
 
@@ -977,7 +977,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/category'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>カテゴリー管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Category</span>
 
 											</a>
 
@@ -987,7 +987,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/brand'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>ブランド管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Brand</span>
 
 											</a>
 
@@ -997,7 +997,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/profile'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>店舗情報</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Information</span>
 
 											</a>
 
@@ -1007,7 +1007,7 @@
 
 											<a href="<?php echo url('index/wanlshop.config/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>ストア構成</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Structure</span>
 
 											</a>
 
@@ -1033,7 +1033,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-th fa-fw text-red"></i> <span>アプリケーションセンター</span>
+										<i class="fa fa-th fa-fw text-red"></i> <span>Application</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i> </span>
 
@@ -1057,7 +1057,7 @@
 
 											<a href="<?php echo url('index/wanlshop.coupon/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>クーポン</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Coupon</span>
 
 											</a>
 
@@ -1109,8 +1109,8 @@
 
 								</li>
 
-								<li class="header">関連リンク</li>
-								<li class="<?php echo $config['controllername'].'.'.$config['actionname']=='wanlshop.wholesale.index'?'active':''; ?>"><a href="<?php echo url('index/wanlshop.wholesale/index'); ?>?order=desc&offset=0&limit=10"><i class="fa fa-list text-red"></i> <span>卸売センター</span></a></li>
+								<li class="header">Partner</li>
+								<li class="<?php echo $config['controllername'].'.'.$config['actionname']=='wanlshop.wholesale.index'?'active':''; ?>"><a href="<?php echo url('index/wanlshop.wholesale/index'); ?>?order=desc&offset=0&limit=10"><i class="fa fa-list text-red"></i> <span>Wholesale center</span></a></li>
 
 								<!--li class="<?php echo $config['controllername'].'.'.$config['actionname']=='wanlshop.user.line'?'active':''; ?>"><a href="<?php echo url('index/wanlshop.user/line'); ?>"><i class="fa fa-qq text-aqua"></i> <span>line交流群</span></a></li-->
 
@@ -1181,7 +1181,7 @@
 
 											<ol class="breadcrumb pull-left">
 
-												<li><a href="dashboard" class="addtabsit"><i class="fa fa-dashboard"></i> コンソール</a></li>
+												<li><a href="dashboard" class="addtabsit"><i class="fa fa-dashboard"></i> Overview</a></li>
 
 											</ol>
 
@@ -1199,7 +1199,7 @@
 
 										<div class="content">
 
-											<style type="text/css">	@page {		size: auto;		margin: 0mm;	}	.wanl_order_list{		margin-bottom: 15px;	}	.wanl_order_list .detail{			}	.fix-108{		width: 108px;		text-align: center;	}	.text-left{		text-align: left;	}	.text-right{		text-align: right;	}	.wanl_order_list .table>thead{		background: #f9fafc;	}	.bootstrap-table .table,	.bootstrap-table .table>thead>tr>th{		border-bottom: 1px solid #f1f1f1;	}	.table-bordered{		border: 1px solid #f1f1f1;	}	.table-bordered > thead > tr > th, 	.table-bordered > tbody > tr > td {		border: 1px solid #f1f1f1;		border-bottom: 0;	}	.table-bordered > thead > tr > th, label{		margin-bottom: 0;		font-weight: normal;	}	.table-bordered > tbody td.empty{		border-top: 0;	}	.table-bordered > tbody td.conceal{		border-left: 0 ;		border-right: 0 ;	}	.table-bordered > tbody td.conceal.fix-108{	}	.table-hover > tbody > tr:hover {	  background-color: #fffbfb;	}	/* 产品 */	.wanl_order_list p{		margin-bottom: 4px;	}	.wanl_order_list .item {		display: flex;		margin: 10px;	}		.wanl_order_list .item .order_img {		overflow: hidden;		border-radius: 6px;		flex-shrink: 0;	}	.wanl_order_list .item .order_info {		width: 90%;		margin-left: 10px;		margin-top: 2px;	}	.wanl_order_list .item .order_info .sku {		color: #9e9e9e;	}		.wanl_order_list .refund{		color: #e74c3c; font-size: 12px;	}		.wanl_order_list .operation a{		color: #565656;	}	.no-records-found{		background-color: #fffbfb;	}</style><div class="panel panel-default panel-intro">	<div class="panel-heading">		<ul class="nav nav-tabs" data-field="state">			<li class="active"><a href="#t-all" data-value="" data-toggle="tab">すべて</a></li>			<?php if(is_array($stateList) || $stateList instanceof \think\Collection || $stateList instanceof \think\Paginator): if( count($stateList)==0 ) : echo "" ;else: foreach($stateList as $key=>$vo): ?>			<li><a href="#t-<?php echo $key; ?>" data-value="<?php echo $key; ?>" data-toggle="tab"><?php echo $vo; ?></a></li>			<?php endforeach; endif; else: echo "" ;endif; ?>		</ul>	</div>	<div class="panel-body">		<div id="myTabContent" class="tab-content">			<div class="tab-pane fade active in" id="one">				<div class="widget-body no-padding">					<div id="toolbar" class="toolbar">						<a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>						<a class="btn btn-info btn-disabled disabled btn-invoice" href="javascript:;"><i class="fa fa-leaf"></i> 請求書を見る</a>						<!-- <a class="btn btn-success btn-disabled disabled btn-express" href="javascript:;"><i class="fa fa-leaf"></i> 电子面單云打印</a> -->						<a class="btn btn-danger btn-disabled disabled btn-delivery" href="javascript:;"><i class="fa fa-leaf"></i> バルク輸送</a>						<!-- <a class="btn btn-warning btn-recyclebin btn-dialog" href="wanlshop/order/recyclebin" title="<?php echo __('Recycle bin'); ?>"><i class="fa fa-recycle"></i> <?php echo __('Recycle bin'); ?></a> -->					</div>					<table id="table" data-show-export="false" data-show-toggle="false" data-show-columns="false" class="table" width="100%"></table>				</div>			</div>		</div>	</div></div><script type="text/html" id="itemtpl">	<% if(i == 0){ %>			<!--/*<div class="col-sm-12" style="margin-bottom: 15px;">			<table class="table table-bordered table-striped table-hover table-nowrap">			   <thead>				   <tr>						<th class="text-center"><div class="th-inner"><strong>商品</strong></div></th>						<th class="fix-108"><div class="th-inner">單价</div></th>						<th class="fix-108"><div class="th-inner">數量</div></th>						<th class="fix-108"><div class="th-inner">買家</div></th>						<th class="fix-108"><div class="th-inner">實際支付</div></th>						<th class="fix-108"><div class="th-inner">狀態</div></th>						<th class="fix-108"><div class="th-inner">操作</div></th>				   </tr>			   </thead>			</table>		</div>*/-->	<% } %><style></style>	<div class="wanl_order_list col-sm-12">		<table class="table table-bordered table-hover "  >			<thead>				<tr>					<th colspan="1">						<div class="th-inner" style="width:100%; font-size:12px;">							<input name="checkbox" data-id="<%=item.id%>" id="order_<%=item.id%>" type="checkbox" /> 							<label style="margin-left: 2px;" for="order_<%=item.id%>">注文番号：<%=item.order_no%></label>                            							<label style="margin-left:10px;" for="order_<%=item.id%>">作成時間：<%=Moment(item.createtime*1000).format("YY-MM-DD HH:mm")%></label>                            						</div>					</th>				</tr>			   			</thead>			<tbody>				<% for(var k = 0 ; k < item.ordergoods.length ; k ++){ %>				    <% var goods = item.ordergoods[k]; %>					<% var labelarr = ['primary', 'success', 'info', 'danger', 'warning', 'muted']; %>				    <tr>				    	<td class="conceal fix-108">							<div class="item">								<div class="order_img">									<a href="javascript:"><img class="img-md img-center" src="<%=cdnurl(goods.image)%>" alt="<%=goods.title%>"></a><br>									<a href="javascript:;" class="refund" data-id="<%=goods.refund_id%>"><%=goods.refund_status_text%></a>								</div>								<div class="order_info"  style="text-align:left;">									<p><%=goods.title%></p>									<p class="sku"><%=goods.difference%></p>																		<p><span style="color:red">販売価格：<%=goods.price%> 円 </span><del>市場価格：<%=goods.market_price%> 円</del> </p>																		<p>購入数量：x<%=goods.number%> </p>								</div>							</div>				    	</td>				    </tr>				    <tr>						<td class="fix-108">							<p>実際の売上高：<strong><%= item.pay.price %> 円</strong>  (貨物を含む：<%= item.pay.freight_price %> 円) </p>						</td>				    </tr>				    <tr>						<% if(k == 0){ %>				    	<td class="fix-108">				    		<p style="margin-bottom:5px;">				    			<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="user.nickname" data-value="<%=item.user.nickname%>" data-original-title="検索をクリックします <%=item.user.nickname%>"><%=item.user.nickname%></a>				    							    			<% if(item.wholesale_id!=0){%>                            <span style="color:red;">(卸売注文)</span>                            <% }%>				    		</p>				    	</td>				    </tr>				    <tr>						<td class="fix-108 operation">							<% if(item.state == 1){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[4]%>"><i class="fa fa-circle"></i> <%=item.state_text%> </span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a> </p>							<% }else if(item.state == 2){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[0]%>"><i class="fa fa-circle"></i> 									<% if(item.wholesale_id!=0){%>									<% if(item.is_wholesale==0){%>                                    <span style="color:red;">卸売りする</span>                                    <% }else {%>									<span style="color:red;">問屋から発送します</span>									<% }%>                                    <% }else {%>									<%=item.state_text%>									<% }%>									</span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a> 							</p>							<% }else if(item.state == 3){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[2]%>"><i class="fa fa-circle"></i>									<% if(item.wholesale_id!=0){%>									<span style="color:red;">メーカーが発送しました</span>                                    <% }else {%>									<%=item.state_text%>									<% }%>									</span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a> 							<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a> </p>							<% }else if(item.state == 4){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[1]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a> 								<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a> 							</p>							<% }else if(item.state == 5){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[0]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a>								<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a> 							</p>							<% }else if(item.state == 6){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[3]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>                                <a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a>                                 <a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a>                                <a href="javascript:;" class="comment" data-id="<%=item.id%>">コメントを見る</a>                            </p>							<% }else if(item.state == 7){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[5]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a>								<!--<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a>-->							</p>							<% } %>						</td>                    </tr>                    <tr>						<td class="fix-108 " style="border-bottom:#ccc solid 1px;">					        <% if(item.state == 1){ %><a href="javascript:;" class="btn btn-xs btn-<%=labelarr[2]%> btn-editprice" data-toggle="tooltip" title="価格を変更する" data-id="<%=item.id%>" style="margin-left:10px;">価格を変更する</a>							<% }else if(item.state == 2){ %>                                                                <% if(item.wholesale_id!=0){%>                                <% if(item.is_wholesale==0){%><a href="javascript:;" class="btn btn-xs btn-<%=labelarr[1]%> btn-wholesale1" data-toggle="tooltip" title="ワンクリック卸売" data-id="<%=item.id%>" style="margin-left:10px;">ワンクリック卸売</a>                                <% }%>                                <% }else{ %>                                <a href="javascript:;" class="btn btn-xs btn-<%=labelarr[1]%> btn-delivery" data-toggle="tooltip" title="輸送する" data-id="<%=item.id%>" style="margin-left:10px;">輸送する</a>                                <% } %>																<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[3]%> btn-invoice" data-toggle="tooltip" title="ライブラリリストを印刷する" data-id="<%=item.id%>" style="margin-left:10px;">ライブラリリストを印刷する</a>							<% }else if(item.state == 5){ %>								<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[2]%> btn-selected" data-toggle="tooltip" title="払い戻しを確認する" data-id="<%=item.id%>" style="margin-left:10px;">払い戻しを確認する</a>							<% } %>														<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[4]%> btn-delone" data-toggle="tooltip" title="購入者に連絡する" data-id="<%=item.user.id%>" data-name="<%=item.user.nickname%>" data-avatar="<%=item.user.avatar%>" style="margin-left:10px;">購入者に連絡する</a>						</td>                    </tr>                    <tr>						<% }else{ %>						<td class="empty"> </td>						<% } %>				    </tr>				<% } %>			</tbody>		</table>	</div></script>
+											<style type="text/css">	@page {		size: auto;		margin: 0mm;	}	.wanl_order_list{		margin-bottom: 15px;	}	.wanl_order_list .detail{		text-decoration-line: underline;	}	.wanl_order_list .kuaidisub{		text-decoration-line: underline;	}	.fix-108{		width: 108px;		text-align: center;	}	.text-left{		text-align: left;	}	.text-right{		text-align: right;	}	.wanl_order_list .table>thead{		background: #f9fafc;	}	.bootstrap-table .table,	.bootstrap-table .table>thead>tr>th{		border-bottom: 1px solid #f1f1f1;	}	.table-bordered{		border: 1px solid #f1f1f1;	}	.table-bordered > thead > tr > th, 	.table-bordered > tbody > tr > td {		border: 1px solid #f1f1f1;		border-bottom: 0;	}	.table-bordered > thead > tr > th, label{		margin-bottom: 0;		font-weight: normal;	}	.table-bordered > tbody td.empty{		border-top: 0;	}	.table-bordered > tbody td.conceal{		border-left: 0 ;		border-right: 0 ;	}	.table-bordered > tbody td.conceal.fix-108{	}	.table-hover > tbody > tr:hover {	  background-color: #fffbfb;	}	/* 产品 */	.wanl_order_list p{		margin-bottom: 4px;	}	.wanl_order_list .item {		display: flex;		margin: 10px;	}		.wanl_order_list .item .order_img {		overflow: hidden;		border-radius: 6px;		flex-shrink: 0;	}	.wanl_order_list .item .order_info {		width: 90%;		margin-left: 10px;		margin-top: 2px;	}	.wanl_order_list .item .order_info .sku {		color: #9e9e9e;	}		.wanl_order_list .refund{		color: #e74c3c; font-size: 12px;	}		.wanl_order_list .operation a{		color: #565656;	}	.no-records-found{		background-color: #fffbfb;	}</style><div class="panel panel-default panel-intro">	<div class="panel-heading">		<ul class="nav nav-tabs" data-field="state">			<li class="active"><a href="#t-all" data-value="" data-toggle="tab"><?php echo __('All'); ?></a></li>			<?php if(is_array($stateList) || $stateList instanceof \think\Collection || $stateList instanceof \think\Paginator): if( count($stateList)==0 ) : echo "" ;else: foreach($stateList as $key=>$vo): ?>			<li><a href="#t-<?php echo $key; ?>" data-value="<?php echo $key; ?>" data-toggle="tab"><?php echo $vo; ?></a></li>			<?php endforeach; endif; else: echo "" ;endif; ?>		</ul>	</div>	<div class="panel-body">		<div id="myTabContent" class="tab-content">			<div class="tab-pane fade active in" id="one">				<div class="widget-body no-padding">					<div id="toolbar" class="toolbar">						<a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>						<a class="btn btn-info btn-disabled disabled btn-invoice" href="javascript:;"><i class="fa fa-leaf"></i> <?php echo __('Invoice'); ?></a>						<!-- <a class="btn btn-success btn-disabled disabled btn-express" href="javascript:;"><i class="fa fa-leaf"></i> 电子面單云打印</a> -->						<a class="btn btn-danger btn-disabled disabled btn-delivery" href="javascript:;"><i class="fa fa-leaf"></i> <?php echo __('Bulk transport'); ?></a>						<!-- <a class="btn btn-warning btn-recyclebin btn-dialog" href="wanlshop/order/recyclebin" title="<?php echo __('Recycle bin'); ?>"><i class="fa fa-recycle"></i> <?php echo __('Recycle bin'); ?></a> -->					</div>					<table id="table" data-show-export="false" data-show-toggle="false" data-show-columns="false" class="table" width="100%"></table>				</div>			</div>		</div>	</div></div><script type="text/html" id="itemtpl">	<% if(i == 0){ %>			<!--/*<div class="col-sm-12" style="margin-bottom: 15px;">			<table class="table table-bordered table-striped table-hover table-nowrap">			   <thead>				   <tr>						<th class="text-center"><div class="th-inner"><strong>商品</strong></div></th>						<th class="fix-108"><div class="th-inner">單价</div></th>						<th class="fix-108"><div class="th-inner">數量</div></th>						<th class="fix-108"><div class="th-inner">買家</div></th>						<th class="fix-108"><div class="th-inner">實際支付</div></th>						<th class="fix-108"><div class="th-inner">狀態</div></th>						<th class="fix-108"><div class="th-inner">操作</div></th>				   </tr>			   </thead>			</table>		</div>*/-->	<% } %><style></style>	<div class="wanl_order_list col-sm-12">		<table class="table table-bordered table-hover "  >			<thead>				<tr>					<th colspan="1">						<div class="th-inner" style="width:100%; font-size:12px;">							<input name="checkbox" data-id="<%=item.id%>" id="order_<%=item.id%>" type="checkbox" /> 							<label style="margin-left: 2px;" for="order_<%=item.id%>"><?php echo __('Order_no'); ?>: <%=item.order_no%></label>                            							<label style="margin-left:10px;" for="order_<%=item.id%>"><?php echo __('Createtime'); ?>: <%=Moment(item.createtime*1000).format("YY-MM-DD HH:mm")%></label>                            						</div>					</th>				</tr>			   			</thead>			<tbody>				<% for(var k = 0 ; k < item.ordergoods.length ; k ++){ %>				    <% var goods = item.ordergoods[k]; %>					<% var labelarr = ['primary', 'success', 'info', 'danger', 'warning', 'muted']; %>				    <tr>				    	<td class="conceal fix-108">							<div class="item">								<div class="order_img">									<a href="javascript:"><img class="img-md img-center" src="<%=cdnurl(goods.image)%>" alt="<%=goods.title%>"></a><br>									<a href="javascript:;" class="refund" data-id="<%=goods.refund_id%>"><%=goods.refund_status_text%></a>								</div>								<div class="order_info"  style="text-align:left;">									<p><%=goods.title%></p>									<p class="sku"><%=goods.difference%></p>																		<p><span style="color:red"><?php echo __('Price'); ?>:<%=goods.price%> $ </span><del><?php echo __('Compare at price'); ?>: <%=goods.market_price%> $</del> </p>																		<p><?php echo __('Quantity'); ?>:x<%=goods.number%> </p>								</div>							</div>				    	</td>				    </tr>				    <tr>						<td class="fix-108">							<p><?php echo __('Sell price'); ?>: <strong><%= item.pay.price %> $</strong>  (<?php echo __('Shipping fee'); ?>：<%= item.pay.freight_price %> $) </p>						</td>				    </tr>				    <tr>						<% if(k == 0){ %>				    	<td class="fix-108">				    		<p style="margin-bottom:5px;">				    			<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="user.nickname" data-value="<%=item.user.nickname%>" data-original-title="Click search <%=item.user.nickname%>"><%=item.user.nickname%></a>				    			<% if(item.wholesale_id!=0){%>                            <span style="color:red;"><?php echo __('Wholesale order'); ?></span>                            <% }%>				    		</p>				    	</td>				    </tr>				    <tr>						<td class="fix-108 operation">							<% if(item.state == 1){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[4]%>"><i class="fa fa-circle"></i> <%=item.state_text%> </span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a> </p>							<% }else if(item.state == 2){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[0]%>"><i class="fa fa-circle"></i>									<% if(item.wholesale_id!=0){%>									<% if(item.is_wholesale==0){%>                                    <span style="color:red;"><?php echo __('Wholesale'); ?></span>                                    <% }else {%>									<span style="color:red;"><?php echo __('Ships from wholesaler'); ?></span>									<% }%>                                    <% }else {%>									<%=item.state_text%>									<% }%>									</span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>							</p>							<% }else if(item.state == 3){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[2]%>"><i class="fa fa-circle"></i>									<% if(item.wholesale_id!=0){%>									<span style="color:red;"><?php echo __('Ships from factory'); ?></span>                                    <% }else {%>									<%=item.state_text%>									<% }%>									</span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>							<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a> </p>							<% }else if(item.state == 4){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[1]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>								<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a>							</p>							<% }else if(item.state == 5){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[0]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>								<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a>							</p>							<% }else if(item.state == 6){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[3]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>                                <a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>                                <a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a>                                <a href="javascript:;" class="comment" data-id="<%=item.id%>"><?php echo __('See comments'); ?></a>                            </p>							<% }else if(item.state == 7){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[5]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>								<!--<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a>-->							</p>							<% } %>						</td>                    </tr>                    <tr>						<td class="fix-108 " style="border-bottom:#ccc solid 1px;">					        <% if(item.state == 1){ %><a href="javascript:;" class="btn btn-xs btn-<%=labelarr[2]%> btn-editprice" data-toggle="tooltip" title="<?php echo __('Change price'); ?>" data-id="<%=item.id%>" style="margin-left:10px;"><?php echo __('Change price'); ?></a>							<% }else if(item.state == 2){ %>                                                                <% if(item.wholesale_id!=0){%>                                <% if(item.is_wholesale==0){%><a href="javascript:;" class="btn btn-xs btn-<%=labelarr[1]%> btn-wholesale1" data-toggle="tooltip" title="<?php echo __('Quick purchase'); ?>" data-id="<%=item.id%>" style="margin-left:10px;"><?php echo __('Quick purchase'); ?></a>                                <% }%>                                <% }else{ %>                                <a href="javascript:;" class="btn btn-xs btn-<%=labelarr[1]%> btn-delivery" data-toggle="tooltip" title="<?php echo __('Shipment'); ?>" data-id="<%=item.id%>" style="margin-left:10px;"><?php echo __('Shipment'); ?></a>                                <% } %>																<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[3]%> btn-invoice" data-toggle="tooltip" title="<?php echo __('Print list'); ?>" data-id="<%=item.id%>" style="margin-left:10px;">ライブラリリストを印刷する</a>							<% }else if(item.state == 5){ %>								<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[2]%> btn-selected" data-toggle="tooltip" title="<?php echo __('Confirm refund'); ?>" data-id="<%=item.id%>" style="margin-left:10px;"><?php echo __('Confirm refund'); ?></a>							<% } %>														<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[4]%> btn-delone" data-toggle="tooltip" title="<?php echo __('Contact customer'); ?>" data-id="<%=item.user.id%>" data-name="<%=item.user.nickname%>" data-avatar="<%=item.user.avatar%>" style="margin-left:10px;"><?php echo __('Contact customer'); ?></a>						</td>                    </tr>                    <tr>						<% }else{ %>						<td class="empty"> </td>						<% } %>				    </tr>				<% } %>			</tbody>		</table>	</div></script>
 
 										</div>
 
@@ -1241,7 +1241,7 @@
 
 							<div class="content">
 
-								<style type="text/css">	@page {		size: auto;		margin: 0mm;	}	.wanl_order_list{		margin-bottom: 15px;	}	.wanl_order_list .detail{			}	.fix-108{		width: 108px;		text-align: center;	}	.text-left{		text-align: left;	}	.text-right{		text-align: right;	}	.wanl_order_list .table>thead{		background: #f9fafc;	}	.bootstrap-table .table,	.bootstrap-table .table>thead>tr>th{		border-bottom: 1px solid #f1f1f1;	}	.table-bordered{		border: 1px solid #f1f1f1;	}	.table-bordered > thead > tr > th, 	.table-bordered > tbody > tr > td {		border: 1px solid #f1f1f1;		border-bottom: 0;	}	.table-bordered > thead > tr > th, label{		margin-bottom: 0;		font-weight: normal;	}	.table-bordered > tbody td.empty{		border-top: 0;	}	.table-bordered > tbody td.conceal{		border-left: 0 ;		border-right: 0 ;	}	.table-bordered > tbody td.conceal.fix-108{	}	.table-hover > tbody > tr:hover {	  background-color: #fffbfb;	}	/* 产品 */	.wanl_order_list p{		margin-bottom: 4px;	}	.wanl_order_list .item {		display: flex;		margin: 10px;	}		.wanl_order_list .item .order_img {		overflow: hidden;		border-radius: 6px;		flex-shrink: 0;	}	.wanl_order_list .item .order_info {		width: 90%;		margin-left: 10px;		margin-top: 2px;	}	.wanl_order_list .item .order_info .sku {		color: #9e9e9e;	}		.wanl_order_list .refund{		color: #e74c3c; font-size: 12px;	}		.wanl_order_list .operation a{		color: #565656;	}	.no-records-found{		background-color: #fffbfb;	}</style><div class="panel panel-default panel-intro">	<div class="panel-heading">		<ul class="nav nav-tabs" data-field="state">			<li class="active"><a href="#t-all" data-value="" data-toggle="tab">すべて</a></li>			<?php if(is_array($stateList) || $stateList instanceof \think\Collection || $stateList instanceof \think\Paginator): if( count($stateList)==0 ) : echo "" ;else: foreach($stateList as $key=>$vo): ?>			<li><a href="#t-<?php echo $key; ?>" data-value="<?php echo $key; ?>" data-toggle="tab"><?php echo $vo; ?></a></li>			<?php endforeach; endif; else: echo "" ;endif; ?>		</ul>	</div>	<div class="panel-body">		<div id="myTabContent" class="tab-content">			<div class="tab-pane fade active in" id="one">				<div class="widget-body no-padding">					<div id="toolbar" class="toolbar">						<a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>						<a class="btn btn-info btn-disabled disabled btn-invoice" href="javascript:;"><i class="fa fa-leaf"></i> 請求書を見る</a>						<!-- <a class="btn btn-success btn-disabled disabled btn-express" href="javascript:;"><i class="fa fa-leaf"></i> 电子面單云打印</a> -->						<a class="btn btn-danger btn-disabled disabled btn-delivery" href="javascript:;"><i class="fa fa-leaf"></i> バルク輸送</a>						<!-- <a class="btn btn-warning btn-recyclebin btn-dialog" href="wanlshop/order/recyclebin" title="<?php echo __('Recycle bin'); ?>"><i class="fa fa-recycle"></i> <?php echo __('Recycle bin'); ?></a> -->					</div>					<table id="table" data-show-export="false" data-show-toggle="false" data-show-columns="false" class="table" width="100%"></table>				</div>			</div>		</div>	</div></div><script type="text/html" id="itemtpl">	<% if(i == 0){ %>			<!--/*<div class="col-sm-12" style="margin-bottom: 15px;">			<table class="table table-bordered table-striped table-hover table-nowrap">			   <thead>				   <tr>						<th class="text-center"><div class="th-inner"><strong>商品</strong></div></th>						<th class="fix-108"><div class="th-inner">單价</div></th>						<th class="fix-108"><div class="th-inner">數量</div></th>						<th class="fix-108"><div class="th-inner">買家</div></th>						<th class="fix-108"><div class="th-inner">實際支付</div></th>						<th class="fix-108"><div class="th-inner">狀態</div></th>						<th class="fix-108"><div class="th-inner">操作</div></th>				   </tr>			   </thead>			</table>		</div>*/-->	<% } %><style></style>	<div class="wanl_order_list col-sm-12">		<table class="table table-bordered table-hover "  >			<thead>				<tr>					<th colspan="1">						<div class="th-inner" style="width:100%; font-size:12px;">							<input name="checkbox" data-id="<%=item.id%>" id="order_<%=item.id%>" type="checkbox" /> 							<label style="margin-left: 2px;" for="order_<%=item.id%>">注文番号：<%=item.order_no%></label>                            							<label style="margin-left:10px;" for="order_<%=item.id%>">作成時間：<%=Moment(item.createtime*1000).format("YY-MM-DD HH:mm")%></label>                            						</div>					</th>				</tr>			   			</thead>			<tbody>				<% for(var k = 0 ; k < item.ordergoods.length ; k ++){ %>				    <% var goods = item.ordergoods[k]; %>					<% var labelarr = ['primary', 'success', 'info', 'danger', 'warning', 'muted']; %>				    <tr>				    	<td class="conceal fix-108">							<div class="item">								<div class="order_img">									<a href="javascript:"><img class="img-md img-center" src="<%=cdnurl(goods.image)%>" alt="<%=goods.title%>"></a><br>									<a href="javascript:;" class="refund" data-id="<%=goods.refund_id%>"><%=goods.refund_status_text%></a>								</div>								<div class="order_info"  style="text-align:left;">									<p><%=goods.title%></p>									<p class="sku"><%=goods.difference%></p>																		<p><span style="color:red">販売価格：<%=goods.price%> 円 </span><del>市場価格：<%=goods.market_price%> 円</del> </p>																		<p>購入数量：x<%=goods.number%> </p>								</div>							</div>				    	</td>				    </tr>				    <tr>						<td class="fix-108">							<p>実際の売上高：<strong><%= item.pay.price %> 円</strong>  (貨物を含む：<%= item.pay.freight_price %> 円) </p>						</td>				    </tr>				    <tr>						<% if(k == 0){ %>				    	<td class="fix-108">				    		<p style="margin-bottom:5px;">				    			<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="user.nickname" data-value="<%=item.user.nickname%>" data-original-title="検索をクリックします <%=item.user.nickname%>"><%=item.user.nickname%></a>				    							    			<% if(item.wholesale_id!=0){%>                            <span style="color:red;">(卸売注文)</span>                            <% }%>				    		</p>				    	</td>				    </tr>				    <tr>						<td class="fix-108 operation">							<% if(item.state == 1){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[4]%>"><i class="fa fa-circle"></i> <%=item.state_text%> </span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a> </p>							<% }else if(item.state == 2){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[0]%>"><i class="fa fa-circle"></i> 									<% if(item.wholesale_id!=0){%>									<% if(item.is_wholesale==0){%>                                    <span style="color:red;">卸売りする</span>                                    <% }else {%>									<span style="color:red;">問屋から発送します</span>									<% }%>                                    <% }else {%>									<%=item.state_text%>									<% }%>									</span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a> 							</p>							<% }else if(item.state == 3){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[2]%>"><i class="fa fa-circle"></i>									<% if(item.wholesale_id!=0){%>									<span style="color:red;">メーカーが発送しました</span>                                    <% }else {%>									<%=item.state_text%>									<% }%>									</span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a> 							<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a> </p>							<% }else if(item.state == 4){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[1]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a> 								<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a> 							</p>							<% }else if(item.state == 5){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[0]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a>								<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a> 							</p>							<% }else if(item.state == 6){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[3]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>                                <a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a>                                 <a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a>                                <a href="javascript:;" class="comment" data-id="<%=item.id%>">コメントを見る</a>                            </p>							<% }else if(item.state == 7){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="検索をクリックします <%=item.state_text%>">									<span class="text-<%=labelarr[5]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>">注文詳細</a>								<!--<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>">ロジスティクスを見る</a>-->							</p>							<% } %>						</td>                    </tr>                    <tr>						<td class="fix-108 " style="border-bottom:#ccc solid 1px;">					        <% if(item.state == 1){ %><a href="javascript:;" class="btn btn-xs btn-<%=labelarr[2]%> btn-editprice" data-toggle="tooltip" title="価格を変更する" data-id="<%=item.id%>" style="margin-left:10px;">価格を変更する</a>							<% }else if(item.state == 2){ %>                                                                <% if(item.wholesale_id!=0){%>                                <% if(item.is_wholesale==0){%><a href="javascript:;" class="btn btn-xs btn-<%=labelarr[1]%> btn-wholesale1" data-toggle="tooltip" title="ワンクリック卸売" data-id="<%=item.id%>" style="margin-left:10px;">ワンクリック卸売</a>                                <% }%>                                <% }else{ %>                                <a href="javascript:;" class="btn btn-xs btn-<%=labelarr[1]%> btn-delivery" data-toggle="tooltip" title="輸送する" data-id="<%=item.id%>" style="margin-left:10px;">輸送する</a>                                <% } %>																<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[3]%> btn-invoice" data-toggle="tooltip" title="ライブラリリストを印刷する" data-id="<%=item.id%>" style="margin-left:10px;">ライブラリリストを印刷する</a>							<% }else if(item.state == 5){ %>								<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[2]%> btn-selected" data-toggle="tooltip" title="払い戻しを確認する" data-id="<%=item.id%>" style="margin-left:10px;">払い戻しを確認する</a>							<% } %>														<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[4]%> btn-delone" data-toggle="tooltip" title="購入者に連絡する" data-id="<%=item.user.id%>" data-name="<%=item.user.nickname%>" data-avatar="<%=item.user.avatar%>" style="margin-left:10px;">購入者に連絡する</a>						</td>                    </tr>                    <tr>						<% }else{ %>						<td class="empty"> </td>						<% } %>				    </tr>				<% } %>			</tbody>		</table>	</div></script>
+								<style type="text/css">	@page {		size: auto;		margin: 0mm;	}	.wanl_order_list{		margin-bottom: 15px;	}	.wanl_order_list .detail{		text-decoration-line: underline;	}	.wanl_order_list .kuaidisub{		text-decoration-line: underline;	}	.fix-108{		width: 108px;		text-align: center;	}	.text-left{		text-align: left;	}	.text-right{		text-align: right;	}	.wanl_order_list .table>thead{		background: #f9fafc;	}	.bootstrap-table .table,	.bootstrap-table .table>thead>tr>th{		border-bottom: 1px solid #f1f1f1;	}	.table-bordered{		border: 1px solid #f1f1f1;	}	.table-bordered > thead > tr > th, 	.table-bordered > tbody > tr > td {		border: 1px solid #f1f1f1;		border-bottom: 0;	}	.table-bordered > thead > tr > th, label{		margin-bottom: 0;		font-weight: normal;	}	.table-bordered > tbody td.empty{		border-top: 0;	}	.table-bordered > tbody td.conceal{		border-left: 0 ;		border-right: 0 ;	}	.table-bordered > tbody td.conceal.fix-108{	}	.table-hover > tbody > tr:hover {	  background-color: #fffbfb;	}	/* 产品 */	.wanl_order_list p{		margin-bottom: 4px;	}	.wanl_order_list .item {		display: flex;		margin: 10px;	}		.wanl_order_list .item .order_img {		overflow: hidden;		border-radius: 6px;		flex-shrink: 0;	}	.wanl_order_list .item .order_info {		width: 90%;		margin-left: 10px;		margin-top: 2px;	}	.wanl_order_list .item .order_info .sku {		color: #9e9e9e;	}		.wanl_order_list .refund{		color: #e74c3c; font-size: 12px;	}		.wanl_order_list .operation a{		color: #565656;	}	.no-records-found{		background-color: #fffbfb;	}</style><div class="panel panel-default panel-intro">	<div class="panel-heading">		<ul class="nav nav-tabs" data-field="state">			<li class="active"><a href="#t-all" data-value="" data-toggle="tab"><?php echo __('All'); ?></a></li>			<?php if(is_array($stateList) || $stateList instanceof \think\Collection || $stateList instanceof \think\Paginator): if( count($stateList)==0 ) : echo "" ;else: foreach($stateList as $key=>$vo): ?>			<li><a href="#t-<?php echo $key; ?>" data-value="<?php echo $key; ?>" data-toggle="tab"><?php echo $vo; ?></a></li>			<?php endforeach; endif; else: echo "" ;endif; ?>		</ul>	</div>	<div class="panel-body">		<div id="myTabContent" class="tab-content">			<div class="tab-pane fade active in" id="one">				<div class="widget-body no-padding">					<div id="toolbar" class="toolbar">						<a href="javascript:;" class="btn btn-primary btn-refresh" title="<?php echo __('Refresh'); ?>" ><i class="fa fa-refresh"></i> </a>						<a class="btn btn-info btn-disabled disabled btn-invoice" href="javascript:;"><i class="fa fa-leaf"></i> <?php echo __('Invoice'); ?></a>						<!-- <a class="btn btn-success btn-disabled disabled btn-express" href="javascript:;"><i class="fa fa-leaf"></i> 电子面單云打印</a> -->						<a class="btn btn-danger btn-disabled disabled btn-delivery" href="javascript:;"><i class="fa fa-leaf"></i> <?php echo __('Bulk transport'); ?></a>						<!-- <a class="btn btn-warning btn-recyclebin btn-dialog" href="wanlshop/order/recyclebin" title="<?php echo __('Recycle bin'); ?>"><i class="fa fa-recycle"></i> <?php echo __('Recycle bin'); ?></a> -->					</div>					<table id="table" data-show-export="false" data-show-toggle="false" data-show-columns="false" class="table" width="100%"></table>				</div>			</div>		</div>	</div></div><script type="text/html" id="itemtpl">	<% if(i == 0){ %>			<!--/*<div class="col-sm-12" style="margin-bottom: 15px;">			<table class="table table-bordered table-striped table-hover table-nowrap">			   <thead>				   <tr>						<th class="text-center"><div class="th-inner"><strong>商品</strong></div></th>						<th class="fix-108"><div class="th-inner">單价</div></th>						<th class="fix-108"><div class="th-inner">數量</div></th>						<th class="fix-108"><div class="th-inner">買家</div></th>						<th class="fix-108"><div class="th-inner">實際支付</div></th>						<th class="fix-108"><div class="th-inner">狀態</div></th>						<th class="fix-108"><div class="th-inner">操作</div></th>				   </tr>			   </thead>			</table>		</div>*/-->	<% } %><style></style>	<div class="wanl_order_list col-sm-12">		<table class="table table-bordered table-hover "  >			<thead>				<tr>					<th colspan="1">						<div class="th-inner" style="width:100%; font-size:12px;">							<input name="checkbox" data-id="<%=item.id%>" id="order_<%=item.id%>" type="checkbox" /> 							<label style="margin-left: 2px;" for="order_<%=item.id%>"><?php echo __('Order_no'); ?>: <%=item.order_no%></label>                            							<label style="margin-left:10px;" for="order_<%=item.id%>"><?php echo __('Createtime'); ?>: <%=Moment(item.createtime*1000).format("YY-MM-DD HH:mm")%></label>                            						</div>					</th>				</tr>			   			</thead>			<tbody>				<% for(var k = 0 ; k < item.ordergoods.length ; k ++){ %>				    <% var goods = item.ordergoods[k]; %>					<% var labelarr = ['primary', 'success', 'info', 'danger', 'warning', 'muted']; %>				    <tr>				    	<td class="conceal fix-108">							<div class="item">								<div class="order_img">									<a href="javascript:"><img class="img-md img-center" src="<%=cdnurl(goods.image)%>" alt="<%=goods.title%>"></a><br>									<a href="javascript:;" class="refund" data-id="<%=goods.refund_id%>"><%=goods.refund_status_text%></a>								</div>								<div class="order_info"  style="text-align:left;">									<p><%=goods.title%></p>									<p class="sku"><%=goods.difference%></p>																		<p><span style="color:red"><?php echo __('Price'); ?>:<%=goods.price%> $ </span><del><?php echo __('Compare at price'); ?>: <%=goods.market_price%> $</del> </p>																		<p><?php echo __('Quantity'); ?>:x<%=goods.number%> </p>								</div>							</div>				    	</td>				    </tr>				    <tr>						<td class="fix-108">							<p><?php echo __('Sell price'); ?>: <strong><%= item.pay.price %> $</strong>  (<?php echo __('Shipping fee'); ?>：<%= item.pay.freight_price %> $) </p>						</td>				    </tr>				    <tr>						<% if(k == 0){ %>				    	<td class="fix-108">				    		<p style="margin-bottom:5px;">				    			<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="user.nickname" data-value="<%=item.user.nickname%>" data-original-title="Click search <%=item.user.nickname%>"><%=item.user.nickname%></a>				    			<% if(item.wholesale_id!=0){%>                            <span style="color:red;"><?php echo __('Wholesale order'); ?></span>                            <% }%>				    		</p>				    	</td>				    </tr>				    <tr>						<td class="fix-108 operation">							<% if(item.state == 1){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[4]%>"><i class="fa fa-circle"></i> <%=item.state_text%> </span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a> </p>							<% }else if(item.state == 2){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[0]%>"><i class="fa fa-circle"></i>									<% if(item.wholesale_id!=0){%>									<% if(item.is_wholesale==0){%>                                    <span style="color:red;"><?php echo __('Wholesale'); ?></span>                                    <% }else {%>									<span style="color:red;"><?php echo __('Ships from wholesaler'); ?></span>									<% }%>                                    <% }else {%>									<%=item.state_text%>									<% }%>									</span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>							</p>							<% }else if(item.state == 3){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[2]%>"><i class="fa fa-circle"></i>									<% if(item.wholesale_id!=0){%>									<span style="color:red;"><?php echo __('Ships from factory'); ?></span>                                    <% }else {%>									<%=item.state_text%>									<% }%>									</span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>							<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a> </p>							<% }else if(item.state == 4){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[1]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>								<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a>							</p>							<% }else if(item.state == 5){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[0]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>								<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a>							</p>							<% }else if(item.state == 6){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[3]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>                                <a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>                                <a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a>                                <a href="javascript:;" class="comment" data-id="<%=item.id%>"><?php echo __('See comments'); ?></a>                            </p>							<% }else if(item.state == 7){ %>							<p>								<a href="javascript:;" class="searchit" data-toggle="tooltip" title="" data-field="state" data-value="<%=item.state%>" data-original-title="Click search <%=item.state_text%>">									<span class="text-<%=labelarr[5]%>"><i class="fa fa-circle"></i> <%=item.state_text%></span>								</a>								<a href="javascript:;" class="detail" data-id="<%=item.id%>"><?php echo __('Order detail'); ?></a>								<!--<a href="javascript:;" class="kuaidisub" data-id="<%=item.id%>"><?php echo __('Tracking'); ?></a>-->							</p>							<% } %>						</td>                    </tr>                    <tr>						<td class="fix-108 " style="border-bottom:#ccc solid 1px;">					        <% if(item.state == 1){ %><a href="javascript:;" class="btn btn-xs btn-<%=labelarr[2]%> btn-editprice" data-toggle="tooltip" title="<?php echo __('Change price'); ?>" data-id="<%=item.id%>" style="margin-left:10px;"><?php echo __('Change price'); ?></a>							<% }else if(item.state == 2){ %>                                                                <% if(item.wholesale_id!=0){%>                                <% if(item.is_wholesale==0){%><a href="javascript:;" class="btn btn-xs btn-<%=labelarr[1]%> btn-wholesale1" data-toggle="tooltip" title="<?php echo __('Quick purchase'); ?>" data-id="<%=item.id%>" style="margin-left:10px;"><?php echo __('Quick purchase'); ?></a>                                <% }%>                                <% }else{ %>                                <a href="javascript:;" class="btn btn-xs btn-<%=labelarr[1]%> btn-delivery" data-toggle="tooltip" title="<?php echo __('Shipment'); ?>" data-id="<%=item.id%>" style="margin-left:10px;"><?php echo __('Shipment'); ?></a>                                <% } %>																<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[3]%> btn-invoice" data-toggle="tooltip" title="<?php echo __('Print list'); ?>" data-id="<%=item.id%>" style="margin-left:10px;">ライブラリリストを印刷する</a>							<% }else if(item.state == 5){ %>								<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[2]%> btn-selected" data-toggle="tooltip" title="<?php echo __('Confirm refund'); ?>" data-id="<%=item.id%>" style="margin-left:10px;"><?php echo __('Confirm refund'); ?></a>							<% } %>														<a href="javascript:;" class="btn btn-xs btn-<%=labelarr[4]%> btn-delone" data-toggle="tooltip" title="<?php echo __('Contact customer'); ?>" data-id="<%=item.user.id%>" data-name="<%=item.user.nickname%>" data-avatar="<%=item.user.avatar%>" style="margin-left:10px;"><?php echo __('Contact customer'); ?></a>						</td>                    </tr>                    <tr>						<% }else{ %>						<td class="empty"> </td>						<% } %>				    </tr>				<% } %>			</tbody>		</table>	</div></script>
 
 							</div>
 
