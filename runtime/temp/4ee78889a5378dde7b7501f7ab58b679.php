@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:86:"/www/wwwroot/www.fdadeal.com/public/../application/index/view/wanlshop/user/index.html";i:1615081302;s:72:"/www/wwwroot/www.fdadeal.com/application/index/view/layout/wanlshop.html";i:1636510733;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:2:{s:86:"/www/wwwroot/www.fdadeal.com/public/../application/index/view/wanlshop/user/index.html";i:1654875655;s:72:"/www/wwwroot/www.fdadeal.com/application/index/view/layout/wanlshop.html";i:1654875636;}*/ ?>
 <!DOCTYPE html>
 
 <html lang="<?php echo $config['language']; ?>">
@@ -170,15 +170,15 @@
 
 										<ul class="dropdown-menu wipecache">
 
-											<li><a href="<?php echo url('index/wanlshop.goods/add'); ?>"><i class="fa fa-circle-o"></i> 商品を公開する</a></li>
+											<li><a href="<?php echo url('index/wanlshop.goods/add'); ?>"><i class="fa fa-circle-o"></i> Publish product</a></li>
 
 											<li class="divider"></li>
 
-											<li><a href="javascript:;" @click="toFind('new')"><i class="fa fa-circle-o"></i> 新製品を投稿する</a></li>
+											<li><a href="javascript:;" @click="toFind('new')"><i class="fa fa-circle-o"></i> Post a new product</a></li>
 
 											<!--<li><a href="javascript:;" @click="toFind('want')"><i class="fa fa-circle-o"></i> 發佈種草</a></li>-->
 
-											<li><a href="javascript:;" @click="toFind('show')"><i class="fa fa-circle-o"></i> ポストバイヤーショー</a></li>
+											<li><a href="javascript:;" @click="toFind('show')"><i class="fa fa-circle-o"></i> Post Buyer Show</a></li>
 
 										</ul>
 
@@ -544,7 +544,7 @@
 
 														<div class="text-orange">
 
-															￥ {{order.price * order.number}}
+															$ {{order.price * order.number}}
 
 														</div>
 
@@ -600,7 +600,7 @@
 
 							<div class="operation">
 
-								<button type="button" class="btn btn-danger" @click="submit">送信 Ctrl+Enter</button>
+								<button type="button" class="btn btn-danger" @click="submit">Send Ctrl+Enter</button>
 
 							</div>
 
@@ -674,9 +674,9 @@
 
 									<div v-cloak>
 
-										<span v-if="shopOnline == 1"><i class="fa fa-circle text-success margin-r-5"></i> 私はオンラインです</span>
+										<span v-if="shopOnline == 1"><i class="fa fa-circle text-success margin-r-5"></i> Online</span>
 
-										<span v-else><i class="fa fa-circle text-gray margin-r-5"></i> IM接続異常</span>
+										<span v-else><i class="fa fa-circle text-gray margin-r-5"></i> IM error</span>
 
 									</div>
 
@@ -690,7 +690,7 @@
 
 								<div class="input-group">
 
-									<input type="text" name="q" class="form-control" placeholder="蒐索選單">
+									<input type="text" name="q" class="form-control" placeholder="Menu selection">
 
 									<span class="input-group-btn">
 
@@ -720,7 +720,7 @@
 
 									<a href="<?php echo url('index/wanlshop.console/index'); ?>">
 
-										<i class="fa fa-dashboard fa-fw"></i> <span>コンソール</span>
+										<i class="fa fa-dashboard fa-fw"></i> <span>Overview</span>
 
 										<span class="pull-right-container"><small class="label pull-right bg-blue">hot</small></span>
 
@@ -732,7 +732,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-user"></i> <span>個人情報</span>
+										<i class="fa fa-user"></i> <span>Member center</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i></span>
 
@@ -746,7 +746,7 @@
 
 											<a href="<?php echo url('index/wanlshop.user/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>メンバーセンター</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>User info</span>
 
 											</a>
 
@@ -765,7 +765,7 @@
 
 											<a href="<?php echo url('index/wanlshop.user/changepwd2'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>支払いパスワードを変更する</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Payment password</span>
 
 											</a>
 
@@ -775,7 +775,7 @@
 
 											<a href="<?php echo url('index/wanlshop.user/changepwd'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>パスワードを変更する</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Password</span>
 
 											</a>
 
@@ -801,7 +801,7 @@
 
 									<a href="<?php echo url('index/wanlshop.shop/invitation'); ?>">
 
-										<i class="fa fa-wpforms"></i> <span>お友達招待</span>
+										<i class="fa fa-wpforms"></i> <span>Invitation</span>
 
 										<span class="pull-right-container"></span>
 
@@ -813,7 +813,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-leaf fa-fw"></i> <span>トランザクション管理</span>
+										<i class="fa fa-leaf fa-fw"></i> <span>Transaction</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i></span>
 
@@ -827,7 +827,7 @@
 
 											<a href="<?php echo url('index/wanlshop.order/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>注文管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Orders</span>
 
 											</a>
 
@@ -837,7 +837,7 @@
 
 											<a href="<?php echo url('index/wanlshop.order/comment'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>コメント管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Comments</span>
 
 											</a>
 
@@ -847,7 +847,7 @@
 
 											<a href="<?php echo url('index/wanlshop.refund/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>払い戻し管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Refund</span>
 
 											</a>
 
@@ -861,7 +861,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-rocket fa-fw"></i> <span>ロジスティクス管理</span>
+										<i class="fa fa-rocket fa-fw"></i> <span>Shipment</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i> </span>
 
@@ -873,7 +873,7 @@
 
 											<a href="<?php echo url('index/wanlshop.logistics/deliver'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>輸送する</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Transport</span>
 
 											</a>
 
@@ -883,7 +883,7 @@
 
 											<a href="<?php echo url('index/wanlshop.logistics/template'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>配送テンプレート</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Shipping template</span>
 
 											</a>
 
@@ -897,7 +897,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-shopping-bag fa-fw"></i> <span>商品管理</span>
+										<i class="fa fa-shopping-bag fa-fw"></i> <span>Products</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i> </span>
 
@@ -919,7 +919,7 @@
 
 											<a href="<?php echo url('index/wanlshop.goods/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>セール品</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Sale items</span>
 
 											</a>
 
@@ -929,7 +929,7 @@
 
 											<a href="<?php echo url('index/wanlshop.goods/stock'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>倉庫内の商品</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Warehouse</span>
 
 											</a>
 
@@ -943,7 +943,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-archive fa-fw"></i> <span>店舗管理</span>
+										<i class="fa fa-archive fa-fw"></i> <span>Online store</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i> </span>
 
@@ -957,7 +957,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/attachment'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>画像スペース</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Images</span>
 
 											</a>
 
@@ -967,7 +967,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>店舗建設</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Customize</span>
 
 											</a>
 
@@ -977,7 +977,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/category'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>カテゴリー管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Category</span>
 
 											</a>
 
@@ -987,7 +987,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/brand'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>ブランド管理</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Brand</span>
 
 											</a>
 
@@ -997,7 +997,7 @@
 
 											<a href="<?php echo url('index/wanlshop.shop/profile'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>店舗情報</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Information</span>
 
 											</a>
 
@@ -1007,7 +1007,7 @@
 
 											<a href="<?php echo url('index/wanlshop.config/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>ストア構成</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Structure</span>
 
 											</a>
 
@@ -1033,7 +1033,7 @@
 
 									<a href="javascript:;">
 
-										<i class="fa fa-th fa-fw text-red"></i> <span>アプリケーションセンター</span>
+										<i class="fa fa-th fa-fw text-red"></i> <span>Application</span>
 
 										<span class="pull-right-container"><i class="fa fa-angle-left"></i> </span>
 
@@ -1057,7 +1057,7 @@
 
 											<a href="<?php echo url('index/wanlshop.coupon/index'); ?>">
 
-												<i class="fa fa-circle-o fa-fw"></i><span>クーポン</span>
+												<i class="fa fa-circle-o fa-fw"></i><span>Coupon</span>
 
 											</a>
 
@@ -1109,8 +1109,8 @@
 
 								</li>
 
-								<li class="header">関連リンク</li>
-								<li class="<?php echo $config['controllername'].'.'.$config['actionname']=='wanlshop.wholesale.index'?'active':''; ?>"><a href="<?php echo url('index/wanlshop.wholesale/index'); ?>?order=desc&offset=0&limit=10"><i class="fa fa-list text-red"></i> <span>卸売センター</span></a></li>
+								<li class="header">Partner</li>
+								<li class="<?php echo $config['controllername'].'.'.$config['actionname']=='wanlshop.wholesale.index'?'active':''; ?>"><a href="<?php echo url('index/wanlshop.wholesale/index'); ?>?order=desc&offset=0&limit=10"><i class="fa fa-list text-red"></i> <span>Wholesale center</span></a></li>
 
 								<!--li class="<?php echo $config['controllername'].'.'.$config['actionname']=='wanlshop.user.line'?'active':''; ?>"><a href="<?php echo url('index/wanlshop.user/line'); ?>"><i class="fa fa-qq text-aqua"></i> <span>line交流群</span></a></li-->
 
@@ -1181,7 +1181,7 @@
 
 											<ol class="breadcrumb pull-left">
 
-												<li><a href="dashboard" class="addtabsit"><i class="fa fa-dashboard"></i> コンソール</a></li>
+												<li><a href="dashboard" class="addtabsit"><i class="fa fa-dashboard"></i> Overview</a></li>
 
 											</ol>
 
@@ -1249,26 +1249,26 @@
                             <div class="ui-content">
                                 <div class="basicinfo">
                                     <div class="row">
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Money'); ?></div>
-                                        <div class="col-xs-8 col-md-4">
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Money'); ?></div>
+                                        <div class="col-xs-8 col-md-3">
                                             <?php echo $user['money']; ?>
                                         </div>
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Score'); ?></div>
-                                        <div class="col-xs-8 col-md-4">
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Score'); ?></div>
+                                        <div class="col-xs-8 col-md-3">
                                             <a href="javascript:;" class="viewscore"><?php echo $user['score']; ?></a>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Successions'); ?></div>
-                                        <div class="col-xs-8 col-md-4"><?php echo $user['successions']; ?> <?php echo __('Day'); ?></div>
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Maxsuccessions'); ?></div>
-                                        <div class="col-xs-8 col-md-4"><?php echo $user['maxsuccessions']; ?> <?php echo __('Day'); ?></div>
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Successions'); ?></div>
+                                        <div class="col-xs-8 col-md-3"><?php echo $user['successions']; ?> <?php echo __('Day'); ?></div>
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Maxsuccessions'); ?></div>
+                                        <div class="col-xs-8 col-md-3"><?php echo $user['maxsuccessions']; ?> <?php echo __('Day'); ?></div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Logintime'); ?></div>
-                                        <div class="col-xs-8 col-md-4"><?php echo date("Y-m-d H:i:s",$user['logintime']); ?></div>
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Prevtime'); ?></div>
-                                        <div class="col-xs-8 col-md-4"><?php echo date("Y-m-d H:i:s",$user['prevtime']); ?></div>
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Logintime'); ?></div>
+                                        <div class="col-xs-8 col-md-3"><?php echo date("Y-m-d H:i:s",$user['logintime']); ?></div>
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Prevtime'); ?></div>
+                                        <div class="col-xs-8 col-md-3"><?php echo date("Y-m-d H:i:s",$user['prevtime']); ?></div>
                                     </div>
                                 </div>
                             </div>
@@ -1372,26 +1372,26 @@
                             <div class="ui-content">
                                 <div class="basicinfo">
                                     <div class="row">
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Money'); ?></div>
-                                        <div class="col-xs-8 col-md-4">
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Money'); ?></div>
+                                        <div class="col-xs-8 col-md-3">
                                             <?php echo $user['money']; ?>
                                         </div>
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Score'); ?></div>
-                                        <div class="col-xs-8 col-md-4">
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Score'); ?></div>
+                                        <div class="col-xs-8 col-md-3">
                                             <a href="javascript:;" class="viewscore"><?php echo $user['score']; ?></a>
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Successions'); ?></div>
-                                        <div class="col-xs-8 col-md-4"><?php echo $user['successions']; ?> <?php echo __('Day'); ?></div>
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Maxsuccessions'); ?></div>
-                                        <div class="col-xs-8 col-md-4"><?php echo $user['maxsuccessions']; ?> <?php echo __('Day'); ?></div>
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Successions'); ?></div>
+                                        <div class="col-xs-8 col-md-3"><?php echo $user['successions']; ?> <?php echo __('Day'); ?></div>
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Maxsuccessions'); ?></div>
+                                        <div class="col-xs-8 col-md-3"><?php echo $user['maxsuccessions']; ?> <?php echo __('Day'); ?></div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Logintime'); ?></div>
-                                        <div class="col-xs-8 col-md-4"><?php echo date("Y-m-d H:i:s",$user['logintime']); ?></div>
-                                        <div class="col-xs-4 col-md-2"><?php echo __('Prevtime'); ?></div>
-                                        <div class="col-xs-8 col-md-4"><?php echo date("Y-m-d H:i:s",$user['prevtime']); ?></div>
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Logintime'); ?></div>
+                                        <div class="col-xs-8 col-md-3"><?php echo date("Y-m-d H:i:s",$user['logintime']); ?></div>
+                                        <div class="col-xs-4 col-md-3"><?php echo __('Prevtime'); ?></div>
+                                        <div class="col-xs-8 col-md-3"><?php echo date("Y-m-d H:i:s",$user['prevtime']); ?></div>
                                     </div>
                                 </div>
                             </div>

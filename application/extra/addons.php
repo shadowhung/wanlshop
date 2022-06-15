@@ -13,6 +13,10 @@ return [
         'upload_delete' => [
             'alioss',
         ],
+        'user_sidenav_after' => [
+            'recharge',
+            'wanlshop',
+        ],
         'sms_send' => [
             'smsbao',
         ],
@@ -23,9 +27,6 @@ return [
             'smsbao',
         ],
         'upgrade' => [
-            'wanlshop',
-        ],
-        'user_sidenav_after' => [
             'wanlshop',
         ],
     ],

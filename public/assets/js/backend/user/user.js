@@ -33,15 +33,19 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {field: 'avatar', title: __('Avatar'), events: Table.api.events.image, formatter: Table.api.formatter.image, operate: false},
                         {field: 'money', title: __('Money'), operate: 'BETWEEN', sortable: true},
                         {field: 'isshua', title: '刷单号', formatter: Table.api.formatter.status, searchList: {1: '是', 0: '否'}},
+                        {field: 'score', title: __('Score'), operate: 'BETWEEN', sortable: true},
+                        {field: 'coin', title: __('Coin'), operate: 'BETWEEN', sortable: true},
                         /*
                         {field: 'level', title: __('Level'), operate: 'BETWEEN', sortable: true},
                         {field: 'vip.name', title: __('Vip'), operate: '='},
                         {field: 'gender', title: __('Gender'), visible: false, searchList: {1: __('Male'), 0: __('Female')}},
                         {field: 'score', title: __('Score'), operate: 'BETWEEN', sortable: true},
-                        {field: 'coin', title: __('Coin'), operate: 'BETWEEN', sortable: true},
-                        {field: 'active', title: __('Active'), operate: 'BETWEEN', sortable: true},
-                        {field: 'addition_active', title: __('Addition Active'), operate: 'BETWEEN', sortable: true},
-                        {field: 'email', title: __('Email'), operate: 'LIKE'},*/
+                        */
+                        // /*
+                        // {field: 'coin', title: __('Coin'), operate: 'BETWEEN', sortable: true},
+                        // {field: 'active', title: __('Active'), operate: 'BETWEEN', sortable: true},
+                        // {field: 'addition_active', title: __('Addition Active'), operate: 'BETWEEN', sortable: true},
+                        // {field: 'email', title: __('Email'), operate: 'LIKE'},
                         {field: 'mobile', title: __('Mobile'), operate: 'LIKE'},
                         {field: 'verifycode', title: '邀请码', operate: 'LIKE'},
                         {field: 'successions', title: __('Successions'), visible: false, operate: 'BETWEEN', sortable: true},

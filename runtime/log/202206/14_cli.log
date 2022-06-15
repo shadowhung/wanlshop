@@ -1,0 +1,30 @@
+[ 2022-06-14T14:00:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000129s ]
+[ info ] [ LOG ] INIT File
+[ 2022-06-14T14:00:35+08:00 ][ info ] [ CACHE ] INIT File
+[ 2022-06-14T14:00:35+08:00 ][ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002995s ]
+[ 2022-06-14T14:00:35+08:00 ][ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000621s ]
+[ 2022-06-14T14:00:35+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000680s ]
+[ 2022-06-14T14:04:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000154s ]
+[ info ] [ LOG ] INIT File
+[ 2022-06-14T14:04:30+08:00 ][ info ] [ CACHE ] INIT File
+[ 2022-06-14T14:04:30+08:00 ][ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.003239s ]
+[ 2022-06-14T14:04:30+08:00 ][ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000665s ]
+[ 2022-06-14T14:04:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000731s ]
+[ 2022-06-14T14:09:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000139s ]
+[ info ] [ LOG ] INIT File
+[ 2022-06-14T14:09:09+08:00 ][ info ] [ CACHE ] INIT File
+[ 2022-06-14T14:09:09+08:00 ][ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.003078s ]
+[ 2022-06-14T14:09:09+08:00 ][ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000628s ]
+[ 2022-06-14T14:09:09+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000695s ]
+[ 2022-06-14T14:27:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000130s ]
+[ info ] [ LOG ] INIT File
+[ 2022-06-14T14:27:57+08:00 ][ info ] [ CACHE ] INIT File
+[ 2022-06-14T14:27:57+08:00 ][ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.003027s ]
+[ 2022-06-14T14:27:57+08:00 ][ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000650s ]
+[ 2022-06-14T14:27:57+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000709s ]
+[ 2022-06-14T14:32:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000152s ]
+[ info ] [ LOG ] INIT File
+[ 2022-06-14T14:32:47+08:00 ][ info ] [ CACHE ] INIT File
+[ 2022-06-14T14:32:47+08:00 ][ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.003333s ]
+[ 2022-06-14T14:32:47+08:00 ][ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000619s ]
+[ 2022-06-14T14:32:47+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000679s ]

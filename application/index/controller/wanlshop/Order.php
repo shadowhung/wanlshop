@@ -95,6 +95,7 @@ class Order extends Wanlshop
     public function wholesale1($id = null)
     {
         $row = $this->model->get($id);
+        
         if (!$row) {
             $this->error(__('No Results were found'));
         }
@@ -103,11 +104,14 @@ class Order extends Wanlshop
             $this->error(__('You have no permission'));
         }
         if ($this->request->isAjax()) {
+            
+            
             $address = model('app\index\model\wanlshop\OrderAddress')
             ->where(['order_id' => $id, 'shop_id' => $this->shop->id])
             ->order('isaddress desc')
             ->field('id,name,mobile,address,address_name')
             ->find();
+            $addressApilt = explode('/',$address['address']);
             
             $data['name']         = $address['name'];
             $data['mobile']       = $address['mobile'];
@@ -134,11 +138,43 @@ class Order extends Wanlshop
             if($row['is_wholesale'] == 1){
                 $this->error('注文は卸売りされました');
             }
+            
             $user = model('app\common\model\User')->get($row['user_id']);
             // 調用支付
 			$wanlPay = new WanlPay2('balance', 'balance', null);
 			$data = $wanlPay->pay($row['id']);
 			if($data['code'] == 200){
+			    
+			    /*
+			        这里调用物流API，订单传过去
+			        '{
+                        "orderId":"126",//订单ID
+                        "storeId":"456",//店铺ID
+                        "sku":"BOSK8123",//商品SKU
+                        "country":"US",
+                        "state":"FL",
+                        "city":"Miami",
+                        "address":"Garden St.1330",
+                        "name":"Kate",
+                        "email":"kate@gmail.com",
+                        "phone":"86133212"
+                    }
+        '
+			    */
+			     $postData = [
+    		        'orderId'=>$row['order_no'] ,
+    		        'storeId'=>$this->shop->id,
+    		        'sku' =>'test',
+    		        'country'=>'US',
+    		        "state"=>$addressApilt[1],
+                    "city"=>$addressApilt[2],
+                    "address"=>$address['address'],
+                    "name"=>$address['name'],
+                    "email"=>"kate@gmail.com",
+                    "phone"=>$address['mobile']
+    		    ];
+    			$result = $this->pushShipping($postData);
+			    
 			    $order[] = [
                     'id' => $row['id'],
                     'is_wholesale' => 1,
@@ -443,7 +479,8 @@ class Order extends Wanlshop
 	public function relative($id = null)
 	{
 		$row = $this->model->get($id);
-		//var_dump($row);exit;
+		
+		
 		if (!$row) {
 			$this->error(__('No Results were found'));
 		}
@@ -494,7 +531,18 @@ class Order extends Wanlshop
         $address['rprovince']  = isset($address1['2'])?$address1['2']:'';
         $address['rdetailed']  = isset($address1['3'])?$address1['3']:'';;
         $address['order_no']  = $row['order_no'];
+        
+        $trackList = json_decode( $this->getShippingTrack($row->express_no) ,true);
+        $listArr = [];
+		if(!empty($trackList['trackDetails'])){
+		    if(!empty($trackList['trackDetails'][0]['shipmentProgressActivities'])){
+		        $listArr = $trackList['trackDetails'][0]['shipmentProgressActivities'];
+		    }
+		}
 		
+	    
+		
+		$this->view->assign('track_list',$listArr);
 		$this->view->assign("data", $data);
 		$this->view->assign("week", $week);
 		$this->view->assign("list", $list);
@@ -502,6 +550,51 @@ class Order extends Wanlshop
 		$this->view->assign("address", $address);
 		return $this->view->fetch();
 	}
+	
+	/*
+	    查询物流跟踪
+	*/
+    private function getShippingTrack($express_no){
+
+        $curl = curl_init();
+        
+        curl_setopt_array($curl, array(
+          CURLOPT_URL => 'https://www.ups.com/track/api/Track/GetStatus?loc=en_US',
+          CURLOPT_RETURNTRANSFER => true,
+          CURLOPT_ENCODING => '',
+          CURLOPT_MAXREDIRS => 10,
+          CURLOPT_TIMEOUT => 0,
+          CURLOPT_FOLLOWLOCATION => true,
+          CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+          CURLOPT_CUSTOMREQUEST => 'POST',
+          CURLOPT_POSTFIELDS =>'{"Locale":"en_US","TrackingNumber":["'.$express_no.'"],"Requester":"wems_1z","returnToValue":""}',
+          CURLOPT_HTTPHEADER => array(
+            'authority: www.ups.com',
+            'accept: application/json, text/plain, */*',
+            'accept-language: zh-CN,zh;q=0.9',
+            'cache-control: no-cache',
+            'content-type: application/json',
+            'cookie: X-CSRF-TOKEN=CfDJ8Jcj9GhlwkdBikuRYzfhrpJtH8-Qidz-reAJ4-6W1E0lLFgkLOx7qCRCnlHAqhEc6pPeTUMUSKlH78MtdCL5i_QoVGDw4avyTdtYcojNjr-99f5FwQKghuBi3OOEAC6UfuqJhtPWvU7j22uu2JiElO4; AKA_A2=A; bm_sz=C28170B30446DA67E07F21A18D56C1EF~YAAQRn+GfOsumEWBAQAAlx/7YhCzsr/eqTa0xa0gfFKoZlL9ZJ4t19Mb+Az44Dh8O9XE7Iz3kQrAZ4xjcaGVHab5cEgJGHwQQydjNPq8vR5KiNntuGXaoq27+1XNcYd+Jgc5FSjsgepXVLIgY6B3l/yo5PuWPL0fW5fa0psx2AQ5iMlNzk6wQKdtjZi1josHnQUuukE8ZJiFBPXD110eeD/8RUYXchgKfdZocGCBgHFSleXJH2dvqbYynxQ6IPf5JPdsmU/reHr1ktByHN4rg1qt4OwUrGw3crHXVMEmTE8=~4538691~3621171; at_check=true; AMCVS_036784BD57A8BB277F000101%40AdobeOrg=1; CONSENTMGR=consent:true%7Cts:1655223039448; mboxEdgeCluster=32; st_cur_page=st_track; _gcl_au=1.1.1527191245.1655223040; s_vnum=1656604800274%26vn%3D1; s_invisit=true; dayssincevisit_s=First%20Visit; s_cc=true; AMCV_036784BD57A8BB277F000101%40AdobeOrg=-2121179033%7CMCIDTS%7C19158%7CMCMID%7C42059923917648290454333107397664055633%7CMCAAMLH-1655827850%7C11%7CMCAAMB-1655827850%7CRKhpRz8krg2tLO6pguXWp5olkAcUniQYPHaMWWgdJ3xzPWQmdj0y%7CMCOPTOUT-1655230250s%7CNONE%7CMCCIDH%7C790187782%7CvVersion%7C5.3.0; aam_uuid=42496359071315585774360989276130969749; aam_cms=segments%3D22945447; akacd_RWASP-default-phased-release=3832675853~rv=90~id=01fc2aa83db3f0a0356ceb1643365c60; HASSEENNOTICE=TRUE; com.ups.ims.lasso.sDataLassoFeb19=0b54c69e886c427d9ced1251f0a24ced:CronxC/i2Khx+JqBFG1ECzl2VTGJOaZyjrBm24mrhmY=; sharedsession=f1c1bfbc-81c5-491c-8c32-7b3007982116:w; ups_language_preference=en_US; gig_canary_ver=13076-3-27587025; gig_canary=false; gig_bootstrap_3_iCVSE9Ao6y9HITzXCDEN85YkhAnYbAuW1a6LOUnRKPEcwU_QCjFz7q_a1qfN5Vgd=_gigya_ver4; .AspNetCore.Antiforgery.pKFBCrPAOmA=CfDJ8H1SCHo8oO5Ascce1J42d2Dq4QyP2yVRKAyLEbg8jDTmdfzGTjQM4kiSq6Ec6OSmgtD_zUFAIEn1g5v0sWMUUltoakcdsfzkj-h9jgyKIlb2Y5Ti0fnhlJlEu6l91Yw7ObtmkMq-Ez7wI8hziYBNlCw; DOA-XSRF-TOKEN=CfDJ8H1SCHo8oO5Ascce1J42d2AKOrDRQupz2bPZ51QhvnlCaAeWcZl6PdHCXu3Qf7iRHv_KTOmQ2vO9UQf2QN0IhsSMvH7gCb4CrtMlZRtX07zdfZ2SQHMR0Q6XbdPtwwmTS-tH3w5-Yh-oB6hBDgbZTsM; bm_sv=BB8EA38CBCDF1D1D2B42957B278E88A9~YAAQVi43F6mvV16BAQAAUCz9YhBmTH+WbD+VPg3vEUeQYYjCTvahclkW+9juyh3lslExmobZSZn/47oTJYekp9osgrq2C9VhUK/lMMWpGTdQiqxgT03fCp4N4aRQ/IrhizXGdiDYL9UYsJqqDbfSv15jQrPzg/jucXaHVRE/VwnhCwcAaujhWpaniucs9R/7MglkgX8uYS4m1Z8j0iVQMQ1dVJGrwiIPf4Fejwlpp1zC3OzfHOC+3mm87lwn~1; ak_bmsc=341A729AAEBD311C6FF1933832ED4F6C~000000000000000000000000000000~YAAQRn+GfNswmEWBAQAAo9X+YhBHc68Mr8CaaLYqtoYAF2OLtyXf+5zMY3fN84krG5zVMNuboE0pZTL0CHbWoZgd7PGVwc4zZDKYrJ49Z0BCVm87/FAhEsUWrivPEIuillJc33SjLtNKBLLyBkEyRALGeouW2Uw1Z/0HUcDpbocEdUSHa5o1E/YmebBUMygKoZkFXz09xv7mm0c45d/ociHZDTu5biru3xDvfx98/jTYyvVJhn3kI553+qwFQhK9MRepZeO3Q57y4rgbZp7xqhFxap9y2gPiZ9GjX9RraUopMwmmhyw/RkCzv5A9SIfacdvWPgvEG0TySnDcwQ4rU1b64/YpDw/GahLGkU9rDwwAgDdnQ3pEltqtoCZuXknUztue9bzE/M7lsiKIFc4k9fN185MYtJrY/cZ1nQVBcukgiJqVIE6YWUwlk6pzKysvIfymQ7381IfmbHXexpEiQ3KyFTrnRRazYXiOa9MuNo8aue7+VsNppW7hRg3WFVAoKmo=; _abck=03797465F7667210832A2B65469BCD54~0~YAAQRn+GfOQwmEWBAQAAHPX+YgjfebyLADRC5CP8u8X53CsmfmOqpozMKttcIvFn0bMsW3E/LBy+DH3LivPCwAvktEKdfQ3wKVe6emmNwN37+GDx8IQ5cAJHAFeDHnemgOc0gW0mI9C6GpP4Gc6tzzSjchp0ebZprchZFA7O+fhNGMx5Yml5fL/5B6X5vXjzptZybRlRpeZqGx40mwDdmweP8l+MeS0t74v+dgzFwZPYAuzVl4JDt6hNN4LBmhogKxq4/zesmJeF/WChR5kT9ARM5yXdGlg+56DxhGqxWFmqPxmmtE9dvSsnLUn5IuNyi3AjCRvEkHXbA4YCiIageR7t78HtySi9MV7bf6rphjLj2u4IzirRLWOS0MTQEHPTFDnL8tYUdMxjtK868R/c25zc/1mg0g==~-1~-1~-1; s_nr=1655223308293-New; dayssincevisit=1655223308294; X-XSRF-TOKEN-ST=CfDJ8Jcj9GhlwkdBikuRYzfhrpKQI2TTLg5owYL9NqxGhyQeRnrZmyH29kM4_s7HAmE2RKlT3w_BJjnPgKAsCQvNcxCCijM0RrQXcSM7MJ11ZFLm-T23pM3T5yTeMb_TvO4p7nDwY_2nSjPxN1xmd6wGsQA; mbox=session#4fecd1d3e95a421395a03f6b3e8edda9#1655225170|PC#4fecd1d3e95a421395a03f6b3e8edda9.32_0#1718468110; utag_main=v_id:018162fb35bf008b279f7c15e9900506f00230670086e$_sn:1$_se:26$_ss:0$_st:1655225109849$ses_id:1655223039426%3Bexp-session$_pn:13%3Bexp-session$fs_sample_user:undefined%3Bexp-session$vapi_domain:ups.com$_prevpage:ups%3Aus%3Aen%3Atrack%3Bexp-1655226908286$_prevpageid:tracking%2FtrackWeb%2Ftra(3det).html%3Bexp-1655226908286$dc_visit:1$dc_event:18%3Bexp-session$dc_region:ap-east-1%3Bexp-session; RT="z=1&dm=ups.com&si=bb8d9eea-bcc3-4c1e-85a1-cb435f9ff71b&ss=l4ed25qg&sl=7&tt=27nh&bcn=%2F%2F684d0d41.akstat.io%2F"; _abck=03797465F7667210832A2B65469BCD54~-1~YAAQRn+GfBkxmEWBAQAA97j/YgiTgwdfpa4TG/D2MiRaPdGOQe9T3fMeD3czxaXRLYCJddFHNgbZzTD+iInooMdOc1XPRhdmjrpKPIfA0bDN5ERcyngNwd1xeGOhlGuS04dDKVHivkppZpwT7uvCtqAIE7bbcFZ0/WUvzEXrAbQkeSGVW5EebSG5RciAcVhtTgzya7RexYMiL7z3GAkVrwX548yY+l8x4hD9+E66qa2xKLFVGzZO5eJl7X0MAPeGNvNGy+Eo6ZKCaw/20tVAa1PE3RCqdxTQhmp6wZ+T1vZxOIAlFl8FeON4+BYLfBVcdLPbFrEBCk8CPbSZFbqITQPwyhTiPrKvpNWxISpPivgEoTLGUTTfF3U6njSpBw5cgFgewa/6KK3cLPWKwMnCO0AnWB7DFg==~0~-1~-1',
+            'origin: https://www.ups.com',
+            'pragma: no-cache',
+            'referer: https://www.ups.com/track?loc=en_US&tracknum=1Z0R41W70328240826&requester=WEMS_1Z/trackdetails',
+            'sec-ch-ua: " Not A;Brand";v="99", "Chromium";v="102", "Google Chrome";v="102"',
+            'sec-ch-ua-mobile: ?1',
+            'sec-ch-ua-platform: "Android"',
+            'sec-fetch-dest: empty',
+            'sec-fetch-mode: cors',
+            'sec-fetch-site: same-origin',
+            'user-agent: Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36',
+            'x-xsrf-token: CfDJ8Jcj9GhlwkdBikuRYzfhrpKQI2TTLg5owYL9NqxGhyQeRnrZmyH29kM4_s7HAmE2RKlT3w_BJjnPgKAsCQvNcxCCijM0RrQXcSM7MJ11ZFLm-T23pM3T5yTeMb_TvO4p7nDwY_2nSjPxN1xmd6wGsQA'
+          ),
+        ));
+        
+        $response = curl_exec($curl);
+        
+        curl_close($curl);
+        return $response;
+
+    }
 	
     
     /**
@@ -647,5 +740,32 @@ class Order extends Wanlshop
 			$this->wanlchat->send($order['user_id'], $msg);
 		}
 		$notice = model('app\index\model\wanlshop\Notice')->saveAll($msgData);
+	}
+	
+	/*
+	    外部物流API
+	*/
+	private function pushShipping($postData=array()){
+
+        $curl = curl_init();
+        curl_setopt_array($curl,array(
+            CURLOPT_URL=>'http://47.88.32.48:8000/api/trackingRecord/order?orderId&storeId&sku&country&state&city&address',
+            CURLOPT_RETURNTRANSFER=>true,
+            CURLOPT_ENCODING=>'',
+            CURLOPT_MAXREDIRS=>10,
+            CURLOPT_TIMEOUT=>0,
+            CURLOPT_FOLLOWLOCATION=>true,
+            CURLOPT_HTTP_VERSION=>CURL_HTTP_VERSION_1_1,
+            CURLOPT_CUSTOMREQUEST=>'POST',
+            CURLOPT_POSTFIELDS=>json_encode($postData),
+            CURLOPT_HTTPHEADER=>array(
+                'Content-Type:application/json'
+            ),
+        ));
+        
+        $response=curl_exec($curl);
+        curl_close($curl);
+        return $response;
+
 	}
 }

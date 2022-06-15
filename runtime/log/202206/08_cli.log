@@ -1,0 +1,24 @@
+[ 2022-06-08T11:25:39+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000135s ]
+[ info ] [ LOG ] INIT File
+[ 2022-06-08T11:25:39+08:00 ][ info ] [ CACHE ] INIT File
+[ 2022-06-08T11:25:39+08:00 ][ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002998s ]
+[ 2022-06-08T11:25:39+08:00 ][ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000642s ]
+[ 2022-06-08T11:25:39+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000701s ]
+[ 2022-06-08T11:25:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000140s ]
+[ info ] [ LOG ] INIT File
+[ 2022-06-08T11:25:49+08:00 ][ info ] [ CACHE ] INIT File
+[ 2022-06-08T11:25:49+08:00 ][ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.003058s ]
+[ 2022-06-08T11:25:49+08:00 ][ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000673s ]
+[ 2022-06-08T11:25:49+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000731s ]
+[ 2022-06-08T11:29:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000133s ]
+[ info ] [ LOG ] INIT File
+[ 2022-06-08T11:29:04+08:00 ][ info ] [ CACHE ] INIT File
+[ 2022-06-08T11:29:04+08:00 ][ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.003091s ]
+[ 2022-06-08T11:29:04+08:00 ][ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000652s ]
+[ 2022-06-08T11:29:04+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000708s ]
+[ 2022-06-08T11:31:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000138s ]
+[ info ] [ LOG ] INIT File
+[ 2022-06-08T11:31:59+08:00 ][ info ] [ CACHE ] INIT File
+[ 2022-06-08T11:31:59+08:00 ][ info ] [ BEHAVIOR ] Run \addons\alioss\Alioss @app_init [ RunTime:0.002624s ]
+[ 2022-06-08T11:31:59+08:00 ][ info ] [ BEHAVIOR ] Run \addons\wanlshop\Wanlshop @app_init [ RunTime:0.000587s ]
+[ 2022-06-08T11:31:59+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000643s ]
