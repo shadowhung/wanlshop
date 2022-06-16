@@ -146,20 +146,12 @@ class Order extends Wanlshop
 			if($data['code'] == 200){
 			    
 			    /*
+    			    订单金额，变成冻结金额
+    			*/
+			    
+			    
+			    /*
 			        这里调用物流API，订单传过去
-			        '{
-                        "orderId":"126",//订单ID
-                        "storeId":"456",//店铺ID
-                        "sku":"BOSK8123",//商品SKU
-                        "country":"US",
-                        "state":"FL",
-                        "city":"Miami",
-                        "address":"Garden St.1330",
-                        "name":"Kate",
-                        "email":"kate@gmail.com",
-                        "phone":"86133212"
-                    }
-        '
 			    */
 			     $postData = [
     		        'orderId'=>$row['order_no'] ,
@@ -174,7 +166,7 @@ class Order extends Wanlshop
                     "phone"=>$address['mobile']
     		    ];
     			$result = $this->pushShipping($postData);
-			    
+    
 			    $order[] = [
                     'id' => $row['id'],
                     'is_wholesale' => 1,

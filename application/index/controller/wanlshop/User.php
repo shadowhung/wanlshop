@@ -366,8 +366,8 @@ class User extends Wanlshop
     public function wallet(){
         $data = [
             'money' => $this->auth->money,
-            'score' => $this->auth->score,
-            'coin'  => $this->auth->coin
+            'score' => $this->auth->frozen_money,
+            'coin'  => $this->auth->approval_money
         ];
         
         $this->view->assign('wallet',$data);
@@ -398,6 +398,15 @@ class User extends Wanlshop
     public function confirmCharge(){
         $data = [];
         $this->view->assign('charge_list',$data);
+        return $this->view->fetch();
+    }
+    
+    /*
+        提现页面
+    */
+    public function withdraw(){
+        $data = [];
+        $this->view->assign('data',$data);
         return $this->view->fetch();
     }
 }

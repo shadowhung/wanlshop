@@ -58,6 +58,7 @@ class Pay extends Api
 		$this->request->filter(['strip_tags']);
 	    if ($this->request->isPost()) {
 	        $user    = $this->auth->getUser();
+	        
 	        $captcha = $this->request->post('captcha');
 	        
 	        if(empty($user['paypass'])||$user['paypass'] != $captcha){
@@ -77,6 +78,27 @@ class Pay extends Api
                 ->where('id', 'in', $order_id)
                 ->where('user_id', $user_id)
 				->select();
+			
+			$shopInfo = model('app\api\model\wanlshop\Shop')
+			    ->where('id',$order[0]->shop_id)
+			    ->find();
+			$shopUserInfo = \app\common\model\User::where('id', $shopInfo['user_id'])->find();
+			
+			
+			// 獲取支付信息
+    		$pay = model('app\api\model\wanlshop\Pay')
+    			->where('order_id', 'in', $order_id)
+    			->where('user_id', $user_id)
+    			->select();
+            // 付款金額
+        	$price = 0;
+    		foreach($pay as $row){
+    			// 總價格
+    			$price += $row['price'];
+    		}
+    		
+    		
+		
 			if(!$order){
 			    $this->error(__('支払う注文が見つかりませんでした'));
 			}
@@ -89,6 +111,12 @@ class Pay extends Api
 			$wanlPay = new WanlPay($type, $method, $code);
 			$data = $wanlPay->pay($order_id);
 			if($data['code'] == 200){
+			    /*
+			        支付成功，更改用户的冻结金额
+			    */
+			    //金额设置成冻结金额
+        		$shopUserInfo->frozen_money = $price;
+        		$shopUserInfo->save();
 			    $this->success('ok', $data['data']);
 			}else{
 			    $this->error($data['msg']);
@@ -288,6 +316,12 @@ class Pay extends Api
                 $withdraw = \app\api\model\wanlshop\Withdraw::create($data);
 				$pay = new WanlPay;
 				$pay->money(-$money, $this->auth->id, '撤退を申請する', 'withdraw', $withdraw['id']);
+				
+				/*
+				    提现到-审批金额
+				*/
+			    $user->approval_money = $money;
+			    $user->save();
                 Db::commit();
             } catch (Exception $e) {
                 Db::rollback();
