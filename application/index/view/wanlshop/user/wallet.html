@@ -1,0 +1,119 @@
+<style>
+    .profile-avatar-container {
+        position:relative;
+        width:100px;
+    }
+    .profile-avatar-container .profile-user-img{
+        width:100px;
+        height:100px;
+    }
+    .profile-avatar-container .profile-avatar-text {
+        display:none;
+    }
+    .profile-avatar-container:hover .profile-avatar-text {
+        display:block;
+        position:absolute;
+        height:100px;
+        width:100px;
+        background:#444;
+        opacity: .6;
+        color: #fff;
+        top:0;
+        left:0;
+        line-height: 100px;
+        text-align: center;
+    }
+    .profile-avatar-container button{
+        position:absolute;
+        top:0;left:0;width:100px;height:100px;opacity: 0;
+    }
+</style>
+<div id="content-container" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-header center-block text-center">
+                    <a href="{:url('index/wanlshop.user/chargeList')}" class="h4">充值记录</a>
+                </div>
+                <div class="panel-body">
+                    <h2 class="page-header center-block text-center">总资产</h2>
+                    
+                    
+                </div>
+                <div class="panel-body text-center">
+                    {$wallet.money}
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="page-header center-block text-center">可用余额</h2>
+                    
+                </div>
+                <div class="panel-body text-center">
+                    {$wallet.money}
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h2 class="page-header center-block text-center">冻结金额</h2>
+                    
+                </div>
+                <div class="panel-body text-center">
+                    {$wallet.score}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="{:url('index/wanlshop.user/charge')}" class="btn btn-success btn-lg center-block text-center">充值</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <a href="#" class="btn btn-info btn-lg center-block  text-center">提现</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+
+<style>
+    .form-layer {height:100%;min-height:150px;min-width:300px;}
+    .form-body {
+        width:100%;
+        overflow:auto;
+        top:0;
+        position:absolute;
+        z-index:10;
+        bottom:50px;
+        padding:15px;
+    }
+    .form-layer .form-footer {
+        height:50px;
+        line-height:50px;
+        background-color: #ecf0f1;
+        width:100%;
+        position:absolute;
+        z-index:200;
+        bottom:0;
+        margin:0;
+    }
+    .form-footer .form-group{
+        margin-left:0;
+        margin-right:0;
+    }
+</style>
