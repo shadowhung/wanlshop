@@ -1,0 +1,93 @@
+<style>
+    .profile-avatar-container {
+        position:relative;
+        width:100px;
+    }
+    .profile-avatar-container .profile-user-img{
+        width:100px;
+        height:100px;
+    }
+    .profile-avatar-container .profile-avatar-text {
+        display:none;
+    }
+    .profile-avatar-container:hover .profile-avatar-text {
+        display:block;
+        position:absolute;
+        height:100px;
+        width:100px;
+        background:#444;
+        opacity: .6;
+        color: #fff;
+        top:0;
+        left:0;
+        line-height: 100px;
+        text-align: center;
+    }
+    .profile-avatar-container button{
+        position:absolute;
+        top:0;left:0;width:100px;height:100px;opacity: 0;
+    }
+</style>
+<div id="content-container" class="container">
+   <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-header">
+                    <a href="#" class="h5 btn btn-danger">可用金额：11111</a>
+                    <a href="{:url('index/wanlshop.user/wallet')}" class="h5 btn btn-info">我的钱包</a>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-bordered table-hover table-condensed table-striped">
+                        <tr>
+                            <td>编号</td>
+                            <td>金额</td>
+                            <td>时间</td>
+                        </tr>
+                        
+                        <tr>
+                            <td>1</td>
+                            <td>99.99</td>
+                            <td>2022-06-16 00:23:17</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>99.99</td>
+                            <td>2022-06-16 00:23:17</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>99.99</td>
+                            <td>2022-06-16 00:23:17</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .form-layer {height:100%;min-height:150px;min-width:300px;}
+    .form-body {
+        width:100%;
+        overflow:auto;
+        top:0;
+        position:absolute;
+        z-index:10;
+        bottom:50px;
+        padding:15px;
+    }
+    .form-layer .form-footer {
+        height:50px;
+        line-height:50px;
+        background-color: #ecf0f1;
+        width:100%;
+        position:absolute;
+        z-index:200;
+        bottom:0;
+        margin:0;
+    }
+    .form-footer .form-group{
+        margin-left:0;
+        margin-right:0;
+    }
+</style>

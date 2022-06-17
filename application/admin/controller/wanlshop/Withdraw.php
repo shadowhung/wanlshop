@@ -91,7 +91,8 @@ class Withdraw extends Backend
     {
 
     	$row = $this->model->get($ids);
-
+    	
+    
     	if (!$row) {
 
     	    $this->error(__('No Results were found'));
@@ -135,6 +136,10 @@ class Withdraw extends Backend
     		        $row->validateFailException(true)->validate($validate);
 
     		    }
+    		    
+    		    $shopUserInfo = \app\common\model\User::where('id', $row->user_id)->find();
+                $shopUserInfo->approval_money = $shopUserInfo->approval_money  - ($row['money'] + $row['handingfee']);
+                $shopUserInfo->save();
 
     			// 審核通過
 
@@ -145,6 +150,8 @@ class Withdraw extends Backend
 					'transfertime' => time()
 
 				]);
+				
+				//审批金额释放
 
     		    Db::commit();
 
@@ -247,6 +254,10 @@ class Withdraw extends Backend
     				$params['status'] = 'rejected';
 
     	            $result = $row->allowField(true)->save($params);
+    	            
+    	            $shopUserInfo = \app\common\model\User::where('id', $row->user_id)->find();
+                    $shopUserInfo->approval_money = $shopUserInfo->approval_money  - ($row['money'] + $row['handingfee']);
+                    $shopUserInfo->save();
 
 					// 更新用戶金額
 

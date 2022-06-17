@@ -1,0 +1,94 @@
+<style>
+    .profile-avatar-container {
+        position:relative;
+        width:100px;
+    }
+    .profile-avatar-container .profile-user-img{
+        width:100px;
+        height:100px;
+    }
+    .profile-avatar-container .profile-avatar-text {
+        display:none;
+    }
+    .profile-avatar-container:hover .profile-avatar-text {
+        display:block;
+        position:absolute;
+        height:100px;
+        width:100px;
+        background:#444;
+        opacity: .6;
+        color: #fff;
+        top:0;
+        left:0;
+        line-height: 100px;
+        text-align: center;
+    }
+    .profile-avatar-container button{
+        position:absolute;
+        top:0;left:0;width:100px;height:100px;opacity: 0;
+    }
+</style>
+<div id="content-container" class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-header center-block text-center">确认充值</div>
+                <div class="panel-body">
+                    <h2 class="page-header center-block text-center">充值金额：100</h2>
+                </div>
+                <div class="panel-footer center-block text-center">手续费、平台反馈说明</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-header center-block text-center">
+                    <a href="#" class="btn btn-default">上传截图</a>
+                </div>
+                <div class="panel-body center-block text-center">
+                    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgdmlld0JveD0iMCAwIDE0MCAxNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzE0MHgxNDAKQ3JlYXRlZCB3aXRoIEhvbGRlci5qcyAyLjYuMC4KTGVhcm4gbW9yZSBhdCBodHRwOi8vaG9sZGVyanMuY29tCihjKSAyMDEyLTIwMTUgSXZhbiBNYWxvcGluc2t5IC0gaHR0cDovL2ltc2t5LmNvCi0tPjxkZWZzPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+PCFbQ0RBVEFbI2hvbGRlcl8xODE2ODNlNTU4YyB0ZXh0IHsgZmlsbDojQUFBQUFBO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1mYW1pbHk6QXJpYWwsIEhlbHZldGljYSwgT3BlbiBTYW5zLCBzYW5zLXNlcmlmLCBtb25vc3BhY2U7Zm9udC1zaXplOjEwcHQgfSBdXT48L3N0eWxlPjwvZGVmcz48ZyBpZD0iaG9sZGVyXzE4MTY4M2U1NThjIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjQ0LjA0Njg3NSIgeT0iNzQuNSI+MTQweDE0MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" alt="..." class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+     <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-header center-block text-center"><a href="#" class="h4">手续费、平台反馈说明</a></div>
+                <div class="panel-body text-center">
+                    <a href="{:url('index/wanlshop.user/confirmCharge')}" class="btn btn-info btn-lg ">确定充值</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .form-layer {height:100%;min-height:150px;min-width:300px;}
+    .form-body {
+        width:100%;
+        overflow:auto;
+        top:0;
+        position:absolute;
+        z-index:10;
+        bottom:50px;
+        padding:15px;
+    }
+    .form-layer .form-footer {
+        height:50px;
+        line-height:50px;
+        background-color: #ecf0f1;
+        width:100%;
+        position:absolute;
+        z-index:200;
+        bottom:0;
+        margin:0;
+    }
+    .form-footer .form-group{
+        margin-left:0;
+        margin-right:0;
+    }
+</style>

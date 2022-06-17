@@ -340,6 +340,8 @@ class Order extends Api
 	        $user_id = $this->auth->id; // 用戶ID
 
 		    $id = $this->request->post('id');
+		    
+		    
 
 			$id ? $id : ($this->error(__('違法なリクエスト')));
 
@@ -350,7 +352,7 @@ class Order extends Api
 				->where(['id' => $id, 'state'=> 3, 'user_id' => $this->auth->id])
 
 				->find();
-
+            
 			if(!$order){
 
 				$this->error(__('注文の例外'));
@@ -378,6 +380,21 @@ class Order extends Api
 			// 平臺轉款給商家
 
 			controller('addons\wanlshop\library\WanlPay\WanlPay')->money(+$order['pay']['price'], $order['shop']['user_id'], '購入者が領収書を確認する', 'pay', $order['order_no']);
+			
+			/*
+			    商家冻结金额释放
+			*/
+			$payInfo = model('app\api\model\wanlshop\Pay')
+    			->where('order_id',  $id)
+    			->find();
+    		$shopInfo =  model('app\api\model\wanlshop\Shop')
+			    ->where('id',$payInfo->shop_id)
+			    ->find();
+			   
+			$shopUserInfo = \app\common\model\User::where('id', $shopInfo['user_id'])->find();
+			
+			$shopUserInfo->frozen_money = $shopUserInfo->frozen_money - $payInfo['order_price'];
+			$shopUserInfo->save();
 
 			// 查詢是否有退款
 

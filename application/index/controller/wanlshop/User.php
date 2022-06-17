@@ -359,4 +359,54 @@ class User extends Wanlshop
         $this->view->assign("mimetypeList", \app\common\model\Attachment::getMimetypeList());
         return $this->view->fetch();
     }
+    
+    /*
+        我的钱包
+    */
+    public function wallet(){
+        $data = [
+            'money' => $this->auth->money,
+            'score' => $this->auth->frozen_money,
+            'coin'  => $this->auth->approval_money
+        ];
+        
+        $this->view->assign('wallet',$data);
+        return $this->view->fetch();
+    }
+    
+    /*
+        充值页面
+    */
+    public function charge(){
+        $data = [];
+        $this->view->assign('wallet',$data);
+        return $this->view->fetch();
+    }
+    
+    /*
+        充值记录页面
+    */
+    public function chargeList(){
+        $data = [];
+        $this->view->assign('charge_list',$data);
+        return $this->view->fetch();
+    }
+    
+    /*
+        确认充值页面
+    */
+    public function confirmCharge(){
+        $data = [];
+        $this->view->assign('charge_list',$data);
+        return $this->view->fetch();
+    }
+    
+    /*
+        提现页面
+    */
+    public function withdraw(){
+        $data = [];
+        $this->view->assign('data',$data);
+        return $this->view->fetch();
+    }
 }
